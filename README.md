@@ -117,3 +117,4 @@ All other files are only available under CC BY 4.0, including:
 + `*.docx`
 
 Please open [an issue](https://github.com/manubot/rootstock/issues) for any question related to licensing.
+
