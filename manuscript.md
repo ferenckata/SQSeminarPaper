@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-08-11'
+date-meta: '2023-08-30'
 author-meta:
 - John Doe
 - Jane Roe
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2023-08-11" />
-  <meta name="citation_publication_date" content="2023-08-11" />
-  <meta property="article:published_time" content="2023-08-11" />
-  <meta name="dc.modified" content="2023-08-11T09:25:10+00:00" />
-  <meta property="article:modified_time" content="2023-08-11T09:25:10+00:00" />
+  <meta name="dc.date" content="2023-08-30" />
+  <meta name="citation_publication_date" content="2023-08-30" />
+  <meta property="article:published_time" content="2023-08-30" />
+  <meta name="dc.modified" content="2023-08-30T07:10:34+00:00" />
+  <meta property="article:modified_time" content="2023-08-30T07:10:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@aff9359](https://github.com/ferenckata/SQSeminarPaper/tree/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398)
-on August 11, 2023.
+from [ferenckata/SQSeminarPaper@a2e0bba](https://github.com/ferenckata/SQSeminarPaper/tree/a2e0bba45105bc2b7041beec74b8ff76726386f8)
+on August 30, 2023.
 </em></small>
 
 
@@ -141,6 +141,49 @@ We implemented a form of code review that fits our specific needs and context. W
 
 We aim to provide guidelines on how to get started with improving the process quality of bioinformatics groups, even without members who have formal training in computer science or software engineering.
 
+
+### Review of existing suggestions for improving software quality in biomedical sciences ###
+
+We reviewed the existing literature that focuses on providing guidelines for programming practices for scientists without extensive training in computational sciences.
+We used several key phrases to search for papers: “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”.
+Such papers are quite abundant and have a number of things in common.
+For example, they can focus on specific suggestions, often referred to as rules or “tips & tricks”, or they can more broadly direct towards good practices of coding, which are put together into “guidelines”.
+
+Papers often choose a main focus or a theme and then distinguish a set of rules or guidelines.
+That focus can be very specialized, such as particular data analysis in a single disease [@doi:10.1186/s13024-022-00517-z].
+Or the theme can be more general, for example setting the rules for next-generation sequencing (NGS) data analysis or outlining tips on how to start on computational analysis of the experimental data [@doi:10.1016/j.jtho.2022.11.006;@doi:10.7287/peerj.preprints.2996;@doi:10.1016/j.jmoldx.2017.11.003].
+Both types of papers emphasize the need to learn how to analyze data properly and provide good suggestions to do that, based on the chosen topic.
+However, one needs to be aware when reading specialized focus guidelines that some of them can be much less applicable if the context of the analysis is different.
+Finally, the reference point matters.
+There is a difference, if the guidelines are read by a person with less experience in computational data analysis, where even a small set of rules can mean a steep learning curve, because some skills that are dependencies for the rules might be common knowledge for those with more experience.
+For example, a guideline to use version control systems, such as git, is a very important one, but for that a reader should most likely know the basics of the unix command line, which is not necessarily a rule on itself.
+One of the first things that should be done while suggesting your set of guidelines is clearly defining your target audience, even if they are meant to be broader suggestions.
+
+As most guidelines tend to be written for researchers or students with minimal coding experience, suggestions often overlap.
+Most commonly highlighted are documentation and version control [@doi:10.1093/bib/bbw134;@doi:10.1371/journal.pcbi.1008645].
+These are basic aspects of the software quality, which are still often overlooked in the publications making it hard to reproduce the research or use a published software [@doi:10.7717/peerj-cs.839].
+Even the people with the least experience in computational analyses should always document their code by writing extensive README documentation.
+Documentation practice is very strong in the wet lab, where having a lab journal is unquestionable.
+This should not be different when working with computational tools. Version control of the code improves research reproducibility and the usage of the software.
+The most popular way to do that is by using git and remote repositories, for example, GitHub or Bitbucket [@doi:10.7287/peerj.preprints.2996v1;@doi:10.1186/s13024-022-00517-z;@doi:10.1371/journal.pcbi.1008645].
+Less commonly emphasized are testing of the developed code or software and optimization of pipelines [@doi:10.1371/journal.pcbi.1008645].
+These are very important rules to follow to end up with a proper collection of code or a stable software [@doi:10.7717/peerj-cs.839].
+However, it might be considered to be too advanced for "beginners" guidelines.
+Unfortunately, not being aware of such requirements can lead to a code that either takes a long time to run or is buggy, which accumulates the technical debt and, in a way, encourages the bad practices.
+To avoid that it is important to at least be aware of the caveats of your code and document them for fellow researchers that might use your code in the future.
+
+As code testing and origanization can be overwhelming for a less experienced computational scientist, there are multiple available tools to help organize the coding tasks and the code itself.
+For example, using task management through Jira or GitHub issues, which are commonly used in team projects, where multiple people work on the same code.
+However, these resources are not emphasized in the guideline's literature as this literature is most commonly focused on the individual persons and their personal practices.
+Often "other people" are only mentioned when guidelines suggest where to seek help when encountering a problem with the code.
+This includes consulting with colleagues, finding a mentor or participating in online communities (for example, Stack Overflow or Biostars) [@doi:10.1371/journal.pcbi.1008645].
+More recently, new tools are introduced that integrate artificial intelligence (AI) as a helper in coding.
+Tools such as GitHub copilot or editor extensions with access to ChatGPT allow to ask the models to write a piece of code to address a problem.
+To our knowledge bioinformatics literature almost never presents suggestions how to code in a team setting and utilize multiple people's expertise on software development.
+In contrary to sofware engineering-oriented literature, where there is a lot of focus on coding in a team practices [@https://faculty.washington.edu/ajko/books/cooperative-software-development;@doi:10.1007/s10664-012-9205-0].
+Hagan et al. described Code Clubs - the practice in their research lab, where group members are collectively engaged in software development through code reviews and pair coding and software engineering education through workshops or seminars [@doi:10.1371/journal.pcbi.1008119].
+The authors give tips on how to organize such meetings and what should be the ground rules.
+Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and finally helps to write a better quality software.
 
 ## References {.page_break_before}
 

@@ -7,12 +7,12 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2023-08-11",
+    "date-meta": "2023-08-30",
     "author-meta": [
       "John Doe",
       "Jane Roe"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2023-08-11\" />\n<meta name=\"citation_publication_date\" content=\"2023-08-11\" />\n<meta property=\"article:published_time\" content=\"2023-08-11\" />\n<meta name=\"dc.modified\" content=\"2023-08-11T09:25:10+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-08-11T09:25:10+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"og:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"twitter:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2023-08-30\" />\n<meta name=\"citation_publication_date\" content=\"2023-08-30\" />\n<meta property=\"article:published_time\" content=\"2023-08-30\" />\n<meta name=\"dc.modified\" content=\"2023-08-30T07:10:34+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-08-30T07:10:34+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"og:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"twitter:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,10 +22,10 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "2023-08-11",
-    "date_long": "August 11, 2023",
-    "generated": "2023-08-11T09:25:10+00:00",
-    "generated_date_long": "August 11, 2023",
+    "date": "2023-08-30",
+    "date_long": "August 30, 2023",
+    "generated": "2023-08-30T07:10:34+00:00",
+    "generated_date_long": "August 30, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -79,19 +79,19 @@
       "repo_slug": "ferenckata/SQSeminarPaper",
       "repo_owner": "ferenckata",
       "repo_name": "SQSeminarPaper",
-      "commit": "aff9359d4bcfdc684ba4109c1c8fdd7f15e84398",
-      "triggering_commit": "aff9359d4bcfdc684ba4109c1c8fdd7f15e84398",
-      "build_url": "https://github.com/ferenckata/SQSeminarPaper/commit/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/checks",
-      "job_url": "https://github.com/ferenckata/SQSeminarPaper/actions/runs/5831004591"
+      "commit": "a2e0bba45105bc2b7041beec74b8ff76726386f8",
+      "triggering_commit": "a2e0bba45105bc2b7041beec74b8ff76726386f8",
+      "build_url": "https://github.com/ferenckata/SQSeminarPaper/commit/a2e0bba45105bc2b7041beec74b8ff76726386f8/checks",
+      "job_url": "https://github.com/ferenckata/SQSeminarPaper/actions/runs/6021700644"
     },
     "html_url": "https://ferenckata.github.io/SQSeminarPaper/",
     "pdf_url": "https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf",
-    "html_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/",
-    "pdf_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/aff9359d4bcfdc684ba4109c1c8fdd7f15e84398/manuscript.pdf",
+    "html_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/",
+    "pdf_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/manuscript.pdf",
     "manubot_version": "0.5.5",
     "rootstock_commit": "299abcea4c710cdda024017b54148e24c8d37228",
     "manuscript_stats": {
-      "word_count": 2282
+      "word_count": 3166
     }
   }
 }
