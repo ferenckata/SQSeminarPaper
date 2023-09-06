@@ -7,24 +7,37 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
+  - github: ferenckata
+    name: Katalin Ferenc
+    initials: KF
+    orcid: 0000-0002-3006-4297
+    email: k.t.ferenc@ncmm.uio.no
     affiliations:
-      - Department of Something, University of Whatever
+      - Centre for Molecular Medicine Norway, University of Oslo
+    corresponding: true
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+  - github: ievarau
+    name: Ieva Rauluseviciute
+    initials: IR
+    orcid: 0000-0001-9253-8825
+    email: ieva.rauluseviciute@ncmm.uio.no
+    twitter: XXX
+    mastodon: XXX
+    mastodon-server: XXX
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-    corresponding: true
+      - Centre for Molecular Medicine Norway, University of Oslo
+  - github: ladislav-hovan
+    name: Ladislav Hovan
+    initials: LH
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: ladislav.hovan@ncmm.uio.no
+    affiliations:
+      - Centre for Molecular Medicine Norway, University of Oslo
+  - github: princeps091-binf
+    name: Vipin Kumar
+    initials: VK
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: vipin.kumar@ncmm.uio.no
+    affiliations:
+      - Centre for Molecular Medicine Norway, University of Oslo
