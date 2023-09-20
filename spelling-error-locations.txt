@@ -44,14 +44,6 @@ content/27.guideline-review.md:37:ChatGPT
 content/27.guideline-review.md:38:bioinformatics
 content/27.guideline-review.md:39:sofware
 content/27.guideline-review.md:40:Hagan
-content/40.our-experience.md:4:bioinformaticians
-content/40.our-experience.md:15:bioinformatic
-content/40.our-experience.md:16:hoc
-content/40.our-experience.md:22:Hagan
-content/40.our-experience.md:39:bioinformaticians
-content/40.our-experience.md:46:Jaspar
-content/40.our-experience.md:53:UML
-content/40.our-experience.md:54:bioframe
 content/99.delete-me.md:44:adipiscing
 content/99.delete-me.md:44:aliqua
 content/99.delete-me.md:44:amet

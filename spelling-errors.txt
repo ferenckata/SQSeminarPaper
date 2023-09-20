@@ -5,8 +5,6 @@ amet
 anim
 aute
 binf
-bioframe
-bioinformatic
 bioinformaticians
 bioinformatics
 Biostars
@@ -37,7 +35,6 @@ Goble
 Hagan
 Hannay
 Hannay’s
-hoc
 Hovan
 Ieva
 ievarau
@@ -85,7 +82,6 @@ sunt
 Szalay
 tempor
 ullamco
-UML
 velit
 veniam
 Vipin

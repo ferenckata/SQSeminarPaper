@@ -25,8 +25,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-20" />
   <meta name="citation_publication_date" content="2023-09-20" />
   <meta property="article:published_time" content="2023-09-20" />
-  <meta name="dc.modified" content="2023-09-20T08:30:09+00:00" />
-  <meta property="article:modified_time" content="2023-09-20T08:30:09+00:00" />
+  <meta name="dc.modified" content="2023-09-20T08:30:38+00:00" />
+  <meta property="article:modified_time" content="2023-09-20T08:30:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@cf29571](https://github.com/ferenckata/SQSeminarPaper/tree/cf295714f376a1bab7d9942e01f5ab01139a21c9)
+from [ferenckata/SQSeminarPaper@b9bfc36](https://github.com/ferenckata/SQSeminarPaper/tree/b9bfc3652da292b674355fc8df40c663a15d7241)
 on September 20, 2023.
 </em></small>
 
@@ -250,77 +250,6 @@ In contrary to sofware engineering-oriented literature, where there is a lot of 
 Hagan et al. described Code Clubs - the practice in their research lab, where group members are collectively engaged in software development through code reviews and pair coding and software engineering education through workshops or seminars [@doi:10.1371/journal.pcbi.1008119].
 The authors give tips on how to organize such meetings and what should be the ground rules.
 Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and finally helps to write a better quality software.
-
-## Our experiences for development processes involving teams {.page_break_before}
-
-The preceding sections mention a lot of possible approaches to improving software quality.
-Given the abundance of opinions on this topic, and the variety of challenges bioinformaticians face, we believe that everyone should find out what works best for them.
-Here, we describe the practices that we have settled on.
-
-The software development practices that we have adopted can be broadly separated into three categories: code reviews, what we have called software quality meetings, and resource sharing.
-
-### Code reviews
-
-Code reviews are not a new invention and many people have discussed their benefits ([@DOI:10.5334/jors.35; @DOI:10.1371/journal.pcbi.1008119]).
-Here we would just like to briefly summarize how being made to present your code and receiving feedback leads to improvement in the process of creating software.
-
-Prior to a scheduled code review, the author is forced to write their code in a way that it will be explainable and understood by others, which is always desirable.
-In a large distributed project this may be trivial, but because the bioinformatic projects are often handled by a single person, it is very possible to make the code needlessly complex and obfuscated.
-We also observed that during data analysis parts of the code are re-run in an ad-hoc manner (e.g. by commenting out parts), making it increasingly difficult to reproduce the same analysis.
-
-During the code review, the author has to explain some aspect of their code clearly (e.g. structure, algorithm implementation, performance related decisions), which depends on them understanding it.
-Trying to explain your code to someone is shown to help with understanding (rubber duck method [@ISBN:9780201616224]).
-The feedback obtained can help fix existing or potential future issues, improve the implementation, and produce cleaner, more concise code.
-The other participants may not be deeply familiar with the particular project, but they have their unique knowledge and point of view.
-We agree with the ten simple rules described by Hagan et al. [@DOI:10.1371/journal.pcbi.1008119], and note that many of those naturally emerged as a code of conduct after a few rounds of trial and error.
-
-After the review, the received suggestions should be implemented swiftly to improve the code before advancing the project.
-The success of code review is highly dependent on its frequency (long time between reviews - a lot of new code, hard to cover all changes in a single session, potentially a lot of rewrite post review), and hence they should be as regular and frequent as reasonably possible.
-
-As a positive additional outcome, we noticed an increasing understanding in each other’s projects that naturally emerged through talking about the analysis code.
-This enabled us to give more involved comments during subsequent group meetings too.
-We noted however, that the focus can easily shift from the code to the biological question at hand.
-This we believe is more of a feature than a bug, as each code review session is led by the person bringing the code and the rest of us are there to support to the best of our abilities.
-Especially after the general level of coding style and quality increased to a good baseline.
-E.g. after about half a year, it was trivial for everyone involved that code organized into functions is preferred over spaghetti.
-The shared knowledge base and  standards also allow us to make new group members adopt good coding practices more quickly.
-
-### Software quality meetings
-
-Within the framework of software quality meetings, we have established larger-scale knowledge transfer between the participants.
-Presentations and demonstrations of new techniques and tools that are not necessarily tied to a specific project help broaden our knowledge base and awareness.
-In this sense, they form almost a substitute for a more formal computer science education, which most bioinformaticians lack [@DOI:10.7717/peerj-cs.839].
-Topics can arise from code reviews, own projects, or effectively be a reproduction of a useful talk or seminar given elsewhere.
-
-The presenters benefit as well by having to research the topic further and present it coherently.
-It is not necessary to have these meetings be as regular as code reviews.
-The time investment is higher, given that a preparation is needed unlike just writing code as for code reviews.
-
-During the software quality meetings, we have also explored the possibility of collaborative projects and pair programming, but have not managed to implement it successfully yet outside of the scope of preparation for the Jaspar 2024 release (reference).
-The main reason for this is that we experimented with collaboration on a software tool not directly used by any of the members.
-As researchers, we could not afford investing time in a hobby project.
-
-The outcome of these sessions are manifold.
-A few examples: 
-1) a shared vocabulary that enables quick discussion about implementation details and code structures (e.g. design patterns, software architecture, data structures and algorithms), 
-2) a kind of toolkit and set of recordings we can sample from and build on in our own research projects (e.g. planning with UML diagrams, git features to ease and quicken software development),
-3) awareness of previously unknown algorithms and packages, improving software performance and quality (e.g. dynamic programming, heap, Python packages such as bioframe).
-
-### Resource sharing
-
-Resource sharing is a basic thing, but it boils down to making sure that useful online resources are brought to the attention of all participants in an easy way.
-
-Resource sharing could be discussed from two perspectives: external open-access resources (forums, repositories, packages and libraries) and internal (within-group resources with tools).
-The latter is very important as it allows for team contribution that can benefit the individual project development.
-A simple example of this could be a shared repository of various computational tools that were developed by members of the group.
-Such tools are universal enough and fit the group’s research questions, so all people in the group can re-use them.
-In addition, each tool can be potentially developed and reviewed by multiple group members. 
-
-During software meetings, we aimed to set aside time to improve these tools from perspectives identified by the members.
-We observed that many of these tools do not have a clear scope and are rather a small script for a sub-task from a previous project.
-Based on this observation, we noted that there is a difference between a script and a standalone tool that can be inserted into various projects.
-The latter requires exploration of use cases related to the tool, handling of unexpected inputs, and extensive documentation, to name a few tasks.
-This understanding was actually quite relevant in a code review discussion when the expected usage modes of a new tool was the main focus.
 
 ## References {.page_break_before}
 

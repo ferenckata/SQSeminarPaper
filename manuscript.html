@@ -119,8 +119,8 @@
   <meta name="dc.date" content="2023-09-20" />
   <meta name="citation_publication_date" content="2023-09-20" />
   <meta property="article:published_time" content="2023-09-20" />
-  <meta name="dc.modified" content="2023-09-20T08:30:09+00:00" />
-  <meta property="article:modified_time" content="2023-09-20T08:30:09+00:00" />
+  <meta name="dc.modified" content="2023-09-20T08:30:38+00:00" />
+  <meta property="article:modified_time" content="2023-09-20T08:30:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -145,9 +145,9 @@
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -171,9 +171,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ferenckata.github.io/SQSeminarPaper/v/cf295714f376a1bab7d9942e01f5ab01139a21c9/">permalink</a>)
+(<a href="https://ferenckata.github.io/SQSeminarPaper/v/b9bfc3652da292b674355fc8df40c663a15d7241/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ferenckata/SQSeminarPaper/tree/cf295714f376a1bab7d9942e01f5ab01139a21c9">ferenckata/SQSeminarPaper@cf29571</a>
+from <a href="https://github.com/ferenckata/SQSeminarPaper/tree/b9bfc3652da292b674355fc8df40c663a15d7241">ferenckata/SQSeminarPaper@b9bfc36</a>
 on September 20, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -311,59 +311,6 @@ In contrary to sofware engineering-oriented literature, where there is a lot of 
 Hagan et al. described Code Clubs - the practice in their research lab, where group members are collectively engaged in software development through code reviews and pair coding and software engineering education through workshops or seminars <span class="citation" data-cites="H5HCY7no">[<a href="#ref-H5HCY7no" role="doc-biblioref">29</a>]</span>.
 The authors give tips on how to organize such meetings and what should be the ground rules.
 Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and finally helps to write a better quality software.</p>
-<h2 class="page_break_before" id="our-experiences-for-development-processes-involving-teams">Our experiences for development processes involving teams</h2>
-<p>The preceding sections mention a lot of possible approaches to improving software quality.
-Given the abundance of opinions on this topic, and the variety of challenges bioinformaticians face, we believe that everyone should find out what works best for them.
-Here, we describe the practices that we have settled on.</p>
-<p>The software development practices that we have adopted can be broadly separated into three categories: code reviews, what we have called software quality meetings, and resource sharing.</p>
-<h3 id="code-reviews">Code reviews</h3>
-<p>Code reviews are not a new invention and many people have discussed their benefits (<span class="citation" data-cites="16AfDLePW H5HCY7no">[<a href="#ref-H5HCY7no" role="doc-biblioref">29</a>,<a href="#ref-16AfDLePW" role="doc-biblioref">30</a>]</span>).
-Here we would just like to briefly summarize how being made to present your code and receiving feedback leads to improvement in the process of creating software.</p>
-<p>Prior to a scheduled code review, the author is forced to write their code in a way that it will be explainable and understood by others, which is always desirable.
-In a large distributed project this may be trivial, but because the bioinformatic projects are often handled by a single person, it is very possible to make the code needlessly complex and obfuscated.
-We also observed that during data analysis parts of the code are re-run in an ad-hoc manner (e.g. by commenting out parts), making it increasingly difficult to reproduce the same analysis.</p>
-<p>During the code review, the author has to explain some aspect of their code clearly (e.g. structure, algorithm implementation, performance related decisions), which depends on them understanding it.
-Trying to explain your code to someone is shown to help with understanding (rubber duck method <span class="citation" data-cites="OkkYJWTs">[<a href="#ref-OkkYJWTs" role="doc-biblioref">31</a>]</span>).
-The feedback obtained can help fix existing or potential future issues, improve the implementation, and produce cleaner, more concise code.
-The other participants may not be deeply familiar with the particular project, but they have their unique knowledge and point of view.
-We agree with the ten simple rules described by Hagan et al. <span class="citation" data-cites="H5HCY7no">[<a href="#ref-H5HCY7no" role="doc-biblioref">29</a>]</span>, and note that many of those naturally emerged as a code of conduct after a few rounds of trial and error.</p>
-<p>After the review, the received suggestions should be implemented swiftly to improve the code before advancing the project.
-The success of code review is highly dependent on its frequency (long time between reviews - a lot of new code, hard to cover all changes in a single session, potentially a lot of rewrite post review), and hence they should be as regular and frequent as reasonably possible.</p>
-<p>As a positive additional outcome, we noticed an increasing understanding in each other’s projects that naturally emerged through talking about the analysis code.
-This enabled us to give more involved comments during subsequent group meetings too.
-We noted however, that the focus can easily shift from the code to the biological question at hand.
-This we believe is more of a feature than a bug, as each code review session is led by the person bringing the code and the rest of us are there to support to the best of our abilities.
-Especially after the general level of coding style and quality increased to a good baseline.
-E.g. after about half a year, it was trivial for everyone involved that code organized into functions is preferred over spaghetti.
-The shared knowledge base and standards also allow us to make new group members adopt good coding practices more quickly.</p>
-<h3 id="software-quality-meetings">Software quality meetings</h3>
-<p>Within the framework of software quality meetings, we have established larger-scale knowledge transfer between the participants.
-Presentations and demonstrations of new techniques and tools that are not necessarily tied to a specific project help broaden our knowledge base and awareness.
-In this sense, they form almost a substitute for a more formal computer science education, which most bioinformaticians lack <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">7</a>]</span>.
-Topics can arise from code reviews, own projects, or effectively be a reproduction of a useful talk or seminar given elsewhere.</p>
-<p>The presenters benefit as well by having to research the topic further and present it coherently.
-It is not necessary to have these meetings be as regular as code reviews.
-The time investment is higher, given that a preparation is needed unlike just writing code as for code reviews.</p>
-<p>During the software quality meetings, we have also explored the possibility of collaborative projects and pair programming, but have not managed to implement it successfully yet outside of the scope of preparation for the Jaspar 2024 release (reference).
-The main reason for this is that we experimented with collaboration on a software tool not directly used by any of the members.
-As researchers, we could not afford investing time in a hobby project.</p>
-<p>The outcome of these sessions are manifold.
-A few examples:
-1) a shared vocabulary that enables quick discussion about implementation details and code structures (e.g. design patterns, software architecture, data structures and algorithms),
-2) a kind of toolkit and set of recordings we can sample from and build on in our own research projects (e.g. planning with UML diagrams, git features to ease and quicken software development),
-3) awareness of previously unknown algorithms and packages, improving software performance and quality (e.g. dynamic programming, heap, Python packages such as bioframe).</p>
-<h3 id="resource-sharing">Resource sharing</h3>
-<p>Resource sharing is a basic thing, but it boils down to making sure that useful online resources are brought to the attention of all participants in an easy way.</p>
-<p>Resource sharing could be discussed from two perspectives: external open-access resources (forums, repositories, packages and libraries) and internal (within-group resources with tools).
-The latter is very important as it allows for team contribution that can benefit the individual project development.
-A simple example of this could be a shared repository of various computational tools that were developed by members of the group.
-Such tools are universal enough and fit the group’s research questions, so all people in the group can re-use them.
-In addition, each tool can be potentially developed and reviewed by multiple group members. </p>
-<p>During software meetings, we aimed to set aside time to improve these tools from perspectives identified by the members.
-We observed that many of these tools do not have a clear scope and are rather a small script for a sub-task from a previous project.
-Based on this observation, we noted that there is a difference between a script and a standalone tool that can be inserted into various projects.
-The latter requires exploration of use cases related to the tool, handling of unexpected inputs, and extensive documentation, to name a few tasks.
-This understanding was actually quite relevant in a code review discussion when the expected usage modes of a new tool was the main focus.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -454,33 +401,26 @@ This understanding was actually quite relevant in a code review discussion when 
 <div id="ref-H5HCY7no" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Ten simple rules to increase computational skills among biologists with Code Clubs</strong> <div class="csl-block">Ada K Hagan, Nicholas A Lesniak, Marcy J Balunas, Lucas Bishop, William L Close, Matthew D Doherty, Amanda G Elmore, Kaitlin J Flynn, Geoffrey D Hannigan, Charlie C Koumpouras, … Patrick D Schloss</div> <em>PLOS Computational Biology</em> (2020-08-27) <a href="https://doi.org/gg92xw">https://doi.org/gg92xw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1008119">10.1371/journal.pcbi.1008119</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32853198">32853198</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7451508">PMC7451508</a></div></div>
 </div>
-<div id="ref-16AfDLePW" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Walking the Talk: Adopting and Adapting Sustainable Scientific Software
-Development processes in a Small Biology Lab</strong> <div class="csl-block">Michael R Crusoe, CTitus Brown</div> <em>Journal of Open Research Software</em> (2016-11-29) <a href="https://doi.org/gsmb78">https://doi.org/gsmb78</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5334/jors.35">10.5334/jors.35</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27942385">27942385</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5142744">PMC5142744</a></div></div>
-</div>
-<div id="ref-OkkYJWTs" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>The pragmatic programmer: from journeyman to master</strong> <div class="csl-block">Andrew Hunt, David Thomas</div> <em>Addison-Wesley</em> (2000) <div class="csl-block">ISBN: 9780201616224</div></div>
-</div>
 <div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
 </div>
 <div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
 </div>
 <div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
 </div>
 <div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
 </div>
 <div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
 </div>
 <div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
 </div>
 <div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
 </div>
 </div>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
@@ -549,15 +489,15 @@ two spaces at end of line.</p>
 <p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
 <p><a href="https://manubot.org">Link by reference</a></p>
 <h2 id="citations">Citations</h2>
-<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">32</a>]</span>.</p>
-<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">33</a>]</span>.</p>
+<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">30</a>]</span>.</p>
+<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">31</a>]</span>.</p>
 <p>Citation by PubMed ID <span class="citation" data-cites="pubmed:30718888">[<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
-<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">34</a>]</span>.</p>
-<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">35</a>]</span>.</p>
-<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">36</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">37</a>]</span>.</p>
-<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">32</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">35</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">37</a>]</span>.
-Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO pubmed:30718888 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">33</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">37</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">38</a>,<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
+<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">32</a>]</span>.</p>
+<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">33</a>]</span>.</p>
+<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">34</a>]</span>.</p>
+<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">35</a>]</span>.</p>
+<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">30</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">33</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">35</a>]</span>.
+Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO pubmed:30718888 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">31</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">35</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">36</a>,<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
 <p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
 <h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
 <p>Figure <a href="#fig:square-image">2</a></p>
@@ -704,7 +644,7 @@ Note that if you want to export to Word (<code>.docx</code>), you need to downlo
 </tbody>
 </table>
 </div>
-<div id="tbl:2dc0e134-5b40-4da1-9013-7532b6d6ff38" class="tablenos">
+<div id="tbl:e52ed675-d732-4ec9-ae58-adb56a5513c7" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
