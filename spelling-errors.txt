@@ -5,6 +5,8 @@ amet
 anim
 aute
 binf
+bioframe
+bioinformatic
 bioinformaticians
 bioinformatics
 Biostars
@@ -23,6 +25,7 @@ Duis
 eg
 eiusmod
 elit
+enginnering
 enim
 esse
 Excepteur
@@ -33,12 +36,15 @@ fugiat
 Goble
 Hagan
 Hannay
+Hannay’s
+hoc
 Hovan
 Ieva
 ievarau
 incididunt
 ipsum
 irure
+isoSQ
 JASPAR
 Jira
 Katalin
@@ -50,6 +56,7 @@ Ladislav
 Lorem
 magna
 mollit
+Nextflow
 NGS
 nisi
 nostrud
@@ -59,7 +66,9 @@ onboarding
 origanization
 Pandoc’s
 pariatur
+performace
 princeps
+priori
 proident
 qui
 quis
@@ -69,10 +78,14 @@ reprehenderit
 reproducibility
 sed
 sint
+Snakemake
 sofware
+suboptimal
 sunt
+Szalay
 tempor
 ullamco
+UML
 velit
 veniam
 Vipin
