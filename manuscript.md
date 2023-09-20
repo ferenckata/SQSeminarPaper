@@ -5,10 +5,12 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-08-30'
+date-meta: '2023-09-20'
 author-meta:
-- John Doe
-- Jane Roe
+- Katalin Ferenc
+- Ieva Rauluseviciute
+- Ladislav Hovan
+- Vipin Kumar
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -20,24 +22,28 @@ header-includes: |
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2023-08-30" />
-  <meta name="citation_publication_date" content="2023-08-30" />
-  <meta property="article:published_time" content="2023-08-30" />
-  <meta name="dc.modified" content="2023-08-30T07:10:34+00:00" />
-  <meta property="article:modified_time" content="2023-08-30T07:10:34+00:00" />
+  <meta name="dc.date" content="2023-09-20" />
+  <meta name="citation_publication_date" content="2023-09-20" />
+  <meta property="article:published_time" content="2023-09-20" />
+  <meta name="dc.modified" content="2023-09-20T08:23:18+00:00" />
+  <meta property="article:modified_time" content="2023-09-20T08:23:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author" content="Katalin Ferenc" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway, University of Oslo" />
+  <meta name="citation_author_orcid" content="0000-0002-3006-4297" />
+  <meta name="citation_author" content="Ieva Rauluseviciute" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway, University of Oslo" />
+  <meta name="citation_author_orcid" content="0000-0001-9253-8825" />
+  <meta name="citation_author" content="Ladislav Hovan" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway, University of Oslo" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author" content="Vipin Kumar" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway, University of Oslo" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta property="og:url" content="https://ferenckata.github.io/SQSeminarPaper/" />
@@ -45,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/f42fcd0595193cf2d3baa344dc44a04947612e4d/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/f42fcd0595193cf2d3baa344dc44a04947612e4d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/f42fcd0595193cf2d3baa344dc44a04947612e4d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/a2e0bba45105bc2b7041beec74b8ff76726386f8/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/f42fcd0595193cf2d3baa344dc44a04947612e4d/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@a2e0bba](https://github.com/ferenckata/SQSeminarPaper/tree/a2e0bba45105bc2b7041beec74b8ff76726386f8)
-on August 30, 2023.
+from [ferenckata/SQSeminarPaper@f42fcd0](https://github.com/ferenckata/SQSeminarPaper/tree/f42fcd0595193cf2d3baa344dc44a04947612e4d)
+on September 20, 2023.
 </em></small>
 
 
@@ -81,38 +87,56 @@ on August 30, 2023.
 
 
 
-+ **John Doe**
++ **Katalin Ferenc**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-3006-4297](https://orcid.org/0000-0002-3006-4297)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ferenckata](https://github.com/ferenckata)
+    <br>
+  <small>
+     Centre for Molecular Medicine Norway, University of Oslo
+     · Funded by Grant XXXXXXXX
+  </small>
+
++ **Ieva Rauluseviciute**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-9253-8825](https://orcid.org/0000-0001-9253-8825)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ievarau](https://github.com/ievarau)
+    <br>
+  <small>
+     Centre for Molecular Medicine Norway, University of Oslo
+  </small>
+
++ **Ladislav Hovan**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
+    [ladislav-hovan](https://github.com/ladislav-hovan)
     <br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Centre for Molecular Medicine Norway, University of Oslo
   </small>
 
-+ **Jane Roe**
-  ^[✉](#correspondence)^<br>
++ **Vipin Kumar**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
+    [princeps091-binf](https://github.com/princeps091-binf)
     <br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Centre for Molecular Medicine Norway, University of Oslo
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/ferenckata/SQSeminarPaper/issues)
 or email to
-Jane Roe \<jane.roe@whatever.edu\>.
+Katalin Ferenc \<k.t.ferenc@ncmm.uio.no\>.
 
 
 :::
