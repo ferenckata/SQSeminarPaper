@@ -3,12 +3,13 @@ bioframe
 bioiformatics
 bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Biostars
 Bitbucket
 challengens
 ChatGPT
 codebase
+consitute
 curation
 differents
 EMBL
@@ -21,10 +22,11 @@ Hagan
 Hannay
 Hannay’s
 hoc
-Hovan
+hovan
 Ieva
 ievarau
 incentivise
+incentivised
 Incentivising
 infantilization
 isoSQ
@@ -33,9 +35,10 @@ Jira
 Katalin
 knowlegebase
 Kumar
-ladislav
+Ladislav
 Mathelier
 meaking
+modularise
 modularity
 motiviation
 NCMM
@@ -51,6 +54,7 @@ Programing
 Rauluseviciute
 README
 recomendations
+Recurringly
 reproducibility
 responsivity
 ressources

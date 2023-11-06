@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-06" />
   <meta name="citation_publication_date" content="2023-11-06" />
   <meta property="article:published_time" content="2023-11-06" />
-  <meta name="dc.modified" content="2023-11-06T07:48:27+00:00" />
-  <meta property="article:modified_time" content="2023-11-06T07:48:27+00:00" />
+  <meta name="dc.modified" content="2023-11-06T07:50:05+00:00" />
+  <meta property="article:modified_time" content="2023-11-06T07:50:05+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@fd5f9d2](https://github.com/ferenckata/SQSeminarPaper/tree/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a)
+from [ferenckata/SQSeminarPaper@ad05117](https://github.com/ferenckata/SQSeminarPaper/tree/ad051173c7c80fbe7e08392d18e9be594d463b20)
 on November 6, 2023.
 </em></small>
 
@@ -437,6 +437,15 @@ We agree with the ten simple rules described by Hagan et al. [@doi:10.1371/journ
 
 After the review, the received suggestions should be implemented swiftly to improve the code before advancing the project.
 The success of code review is highly dependent on its frequency (long time between reviews - a lot of new code, hard to cover all changes in a single session, potentially a lot of rewrite post review), and hence they should be as regular and frequent as reasonably possible.
+
+Our experience indicate a broader adoption of notions and practices of good software engineering standards highlighted during these code review sessions.
+Here we will focus on couple examples to illustrate how code reviews incentivised coding practices and team self-managements aligned with agile prescriptions.
+Code review involves some elements of problem solving, often revisiting fundamental notions of design patterns, algorithms or data structures. 
+Recurringly we would examine best strategies to modularise the presented code and discuss what would consitute effective and self-contained computational task and elaborate collectively possible design patterns.
+This strengthens the team's overall competency as well as promoting some form of standardization regarding the mental models to use for common tasks and objects solicited in many computational projects.
+An important part of the code review process focuses on the compliance with good code practices, and constitutes an explicit attempt at standardization. 
+This is particularly well illustrated with the review of documentation which goes beyond simple linting. 
+Effectively this process promotes the adoption of a shared and systematic manner to describe and document the behavior of the considered tool, which facilitates its intelligibility for a wider audience.
 
 As a positive additional outcome, we noticed an increasing understanding in each other’s projects that naturally emerged through talking about the analysis code.
 This enabled us to give more involved comments during subsequent group meetings too.
