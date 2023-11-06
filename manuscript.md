@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2023-09-29'
+date-meta: '2023-11-06'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics groups through temawork" />
   <meta property="og:title" content="Improving software quality in bioinformatics groups through temawork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics groups through temawork" />
-  <meta name="dc.date" content="2023-09-29" />
-  <meta name="citation_publication_date" content="2023-09-29" />
-  <meta property="article:published_time" content="2023-09-29" />
-  <meta name="dc.modified" content="2023-09-29T15:00:51+00:00" />
-  <meta property="article:modified_time" content="2023-09-29T15:00:51+00:00" />
+  <meta name="dc.date" content="2023-11-06" />
+  <meta name="citation_publication_date" content="2023-11-06" />
+  <meta property="article:published_time" content="2023-11-06" />
+  <meta name="dc.modified" content="2023-11-06T07:48:27+00:00" />
+  <meta property="article:modified_time" content="2023-11-06T07:48:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@4fe3884](https://github.com/ferenckata/SQSeminarPaper/tree/4fe3884fb1ad695627ad66129df5b977dd6fe1da)
-on September 29, 2023.
+from [ferenckata/SQSeminarPaper@fd5f9d2](https://github.com/ferenckata/SQSeminarPaper/tree/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a)
+on November 6, 2023.
 </em></small>
 
 
@@ -341,6 +341,77 @@ Hagan et al. described Code Clubs - the practice in their research lab, where gr
 The authors give tips on how to organize such meetings and what should be the ground rules.
 Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and finally helps to write a better quality software.
 
+### Review of team management literature in the context of software engineering
+
+Programing as a collective practice is a key notion in software engineering, which prompted a corresponding rich literature examining how to effectively organise it [@doi:10.1287/mnsc.l080.0921].
+A central theme in this literature is maximising team cohesion while minimising code coupling.
+Authors (<span style="background-color: yellow">citation needed</span>) argue that the viability of a software project along it succesive development phases is largely determined by the adoption of sound software design enforcing modularity and extensibility coupled with team management practices centered around communication and collective governance.
+
+Before delving into more specific recomendations, let us first define the scope of what constitutes management.
+We understand management as the set of tasks ensuring the viability of a software project.
+These tasks revolve around planning, monitoring resources, and tracking progression [@{https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/}].
+Typically the overseeing of these functions would be taken up by a single individual referred to as the “manager” of a project.
+
+In the particular context of computational projects in academia, a strict division of labour is rarely found with regards to the management of software projects.
+Furthermore, some tasks, such as risk, budget and time management and maintenance are decoupled from the actual software development phase.
+The remaining management tasks would often be deliberated by the developer(s), eventually reaching a consensus on the desired way forward and acted upon.
+
+This sort of self-management, at times collective, echoes some of the prescriptions of the SCRUM method [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+SCRUM is a framework to perform these management tasks through team self-management. 
+This framework was introduced to respond to the aspiration for more autonomy and responsivity from software developers, best illustrated by the agile manifesto [@{https://agilemanifesto.org/}]. 
+This proposition was a reaction to the typical blueprint-like management for engineering projects which proved ineffective in addressing the emerging challengens of large software projects[@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}]
+This similarity is probably the reason why agile practices are part of guidelines for scientific software developers (Table @tbl:sq-recommendations).
+
+One outstanding aim of agile is the aspiration for more autonomy for organising the work of software developers.
+In the particular context of large computational project, agile opened the opportunity for collective governance and a move away from a project structure producing a division of labour coupling one developer to a particular task or aspect indefinitely.
+Incentivising a collective ownership and governance of the codebase as a whole, promotes the adoption of software engineering best practices among developers contributing to a software project[@doi:10.1016/j.infsof.2009.11.004]. 
+Indeed by aspiring to make any developer within the team interchangeable across the various ongoing tasks, we create the need for robust testing, comprehensive documentation and coherence across the differents parts of the project [@doi:10.1287/mnsc.l080.0921].
+
+Furthermore by exposing every developer to a variety of tasks over the course of the project development, we strengthen the knowledge and skill base of the team as a whole, as well as a better mutual awareness of team member expertise (transactive memory system [@doi:10.1177/1046496420967764]). 
+Taken together these merits further improve the team's capacity to overcome technical challenges that will arise over the course of the development process.
+
+The previous paragraph outlined some of the desirable outcomes of agile-like practices.
+Such benefits require the implementation and effective adoption of this mode of project management.
+This in turn relies on the execution of a variety of methods whose success in realising the merits of agile depends heavily on setting the adequate circumstances for the team to need to incorporate elements of agile in their regular work practice.
+Practices and methods aligned with agile prescriptions include stand-up meetings, task allocations, pair-programming, or code reviews.
+Note, that many of these practices do not require the presence of the manager, but assumes a work culture and standardised procedures.
+At their core, these practices incentivise continuous communication and collective decision meaking among developers. 
+This constitutes an additional overhead in terms of time and ressources needed when developing, but this is offset by the aforementioned benefits in terms of coding practice, software resilience and improved team capabilities.
+
+## Optional section that might be put in discussion instead.
+- Comparison to current academic coding
+    - agile would be more stringent
+    - agile would challenge the one project : one developer configuration
+    - agile would highlight the impossibility to capitalise dividends of long-term building of knowlegebase and team chemistry
+    - agile would point at the training gap
+
+- Approaches and circumstances promoting the benefits of agile
+
+
+Let us not forget that academia comes from a different place than where agile was developed.
+The Agile Manifesto was written against "bureaucracy, infantilization, and sense of futility" [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+The academic software development agile practices would in fact be a more stringent approach to software development than current practices.
+For example it would include writing down requirements in form of user stories, plan a minimal viable product, plan an initial architecture, and dividing the project into tasks.
+This is important, because most literature pictures agile as management style free from traditional management.
+We should not forget that ad-hoc coding does not comply with agile, and we cannot use it as an excuse to continue our current practices.
+The agile system assumes that software engineering professionals seek to find the best approaches, and are well equiped to make good decisions on their own - when faced with shifting requirements and complex code base [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+Additionally, the lack of top-to-bottom management, architects and system analysts in academic software development put even more responsibility on the individual developer.
+However, as noted in previous sections, current scientific software developer education does not necessarily cover these elements [@doi:10.1109/CSEET.2009.44].
+
+- Cost-Benefit of adoption
+
+Working in teams is not an option, but a must for large projects.
+Although it is not necessary in smaller projects, the benefits are significant.
+- over time a small project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication
+- lack of standards and good practices undermine quality and maintainability
+- ease of technical knowledge transfer (which requires time and social factors) [@doi:10.1287/mnsc.l080.0921]
+- knowledge on who knows what (transactive memory system) speeds up problem solving [@doi:10.1177/1046496420967764]
+
+However, it is not trivial to assemble a well functioning team.
+Authors found that the overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience [@doi:10.1287/mnsc.l080.0921].
+Miriam Posner also points out that team management practices do not protect from a toxic environment [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+
+
 ## Our experiences for development processes involving teams ##
 
 The preceding sections mention a lot of possible approaches to improving software quality.
@@ -351,7 +422,7 @@ The software development practices that we have adopted can be broadly separated
 
 ### Code reviews ###
 
-Code reviews are not a new invention and many people have discussed their benefits [@doi:10.5334/jors.35; @doi:10.1371/journal.pcbi.1008119].
+Code reviews are not a new invention and many people have discussed their benefits [@doi:10.5334/jors.35; @doi:10.1371/journal.pcbi.1008119, @{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
 Here we would just like to briefly summarize how being made to present your code and receiving feedback leads to improvement in the process of creating software.
 
 Prior to a scheduled code review, the author is forced to write their code in a way that it will be explainable and understood by others, which is always desirable.

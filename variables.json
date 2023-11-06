@@ -7,7 +7,7 @@
       "teamwork"
     ],
     "lang": "en-US",
-    "date-meta": "2023-09-29",
+    "date-meta": "2023-11-06",
     "author-meta": [
       "Katalin Ferenc",
       "Ieva Rauluseviciute",
@@ -15,7 +15,7 @@
       "Vipin Kumar",
       "Anthony Mathelier"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta name=\"citation_title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta property=\"og:title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta property=\"twitter:title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta name=\"dc.date\" content=\"2023-09-29\" />\n<meta name=\"citation_publication_date\" content=\"2023-09-29\" />\n<meta property=\"article:published_time\" content=\"2023-09-29\" />\n<meta name=\"dc.modified\" content=\"2023-09-29T15:00:51+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-09-29T15:00:51+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Katalin Ferenc\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3006-4297\" />\n<meta name=\"citation_author\" content=\"Ieva Rauluseviciute\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9253-8825\" />\n<meta name=\"citation_author\" content=\"Ladislav Hovan\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8847-9295\" />\n<meta name=\"citation_author\" content=\"Vipin Kumar\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Anthony Mathelier\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5127-5459\" />\n<link rel=\"canonical\" href=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"og:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"twitter:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta name=\"citation_title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta property=\"og:title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta property=\"twitter:title\" content=\"Improving software quality in bioinformatics groups through temawork\" />\n<meta name=\"dc.date\" content=\"2023-11-06\" />\n<meta name=\"citation_publication_date\" content=\"2023-11-06\" />\n<meta property=\"article:published_time\" content=\"2023-11-06\" />\n<meta name=\"dc.modified\" content=\"2023-11-06T07:48:27+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-11-06T07:48:27+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Katalin Ferenc\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3006-4297\" />\n<meta name=\"citation_author\" content=\"Ieva Rauluseviciute\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9253-8825\" />\n<meta name=\"citation_author\" content=\"Ladislav Hovan\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8847-9295\" />\n<meta name=\"citation_author\" content=\"Vipin Kumar\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Anthony Mathelier\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5127-5459\" />\n<link rel=\"canonical\" href=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"og:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta property=\"twitter:url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,10 +25,10 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "2023-09-29",
-    "date_long": "September 29, 2023",
-    "generated": "2023-09-29T15:00:51+00:00",
-    "generated_date_long": "September 29, 2023",
+    "date": "2023-11-06",
+    "date_long": "November 6, 2023",
+    "generated": "2023-11-06T07:48:27+00:00",
+    "generated_date_long": "November 6, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -117,19 +117,19 @@
       "repo_slug": "ferenckata/SQSeminarPaper",
       "repo_owner": "ferenckata",
       "repo_name": "SQSeminarPaper",
-      "commit": "4fe3884fb1ad695627ad66129df5b977dd6fe1da",
-      "triggering_commit": "4fe3884fb1ad695627ad66129df5b977dd6fe1da",
-      "build_url": "https://github.com/ferenckata/SQSeminarPaper/commit/4fe3884fb1ad695627ad66129df5b977dd6fe1da/checks",
-      "job_url": "https://github.com/ferenckata/SQSeminarPaper/actions/runs/6353359648"
+      "commit": "fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a",
+      "triggering_commit": "fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a",
+      "build_url": "https://github.com/ferenckata/SQSeminarPaper/commit/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/checks",
+      "job_url": "https://github.com/ferenckata/SQSeminarPaper/actions/runs/6767737434"
     },
     "html_url": "https://ferenckata.github.io/SQSeminarPaper/",
     "pdf_url": "https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf",
-    "html_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/",
-    "pdf_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/4fe3884fb1ad695627ad66129df5b977dd6fe1da/manuscript.pdf",
+    "html_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/",
+    "pdf_url_versioned": "https://ferenckata.github.io/SQSeminarPaper/v/fd5f9d274f0ca67f2b8148b27775b61ced4dbe7a/manuscript.pdf",
     "manubot_version": "0.5.5",
     "rootstock_commit": "299abcea4c710cdda024017b54148e24c8d37228",
     "manuscript_stats": {
-      "word_count": 4698
+      "word_count": 5766
     }
   }
 }
