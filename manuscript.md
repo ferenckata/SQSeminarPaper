@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2023-11-06'
+date-meta: '2023-11-14'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics groups through temawork" />
   <meta property="og:title" content="Improving software quality in bioinformatics groups through temawork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics groups through temawork" />
-  <meta name="dc.date" content="2023-11-06" />
-  <meta name="citation_publication_date" content="2023-11-06" />
-  <meta property="article:published_time" content="2023-11-06" />
-  <meta name="dc.modified" content="2023-11-06T07:50:05+00:00" />
-  <meta property="article:modified_time" content="2023-11-06T07:50:05+00:00" />
+  <meta name="dc.date" content="2023-11-14" />
+  <meta name="citation_publication_date" content="2023-11-14" />
+  <meta property="article:published_time" content="2023-11-14" />
+  <meta name="dc.modified" content="2023-11-14T09:12:25+00:00" />
+  <meta property="article:modified_time" content="2023-11-14T09:12:25+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/7cada873b7297e776f3b975b2efa1122290072ab/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/7cada873b7297e776f3b975b2efa1122290072ab/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/7cada873b7297e776f3b975b2efa1122290072ab/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/ad051173c7c80fbe7e08392d18e9be594d463b20/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/7cada873b7297e776f3b975b2efa1122290072ab/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@ad05117](https://github.com/ferenckata/SQSeminarPaper/tree/ad051173c7c80fbe7e08392d18e9be594d463b20)
-on November 6, 2023.
+from [ferenckata/SQSeminarPaper@7cada87](https://github.com/ferenckata/SQSeminarPaper/tree/7cada873b7297e776f3b975b2efa1122290072ab)
+on November 14, 2023.
 </em></small>
 
 
@@ -159,101 +159,80 @@ Anthony Mathelier \<anthony.mathelier@ncmm.uio.no\>.
 
 
 
-## Introduction {.page_break_before} ##
+## Introduction ##
 
 Bioinformatics and computational biology are continuously gaining importance in biological research.
 These fields are heavily relying on inventions of computer science and software engineering.
-As Goble pointed out in 2014, about 90% of researchers used or relied on results produced by scientific software [@doi:10.1109/MIC.2014.88].
-Goble, and others also highlighted that one implication of poor software engineering practices is that incorrect software results in invalid scientific findings [@doi:10.1109/MIC.2014.88; @doi:10.7717/peerj-cs.839].
-Beyond incorrect software, even when the software performs as intended, researchers spend significant amount of time building software using suboptimal practices which can further increase the necessary time investment in the future [@doi:10.1016/j.jss.2020.110848].
+About 90% of researchers rely on results produced by scientific software [@doi:10.1109/MIC.2014.88].
+One implication of poor software engineering practices is that incorrect software results in invalid scientific findings [@doi:10.1109/MIC.2014.88; @doi:10.7717/peerj-cs.839].
+Beyond that, even when the software performs as intended, researchers spend significant amount of time on software building using suboptimal practices which can further increase the necessary time investment in the future [@doi:10.1016/j.jss.2020.110848]. Saving time in early development at the expense of future maintenance is known (in the software engineering literature) as accumulation of technical debt [@{https://c2.com/doc/oopsla92.html}; @doi:10.1145/2160718.2160733].
 
-Good software development practices to mitigate the risk of incorrect software solutions has been established in other software-heavy endeavours.
-However, bioinformaticians lack formal education in computer science and related subjects [@doi:10.1109/SECSE.2009.5069155; @doi:10.7717/peerj-cs.839; @doi:10.1371/journal.pcbi.1005412].
-Such lack of theoretical and practical foundations hinders the adoption of good practices (e.g. continuous integration, unit tests, code reviews, planning of software architecture).
-Indeed, unknown unknowns may include most of the software quality attributes defined by the International Organization for Standardization [@{https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3%20}] (Figure @fig:isoSQ-image).
-
-![ISO25000](content/images/iso25010.png "ISO 25000 standards for software quality"){#fig:isoSQ-image}
+Good software development practices mitigating the risk of incorrect software solutions has been established in other software-heavy endeavours.
+However, bioinformaticians or more generally scientists working with scientific software often lack formal education in computer science or software development [@doi:10.1109/SECSE.2009.5069155; @doi:10.7717/peerj-cs.839; @doi:10.1371/journal.pcbi.1005412].
+Such lack of theoretical and practical foundations hinders the adoption of good coding practices (e.g. software architecture planning, continuous integration, unit tests, code reviews).
+Indeed, the software quality attributes defined by the International Organization for Standardization may be summarized into the "unknown unknowns" for bioinformaticians [@{https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3%20}].
+For example, reliability of the software should ensure that the expected output is always produced by the software, which maintainability should allow for easy inspection, update and testing of the software.
 
 Beyond the limits of individual education, many of these practices rely on redundancy of knowledge within team members, supported by practices such as pair programming, daily stand-up meetings and code reviews.
-One main feature of academic research groups is the research projects conducted by a single PhD student or post-doc.
-In fact, academia prides itself on enabling individual achievements, and generally measures the success of individual effort while disregarding team effort.
-This often results in very few people maintaining the software product, which might be used by thousands of researchers worldwide [@doi:10.1101/2022.03.10.483804; @doi:10.1371/journal.pone.0205898; @doi:10.1371/journal.pcbi.1005412; @doi:10.1145/1852786.1852802].
-Lack of funding contributes to the poor maintenance status of much of scientific software [@doi:10.1109/MIC.2014.88].
-The lack of funding is being recognized and addressed by few agencies, one of which is the Chan Zuckerberg Initiative Essential Open Source Software for Science fund [@{https://chanzuckerberg.com/eoss/}].
+In contrast, historically academic research projects are mostly driven by a single person (a PhD student or a post-doc) as these projects are often part of academic degree evaluation.
+Sadly, academic world still often tends to disregard the team effort, priding itself on enabling individual achievements and career progression instead.
+Taking this into account, with one (or very few) person developing the software for a project, scientific software remains poorly maintained even if it is used by a significant number of researchers worldwide [@doi:10.1101/2022.03.10.483804; @doi:10.1371/journal.pone.0205898; @doi:10.1371/journal.pcbi.1005412; @doi:10.1145/1852786.1852802].
+The concept of a team is therefore different in a research-oriented project compared to a software development project.
+While the group members help each other with scientific suggestions, most often there is a single responsible person for the design and implementation of the code base.
+As official guidelines on coding practices are rarely definitive, but rather suggestive, the actual craft of software engineering is treated as secondary task and is often up to individual judgment.
+These guidelines may naturally emerge in larger groups, if software is used or even developed by multiple group members.
+It is not always obvious that to follow them requires a form of team organization not intrinsic to academic groups.
+To highlight the team aspect, it was reported previously that researchers tended to rank software engineering concepts higher if they worked in a team [@doi:10.1109/SECSE.2009.5069155].
+High-profile code bases often feature larger development teams and their activities are marked with longer commit messaged indicating better communication and documentation of the software [@doi:10.1371/journal.pone.0205898].
+We hypothesize that the form of team structure organized around individual software products could improve the quality of our scientific code.
 
-The concept of a team is therefore different in a science project from a software project.
-While group members help each other with scientific suggestions, most often there is a single responsible person for the design and implementation of the code base.
-As official guidelines are rarely available on coding practices, the actual craft of software engineering is treated as secondary and up to individual judgment.
-These guidelines may naturally emerge in larger groups, following them requires a form of team organization not intrinsic to academic groups.
-In line with this, Hannay et al. [@doi:10.1109/SECSE.2009.5069155] found that researchers tended to rank software engineering concepts higher if they worked in a team.
-Russel et al. [@doi:10.1371/journal.pone.0205898] showed that high-profile code bases feature larger development teams than low-profile ones, and their activities are also associated with longer commit messages as a sign of better communication and documentation of changes.
-Relying on these findings, we asked ourselves whether a form of team structure organized around individual software products could improve the quality of our scientific code.
+The next, almost natural, question related to better maintenance of scientific software in academia is funding.
+It is notoriously hard to attract funding for existing scientific software, which contributes to the poor maintenance status of much of scientific software [@doi:10.1109/MIC.2014.88].
+Fortunately in recent years, the lack of funding is being recognized and addressed by few agencies, such as the Chan Zuckerberg Initiative Essential Open Source Software for Science fund [@{https://chanzuckerberg.com/eoss/}].
+These initiatives are great examples of how our views towards scientific software should be updated.
+Scientific community and funding agencies should welcome the efforts of maintaining original software and encourage its updates instead of development of new software that risks remaining unmaintained.
+Development and maintenance of scientific software can be improved by taking into account good software practices.
+This can be implemented in research groups by creating a teamwork atmosphere where trainees and staff are directly or indirectly working on the same software.
 
-In this work we first review the findings of software engineer researchers on computational scientists, and their suggestions for improving the overall quality of scientific software.
-We do not limit our scope to bioinformaticians, as bioiformatics software quality and development practices share many characteristics with scientific software in general.
-Next, we review the literature on guidelines posed by bioinformaticians to the bioinformatics community.
-These works highlight the priorities within the community.
-Noticing the distance between software development practices and academic reality, we also turned to theory on team management.
-Finally, we discuss how our research group, inspired by the literature, incorporated weekly discussions on scientific software quality.
-Good practice requires investment in time and effort that may not pay off on an individual basis.
-Sharing the onboarding effort of new tools, and normalizing discussions on implementation details resulted in an overall better perceived process quality and code quality of the members with a reduced effort on an individual level.
-We aim to provide motiviation and framework on how to get started with improving the process quality of bioinformatics groups, even without members who have formal training in computer science or software engineering.
+In this work we first analyse how software engineers are evaluating the computational scientists (emphasizing, but not limiting to bioinformatics) and what suggestions they give to improve the overall quality of software.
+In addition, we review the literature on guidelines posed by bioinformaticians to the bioinformatics community to summarize the current software standards and priorities circulating in the community.
+To better understand the team work aspect, we present the main aspect of team management.
+Finally, we present and discuss how our research groups, motivated and inspired by current software quality state, created weekly sessions to practically discuss and learn to incorporate different aspects of software quality.
+Good practices require investment in time and effort that may not feasible to fulfill as an individual (for example, having limited time perform and to deliver doctoral thesis).
+However, we suggest that sharing the existing software knowledge base in the group, learning new tool development and implementation together and, more importantly, normalizing showing and discussing code results in an overall better code quality of the members with a reduced effort on an individual level.
+We aim to provide a motivation and framework on how to get started with a setting, where code can be developed in a team setting directly or indirectly involving all group members with or without formal training in software engineering.
 
 
-## Status of scientific and bioinformatics software from the SE perspective ##
+## Guidelines and practises of bioinformatics as seen by software engineers and bioinformaticians ##
 
-A landmark paper in 2007 by Diane F. Kelly [@doi:10.1109/MS.2007.155] discussed the separation ("chasm") between software engineering and scientific-computing community.
-She points out the need to bridge the one-size-fits all software engineering solutions and the particularities of the scientific software development which relies heavily on domain knowledge.
-Without such bridge, scientific computations keep on being performed using error-prone development practices and reaching suboptimal solutions and poor software quality.
-Her predictions seem to hold true even after almost 20 years.
+The internet is full of learning and support material for developing or working with software products.
+Since bioinformaticians are often teaching themselves coding and only a small fraction have formal training in software quality practices, these recourses become vital.
+They include blog posts from peers, freely available lecture materials from universities, forums or articles that propose guidelines how to code or analyse data in a better way.
+The practices that are encouraged vary a lot, therefore the code produced by bioinformaticians may lack a certain standard.
+This has been analysed by the software engineer community, where certain limitations and caveats were identified and discussed.
+We overviewed available literature on these discussion points.
 
-In the past two decades, software engineering researchers have been surveying bioinformatics software, and more broadly scientific software, and its development practices from the software engineering perspective[@doi:10.1016/j.jss.2020.110848; @doi:10.1109/SECSE.2009.5069155; @doi:10.1109/CSEET.2009.44; @doi:10.1145/1852786.1852802].
-There are multiple guidelines and suggestions to improve the quality of scientific code [@doi:10.1109/MIC.2014.88; @doi:10.5281/zenodo.1172970], many of which would target students of scientific disciplines [@doi:10.1109/MIC.2014.88; @doi:10.1109/CSEET.2009.44].
-Recently, an extensive literature review has been published which collects known issues and suggested solutions [@doi:10.7717/peerj-cs.839].
-Yet, these guidelines seem to not have reached the majority of the bioinformatics community, which is found to be "still in its infancy compared with the majority of other scientific disciplines" [@doi:10.7717/peerj-cs.839].
-Indeed, the guidelines suggested include following agile practices, the DRY (don't repeat yourself) principle, requirements gathering and unit testing, none of which concept is intuitive, well known in the bioinformatics community or even trivial to adapt to bioinformatics software [@doi:10.1109/CSEET.2009.44, @doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85].
-Without a shift in coding culture within bioinformatics, these concepts might remain unavailable to help bioinformatics professionals.
-
-*lack of time on SE concepts?*
-In case of concepts, like object-oriented programming and extreme programming, which were found to be known and used in the bioinformatics community [@doi:10.1109/CSEET.2009.44], the authors note that these methods are not used to their full power.
-For example, they found that a bioinformatics programmer may use classes and inheritance, but rarely encapsulation and polymorphism [@doi:10.1109/CSEET.2009.44].
-
-Undoubtedly, scientific software development has its own challenges.
-However, it cannot be an excuse for skipping good practices: as Carole Globe [@doi:10.1109/MIC.2014.88] puts it "in Hannay's survey [@doi:10.1109/SECSE.2009.5069155], only 47 percent of scientists had a good understanding of testing, and just 34 percent thought any formal training was important.
-This is strange because presumably they wouldn't use and trust the results of a microscope or telescope that hadn't been built by qualified engineers or tested.
-Yet software is the most prevalent of all the instruments used in modern science".
-Software engineering emerged and has been developing to address issues naturally arising from poorly planned development, such as project failures, delays, incorrect functionality or defects [@doi:10.1145/3084225], none of which is unknown to the scientific community.
-In fact, the crisis of scientific software is fairly well known and suggestions are being made from both inside and outside the community [@doi:10.1038/d41586-023-00053-w; @doi:10.1038/d41586-022-01516-2].
-
-One key challenge is the limited funding and the lack of recognition for development and maintenance of scientific software.
-Currently, as Alexander Szalay puts it "The funding stops when they (researchers) actually develop the software prototype" [@doi:10.1038/d41586-022-01901-x].
-This is a problem, because future researchers would want to build on each other's findings, use previous software as tools, and spend less time adopting or maintaining software [@doi:10.1371/journal.pcbi.1005412; @doi:10.1016/j.jss.2020.110848; @doi:10.1109/MIC.2014.8].
-In line with this notion, [@doi:10.1109/CSEET.2009.44] found that bioinformatics software developers view their code as "means to an end" and care less about the future of the software they are writing.
-The authors point out that bioinformaticians are not well aware of the relationship between complexity, size, age, and the change-proneness of a code, which heavily affect maintainability.
-
-Another obstacle is the non-trivial nature of testing of scientific software [@doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85].
-In a recent review paper [@doi:10.48550/arXiv.1804.01954] two key aspects of scientific software testing has been highlighted: the oracle problem and the cultural differences between scientists and software engineers.
-Software behaviour can be tested against an expected output, but often in science we use software to find new knowledge.
-This results in an oracle problem, when scientists actually do not know *a priori* how the software should behave, thus straight forward verification is impossible.
-According to the authors, scientists also view their scientific model and the implementation as a single entity.
-Therefore, scientists tend to test the validity of the model but not verify the code which produces it.
-Uncovered faults can and do lead to incorrect scientific insights as shown in multiple examples [@doi:10.1126/science.314.5807.1856].
-
-Nevertheless, software quality standards (Figure @fig:isoSQ-image) are universally applicable.
-Depending on the application of the scientific software, whether it is a tool or a data analysis pipeline, the authors may prioritize different quality attributes [@doi:10.1016/j.jss.2020.110848].
-For example, in the world of big data, performance and efficiency gain importance.
-Shown in a previous study reviewing mappers, individual tools have varying level of compatibility, usability, and portability [@doi:10.1101/2022.03.10.483804]; quality attributes which directly impact user experience.
-Frameworks, such as Snakemake [@doi:10.12688/f1000research.29032.1] or Nextflow [@doi:10.1038/nbt.3820] support usability, reliability, and maintainability.
-Anaconda [@{https://www.anaconda.com/}] and container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}] help achieve portability.
-These are also compatible with Snakemake and Nextflow, making these frameworks staple for reproducible data analysis.
+First, let us summarize the main themes in papers with guidelines for bioinformaticians.
+We used several key phrases to search for papers: “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”.
+Selected papers focus on specific suggestions, often referred to as rules or “tips & tricks”, or they more broadly direct the readers towards good practices of coding, which are put together into guidelines.
+Specialized topics include particular data analysis in a single disease [@doi:10.1186/s13024-022-00517-z], while broad themes span from next-generation sequencing (NGS) data analysis to outlining tips on how to start on computational analysis of the experimental data [@doi:10.1016/j.jtho.2022.11.006;@doi:10.7287/peerj.preprints.2996;@doi:10.1016/j.jmoldx.2017.11.003].
+Both types of papers emphasize the need to learn how to analyse data properly and provide good suggestions to do that, based on the chosen topic.
+The guideline papers tend to target early career researchers with minimal coding experience.
+Therefore, the guidelines might be slightly basic, especially from the perspective of software engineers.
+For example, documentation and version control are most commonly highlighted [@doi:10.1093/bib/bbw134;@doi:10.1371/journal.pcbi.1008645].
+However, instructions or tips how to make your documentation and code actually good and up to software quality standards is usually limited due to short nature of guidelines.
 
 In Table @tbl:sq-recommendations, we collected recommendations to improve the software quality of scientific, and whenever possible bioinformatics, software.
 The literature search was performed in multiple iterations using Google (to include grey literature) and Google Scholar based on phrases "scientific software development", "software engineering bioinformatics" and "bioinformatics software recommendations" throughout 2023.
 Additionally, relevant articles were selected based on the snowball effect from the references of the initial publications.
-[@doi:10.1016/j.jss.2020.110848] notes that a scientific software developer needs to prioritize the software quality attributes to make choices among the good practices.
-They also provide a matrix to help with the selection and priorization.
-Beyond prioritization, the list below is somewhat daunting, especially while the main priority is to produce scientifically relevant results, and may actually discourage scientists to change their habits.
-One solution could be joining efforts and create a community to collectively increase software quality, while reducing the barrier to explore new techniques.
+Software engineers notice the separation between software engineering and scientific computing community.
+Already almost two decades ago Diane F. Kelly wrote that scientific computations keep on being performed using error-prone development practices and reaching suboptimal solutions and poor software quality due to lack of appropriate software engineering practices [@doi:10.1109/MS.2007.155]
+Software engineering community also write guidelines how these practices should be followed after surveying the current state of software in scientific community (focusing on bioinformatics) [@doi:10.1016/j.jss.2020.110848; @doi:10.1109/SECSE.2009.5069155; @doi:10.1109/CSEET.2009.44; @doi:10.1145/1852786.1852802; @doi:10.1109/MIC.2014.88].
+In addition, an extensive literature review has been published recently in which known issues and suggested solutions are collected [@doi:10.7717/peerj-cs.839].
+Among recommended practices there are agile coding, the DRY (don't repeat yourself) principle, requirements gathering and unit testing, none of which concept is intuitive, well known in the bioinformatics community or even trivial to adapt to bioinformatics software [@doi:10.1109/CSEET.2009.44, @doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85].
+On the other hand, concepts like object-oriented programming and extreme programming are known and used in the bioinformatics community, but they are not used to their full power [@doi:10.1109/CSEET.2009.44].
+For example, bioinformaticians might use classes and inheritance, but rarely encapsulation and polymorphism [@doi:10.1109/CSEET.2009.44].
+
 
 | Recommendation          | Source         |
 |:-----------------|:-------------:|
@@ -294,123 +273,83 @@ One solution could be joining efforts and create a community to collectively inc
 Table: Collection of recommendations for improving scientific software quality. Some guidelines are more vague than others, they also have varied scope, and they target different stakeholders. Therefore, it may be hard to find individual responsibility and actionable points from the literature.
 {#tbl:sq-recommendations}
 
-(<span style="background-color: yellow">TODO: join this table with a similar from the next section.</span>)
-(<span style="background-color: yellow">The distinction may actually be a bit arbitrary between this section and the next.</span>)
 
+The guidelines from engineers are struggling to penetrate bioinformatics community and the challenges in software development cannot be an excuse for skipping good practices [@doi:10.7717/peerj-cs.839].
+As reported, 47 percent of scientists had a good understanding of testing, while just 34 percent thought any formal training was important [@doi:10.1109/MIC.2014.88; @doi:10.1109/SECSE.2009.5069155].
+To put it into perspective, a scientist would likely not trust results of the microscope or an experimental assay, if they would know that the chances it was tested and passed quality control are that low [@doi:10.1109/MIC.2014.88].
+In bioinformatics analysis it is common to combine the functionalities that are coming from various packages.
+This should be encouraged further, but it also highlights the need of quality software, because with good software researchers spend less time on adopting it or maintenance [@doi:10.1371/journal.pcbi.1005412; @doi:10.1016/j.jss.2020.110848; @doi:10.1109/MIC.2014.8].
+In contrasts, bioinformatics software developers view their code as "means to an end" and care less about the future of the software they are writing.
+Bioinformaticians are not well aware of the relationship between complexity, size, age, and the change-proneness of a code, which heavily affect maintainability [@doi:10.1109/CSEET.2009.44].
+Another obstacle is the non-trivial nature of testing of scientific software [@doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85].
+In a recent review paper [@doi:10.48550/arXiv.1804.01954] two key aspects of scientific software testing has been highlighted: the oracle problem and the cultural differences between scientists and software engineers.
+Software behaviour can be tested against an expected output, but often in science we use software to find new knowledge.
+This results in an oracle problem, when scientists actually do not know *a priori* how the software should behave, thus straight forward verification is impossible.
+According to the authors, scientists also view their scientific model and the implementation as a single entity.
+Therefore, scientists tend to test the validity of the model but not verify the code which produces it.
+Uncovered faults can and do lead to incorrect scientific insights as shown in multiple examples [@doi:10.1126/science.314.5807.1856].
 
-### Review of existing suggestions for improving software quality in biomedical sciences ###
+The crisis of scientific software is fairly well known [@doi:10.1038/d41586-023-00053-w; @doi:10.1038/d41586-022-01516-2].
+Without a shift in coding culture within bioinformatics, these concepts might remain unavailable to help bioinformatics professionals.
+Therefore, we need to increase the awareness and applicability of the software quality standards.
+Depending on the application of the scientific software, whether it is a tool or a data analysis pipeline, the authors may prioritize different quality attributes [@doi:10.1016/j.jss.2020.110848].
+For example, in the world of big data, performance and efficiency gain importance.
+Shown in a previous study reviewing mappers, individual tools have varying level of compatibility, usability, and portability [@doi:10.1101/2022.03.10.483804]; quality attributes which directly impact user experience.
+Frameworks, such as Snakemake [@doi:10.12688/f1000research.29032.1] or Nextflow [@doi:10.1038/nbt.3820] support usability, reliability, and maintainability.
+Anaconda [@{https://www.anaconda.com/}] and container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}] help achieve portability.
+These are also compatible with Snakemake and Nextflow, making these frameworks staple for reproducible data analysis.
+Scientific software developer needs to prioritize the software quality attributes to make choices among the good practices [@doi:10.1016/j.jss.2020.110848].
+Understandably, trying to implement all software quality practices can be daunting, especially while the main priority is to produce scientifically relevant results, and may actually discourage scientists to change their habits.
+We propose that coding in a team environment could help to ease into good software quality practises.
 
-We reviewed the existing literature that focuses on providing guidelines for programming practices for scientists without extensive training in computational sciences.
-We used several key phrases to search for papers: “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”.
-Such papers are quite abundant and have a number of things in common.
-For example, they can focus on specific suggestions, often referred to as rules or “tips & tricks”, or they can more broadly direct towards good practices of coding, which are put together into “guidelines”.
-
-Papers often choose a main focus or a theme and then distinguish a set of rules or guidelines.
-That focus can be very specialized, such as particular data analysis in a single disease [@doi:10.1186/s13024-022-00517-z].
-Or the theme can be more general, for example setting the rules for next-generation sequencing (NGS) data analysis or outlining tips on how to start on computational analysis of the experimental data [@doi:10.1016/j.jtho.2022.11.006;@doi:10.7287/peerj.preprints.2996;@doi:10.1016/j.jmoldx.2017.11.003].
-Both types of papers emphasize the need to learn how to analyse data properly and provide good suggestions to do that, based on the chosen topic.
-However, one needs to be aware when reading specialized focus guidelines that some of them can be much less applicable if the context of the analysis is different.
-Finally, the reference point matters.
-There is a difference, if the guidelines are read by a person with less experience in computational data analysis, where even a small set of rules can mean a steep learning curve, because some skills that are dependencies for the rules might be common knowledge for those with more experience.
-For example, a guideline to use version control systems, such as git, is a very important one, but for that a reader should most likely know the basics of the unix command line, which is not necessarily a rule on itself.
-One of the first things that should be done while suggesting your set of guidelines is clearly defining your target audience, even if they are meant to be broader suggestions.
-
-As most guidelines tend to be written for researchers or students with minimal coding experience, suggestions often overlap.
-Most commonly highlighted are documentation and version control [@doi:10.1093/bib/bbw134;@doi:10.1371/journal.pcbi.1008645].
-These are basic aspects of the software quality, which are still often overlooked in the publications making it hard to reproduce the research or use a published software [@doi:10.7717/peerj-cs.839].
-Even the people with the least experience in computational analyses should always document their code by writing extensive README documentation.
-Documentation practice is very strong in the wet lab, where having a lab journal is unquestionable.
-This should not be different when working with computational tools. Version control of the code improves research reproducibility and the usage of the software.
-The most popular way to do that is by using git and remote repositories, for example, GitHub or Bitbucket [@doi:10.7287/peerj.preprints.2996v1;@doi:10.1186/s13024-022-00517-z;@doi:10.1371/journal.pcbi.1008645].
-Less commonly emphasized are testing of the developed code or software and optimization of pipelines [@doi:10.1371/journal.pcbi.1008645].
-These are very important rules to follow to end up with a proper collection of code or a stable software [@doi:10.7717/peerj-cs.839].
-However, it might be considered to be too advanced for "beginners" guidelines.
-Unfortunately, not being aware of such requirements can lead to a code that either takes a long time to run or is buggy, which accumulates the technical debt and, in a way, encourages the bad practices.
-To avoid that it is important to at least be aware of the caveats of your code and document them for fellow researchers that might use your code in the future.
-
-As code testing and organization can be overwhelming for a less experienced computational scientist, there are multiple available tools to help organize the coding tasks and the code itself.
-For example, using task management through Jira or GitHub issues, which are commonly used in team projects, where multiple people work on the same code.
-However, these resources are not emphasized in the guideline's literature as this literature is most commonly focused on the individual persons and their personal practices.
-Often "other people" are only mentioned when guidelines suggest where to seek help when encountering a problem with the code.
-This includes consulting with colleagues, finding a mentor or participating in online communities (for example, Stack Overflow or Biostars) [@doi:10.1371/journal.pcbi.1008645].
-More recently, new tools are introduced that integrate artificial intelligence (AI) as a helper in coding.
-Tools such as GitHub copilot or editor extensions with access to ChatGPT allow to ask the models to write a piece of code to address a problem.
 To our knowledge bioinformatics literature almost never presents suggestions how to code in a team setting and utilize multiple people's expertise on software development.
-In contrary to software engineering-oriented literature, where there is a lot of focus on coding in a team practices [@https://faculty.washington.edu/ajko/books/cooperative-software-development;@doi:10.1007/s10664-012-9205-0].
+Often guidelines for starting bioinformaticians encourage reaching out to others, but mostly to seek help when encountering a problem with the code.
+This could include consulting with colleagues, finding a mentor or participating in online communities (for example, Stack Overflow or Biostars) [@doi:10.1371/journal.pcbi.1008645].
+However, this does not represent code production and maintenance in the team and is still mainly focused on individual practices.
+In contrary to software engineering-oriented literature, where there is a lot of focus on practises when coding in a team [@https://faculty.washington.edu/ajko/books/cooperative-software-development;@doi:10.1007/s10664-012-9205-0].
+The change in bioinformatics culture can be spotted though even if rare or unreported.
 Hagan et al. described Code Clubs - the practice in their research lab, where group members are collectively engaged in software development through code reviews and pair coding and software engineering education through workshops or seminars [@doi:10.1371/journal.pcbi.1008119].
 The authors give tips on how to organize such meetings and what should be the ground rules.
-Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and finally helps to write a better quality software.
+Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, and helps to write a better quality software.
 
-### Review of team management literature in the context of software engineering
 
-Programing as a collective practice is a key notion in software engineering, which prompted a corresponding rich literature examining how to effectively organise it [@doi:10.1287/mnsc.l080.0921].
-A central theme in this literature is maximising team cohesion while minimising code coupling.
-Authors (<span style="background-color: yellow">citation needed</span>) argue that the viability of a software project along it succesive development phases is largely determined by the adoption of sound software design enforcing modularity and extensibility coupled with team management practices centered around communication and collective governance.
+## Coding in team from software engineering perspective ##
 
-Before delving into more specific recomendations, let us first define the scope of what constitutes management.
-We understand management as the set of tasks ensuring the viability of a software project.
+Beyond the brief mentioning of getting support or coding in a team in guidelines for bioinformaticians, there is specialized literature that examines how to effectively organize coding activities in a team.
+Programming as a collective practice is a key notion in software engineering.
+A central theme in this literature is maximizing team cohesion while minimizing code coupling [@{http://www.jstor.org/stable/40539129}].
+Authors (<span style="background-color: yellow">citation needed</span>) argue that the viability of a software project along it successive development phases is largely determined by the adoption of sound software design enforcing modularity and extensibility coupled with team management practices centred around communication and collective governance.
+
+In general, we understand management as the set of tasks ensuring the viability of a software project.
 These tasks revolve around planning, monitoring resources, and tracking progression [@{https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/}].
-Typically the overseeing of these functions would be taken up by a single individual referred to as the “manager” of a project.
-
-In the particular context of computational projects in academia, a strict division of labour is rarely found with regards to the management of software projects.
+Typically, the overseeing of these functions would be taken up by a single individual referred to as the “manager” of a project.
+In the particular context of computational projects in academia, a strict division of labour is rarely found in regard to the management of software projects.
+This means that the management and execution of a software project falls into the hands of the same person.
 Furthermore, some tasks, such as risk, budget and time management and maintenance are decoupled from the actual software development phase.
 The remaining management tasks would often be deliberated by the developer(s), eventually reaching a consensus on the desired way forward and acted upon.
+This sort of self-management, at times collective, echoes some prescriptions of the SCRUM method [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+SCRUM is a framework to perform these management tasks through team self-management.
+This framework was introduced to respond to the aspiration for more autonomy and responsivity from software developers, best illustrated by the agile manifesto [@{https://agilemanifesto.org/}].
+This proposition was a reaction to the typical blueprint-like management for engineering projects which proved ineffective in addressing the emerging challenges of large software projects [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+The similarity is probably the reason why agile practices are part of guidelines for scientific software developers (Table @tbl:sq-recommendations).
 
-This sort of self-management, at times collective, echoes some of the prescriptions of the SCRUM method [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
-SCRUM is a framework to perform these management tasks through team self-management. 
-This framework was introduced to respond to the aspiration for more autonomy and responsivity from software developers, best illustrated by the agile manifesto [@{https://agilemanifesto.org/}]. 
-This proposition was a reaction to the typical blueprint-like management for engineering projects which proved ineffective in addressing the emerging challengens of large software projects[@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}]
-This similarity is probably the reason why agile practices are part of guidelines for scientific software developers (Table @tbl:sq-recommendations).
-
-One outstanding aim of agile is the aspiration for more autonomy for organising the work of software developers.
+One outstanding aim of agile is the aspiration for more autonomy for organizing the work of software developers.
 In the particular context of large computational project, agile opened the opportunity for collective governance and a move away from a project structure producing a division of labour coupling one developer to a particular task or aspect indefinitely.
-Incentivising a collective ownership and governance of the codebase as a whole, promotes the adoption of software engineering best practices among developers contributing to a software project[@doi:10.1016/j.infsof.2009.11.004]. 
-Indeed by aspiring to make any developer within the team interchangeable across the various ongoing tasks, we create the need for robust testing, comprehensive documentation and coherence across the differents parts of the project [@doi:10.1287/mnsc.l080.0921].
-
-Furthermore by exposing every developer to a variety of tasks over the course of the project development, we strengthen the knowledge and skill base of the team as a whole, as well as a better mutual awareness of team member expertise (transactive memory system [@doi:10.1177/1046496420967764]). 
+Incentivizing a collective ownership and governance of the codebase as a whole, promotes the adoption of software engineering best practices among developers contributing to a software project[@doi:10.1016/j.infsof.2009.11.004].
+Indeed, by aspiring to make any developer within the team interchangeable across the various ongoing tasks, we create the need for robust testing, comprehensive documentation and coherence across the difference parts of the project [@{http://www.jstor.org/stable/40539129}].
+Furthermore, by exposing every developer to a variety of tasks over the course of the project development, we strengthen the knowledge and skill base of the team as a whole, as well as a better mutual awareness of team member expertise (transactive memory system [@doi:10.1177/1046496420967764]).
 Taken together these merits further improve the team's capacity to overcome technical challenges that will arise over the course of the development process.
 
-The previous paragraph outlined some of the desirable outcomes of agile-like practices.
+The previous paragraph outlined some desirable outcomes of agile-like practices.
 Such benefits require the implementation and effective adoption of this mode of project management.
-This in turn relies on the execution of a variety of methods whose success in realising the merits of agile depends heavily on setting the adequate circumstances for the team to need to incorporate elements of agile in their regular work practice.
+In turn, it relies on the execution of a variety of methods whose success in realizing the merits of agile depends heavily on setting the adequate circumstances for the team to need to incorporate elements of agile in their regular work practice.
 Practices and methods aligned with agile prescriptions include stand-up meetings, task allocations, pair-programming, or code reviews.
-Note, that many of these practices do not require the presence of the manager, but assumes a work culture and standardised procedures.
-At their core, these practices incentivise continuous communication and collective decision meaking among developers. 
-This constitutes an additional overhead in terms of time and ressources needed when developing, but this is offset by the aforementioned benefits in terms of coding practice, software resilience and improved team capabilities.
+Note, that many of these practices do not require the presence of the manager, but assumes a work culture and standardized procedures.
+At their core, these practices incentivize continuous communication and collective decision-making among developers.
+This constitutes an additional overhead in terms of time and resources needed when developing, but this is offset by the aforementioned benefits in terms of coding practice, software resilience and improved team capabilities.
 
-## Optional section that might be put in discussion instead.
-- Comparison to current academic coding
-    - agile would be more stringent
-    - agile would challenge the one project : one developer configuration
-    - agile would highlight the impossibility to capitalise dividends of long-term building of knowlegebase and team chemistry
-    - agile would point at the training gap
-
-- Approaches and circumstances promoting the benefits of agile
-
-
-Let us not forget that academia comes from a different place than where agile was developed.
-The Agile Manifesto was written against "bureaucracy, infantilization, and sense of futility" [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
-The academic software development agile practices would in fact be a more stringent approach to software development than current practices.
-For example it would include writing down requirements in form of user stories, plan a minimal viable product, plan an initial architecture, and dividing the project into tasks.
-This is important, because most literature pictures agile as management style free from traditional management.
-We should not forget that ad-hoc coding does not comply with agile, and we cannot use it as an excuse to continue our current practices.
-The agile system assumes that software engineering professionals seek to find the best approaches, and are well equiped to make good decisions on their own - when faced with shifting requirements and complex code base [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
-Additionally, the lack of top-to-bottom management, architects and system analysts in academic software development put even more responsibility on the individual developer.
-However, as noted in previous sections, current scientific software developer education does not necessarily cover these elements [@doi:10.1109/CSEET.2009.44].
-
-- Cost-Benefit of adoption
-
-Working in teams is not an option, but a must for large projects.
-Although it is not necessary in smaller projects, the benefits are significant.
-- over time a small project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication
-- lack of standards and good practices undermine quality and maintainability
-- ease of technical knowledge transfer (which requires time and social factors) [@doi:10.1287/mnsc.l080.0921]
-- knowledge on who knows what (transactive memory system) speeds up problem solving [@doi:10.1177/1046496420967764]
-
-However, it is not trivial to assemble a well functioning team.
-Authors found that the overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience [@doi:10.1287/mnsc.l080.0921].
-Miriam Posner also points out that team management practices do not protect from a toxic environment [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
-
+In our research groups, we have practically implemented the environment in which we, as a group, learn about and implement software quality practices that have been discussed in literature.
+We want to share this experience and propose how simple additions, such as weekly code review sessions or seminars, can lead to improved quality collective or personal software.
 
 ## Our experiences for development processes involving teams ##
 
@@ -498,10 +437,11 @@ This understanding was actually quite relevant in a code review discussion when 
 ![wall_climbing](content/images/wall_climbing.png "Wall climbing"){height="700px"}{#fig:climbing-figure}
 
 
-## Discussion ##
+## Conclusions and future perspectives ##
+(<span style="background-color: yellow">From Ieva: I would call this conclusions and future perspectives and would keep the section sharp and short</span>)
 
 We implemented a form of code review that fits our specific needs and context.
-We used our experience from these sessions, with special focus on team-based software development practices ensuring good code quality during in the update of the curation analysis software of the 2024 release of the JASPAR database (<span style="background-color: yellow">citation</span>).
+We used our experience from these sessions, with special focus on team-based software development practices ensuring good code quality during in the update of the curation analysis software of the 2024 release of the JASPAR database [@doi:10.1093/nar/gkad1059].
 In this project, as well as in some of our own individual research projects, we introduced user stories when documenting the assumptions, current features and new ideas, and we relied on development tools such as Jira and git.
 We note that the usage of these tools is not necessarily aligned with industry practices, due to the experimental nature of scientific software.
 Nevertheless, as bioinformatics becomes a more and more software-heavy field, we believe a good direction is to collectively lower the barrier to adapting to new technologies.
@@ -512,6 +452,54 @@ How to decide when it is time to invest in a script?
 There is a method called ad-hoc testing, which could be beneficial for scientists without test plans or documentation.
 It is flexible, allows creativity and discovery of new requirements [@{https://www.browserstack.com/guide/adhoc-testing}].
 However, it is not advised to be used on its own, as it is not robust and requires extensive know-how.
+
+
+(<span style="background-color: yellow">From Ieva: I would discuss a bit about lack of funding here. Or the importance of funding for software maintenance and the need to support already existing software</span>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Optional section that might be put in discussion instead.
+- Comparison to current academic coding
+    - agile would be more stringent
+    - agile would challenge the one project : one developer configuration
+    - agile would highlight the impossibility to capitalise dividends of long-term building of knowlegebase and team chemistry
+    - agile would point at the training gap
+
+- Approaches and circumstances promoting the benefits of agile
+
+
+Let us not forget that academia comes from a different place than where agile was developed.
+The Agile Manifesto was written against "bureaucracy, infantilization, and sense of futility" [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+The academic software development agile practices would in fact be a more stringent approach to software development than current practices.
+For example it would include writing down requirements in form of user stories, plan a minimal viable product, plan an initial architecture, and dividing the project into tasks.
+This is important, because most literature pictures agile as management style free from traditional management.
+We should not forget that ad-hoc coding does not comply with agile, and we cannot use it as an excuse to continue our current practices.
+The agile system assumes that software engineering professionals seek to find the best approaches, and are well equiped to make good decisions on their own - when faced with shifting requirements and complex code base [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
+Additionally, the lack of top-to-bottom management, architects and system analysts in academic software development put even more responsibility on the individual developer.
+However, as noted in previous sections, current scientific software developer education does not necessarily cover these elements [@doi:10.1109/CSEET.2009.44].
+
+- Cost-Benefit of adoption
+
+Working in teams is not an option, but a must for large projects.
+Although it is not necessary in smaller projects, the benefits are significant.
+- over time a small project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication
+- lack of standards and good practices undermine quality and maintainability
+- ease of technical knowledge transfer (which requires time and social factors) [@{http://www.jstor.org/stable/40539129}]
+- knowledge on who knows what (transactive memory system) speeds up problem solving [@doi:10.1177/1046496420967764]
+
+However, it is not trivial to assemble a well functioning team.
+Authors found that the overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience [@{http://www.jstor.org/stable/40539129}].
+Miriam Posner also points out that team management practices do not protect from a toxic environment [@{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}].
 
 
 ## References {.page_break_before}
