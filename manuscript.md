@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2023-12-12'
+date-meta: '2023-12-16'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics groups through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics groups through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics groups through teamwork" />
-  <meta name="dc.date" content="2023-12-12" />
-  <meta name="citation_publication_date" content="2023-12-12" />
-  <meta property="article:published_time" content="2023-12-12" />
-  <meta name="dc.modified" content="2023-12-12T12:23:05+00:00" />
-  <meta property="article:modified_time" content="2023-12-12T12:23:05+00:00" />
+  <meta name="dc.date" content="2023-12-16" />
+  <meta name="citation_publication_date" content="2023-12-16" />
+  <meta property="article:published_time" content="2023-12-16" />
+  <meta name="dc.modified" content="2023-12-16T23:07:51+00:00" />
+  <meta property="article:modified_time" content="2023-12-16T23:07:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/5b9d8cd5a2348aa418f20590c60f0786e35c8b51/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/5b9d8cd5a2348aa418f20590c60f0786e35c8b51/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/5b9d8cd5a2348aa418f20590c60f0786e35c8b51/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/3e2fb77da010836e7e9b03eeb5fabf2d04546763/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/3e2fb77da010836e7e9b03eeb5fabf2d04546763/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/3e2fb77da010836e7e9b03eeb5fabf2d04546763/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/5b9d8cd5a2348aa418f20590c60f0786e35c8b51/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/3e2fb77da010836e7e9b03eeb5fabf2d04546763/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@5b9d8cd](https://github.com/ferenckata/SQSeminarPaper/tree/5b9d8cd5a2348aa418f20590c60f0786e35c8b51)
-on December 12, 2023.
+from [ferenckata/SQSeminarPaper@3e2fb77](https://github.com/ferenckata/SQSeminarPaper/tree/3e2fb77da010836e7e9b03eeb5fabf2d04546763)
+on December 16, 2023.
 </em></small>
 
 
@@ -343,7 +343,7 @@ Sharing your coding experience with others helps minimize the isolation, allows 
 Beyond the brief mentioning of getting support or coding in a team in guidelines for bioinformaticians, there is specialized literature that examines how to effectively organize coding activities in a team.
 Programming as a collective practice is a key notion in software engineering.
 A central theme in this literature is maximizing team cohesion while minimizing code coupling [@{http://www.jstor.org/stable/40539129}].
-Authors (<span style="background-color: yellow">which authors?</span>) argue that the viability of a software project along it successive development phases is largely determined by the adoption of sound software design enforcing modularity and extensibility coupled with team management practices centred around communication and collective governance.
+Authors argue that the viability of a software project along it successive development phases is largely determined by the adoption of sound software design enforcing modularity and extensibility coupled with team management practices centred around communication and collective governance @isbn0932633420.
 
 In general, we understand management as the set of tasks ensuring the viability of a software project.
 These tasks revolve around planning, monitoring resources, and tracking progression [@{https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/}].
@@ -371,8 +371,8 @@ Taken together these merits further improve the team's capacity to overcome tech
 The previous paragraph outlined some desirable outcomes of agile-like practices.
 Such benefits require the implementation and effective adoption of this mode of project management.
 In turn, it relies on the execution of a variety of methods whose success in realizing the merits of agile depends heavily on setting the adequate circumstances for the team to need to incorporate elements of agile in their regular work practice.
-Practices and methods aligned with agile prescriptions include stand-up meetings, task allocations, pair-programming, and code reviews.
-Note, that many of these practices do not require the presence of the manager, but assumes a work culture and standardized procedures.
+Practices and methods aligned with agile prescriptions include stand-up meetings, task allocations, pair-programming, or code reviews.
+Note, that many of these practices do not require the presence of the manager, but assumes a collegial work culture and standardized procedures.
 At their core, these practices incentivize continuous communication and collective decision-making among developers.
 This constitutes an additional overhead in terms of time and resources needed when developing, but this is offset by the aforementioned benefits in terms of coding practice, software resilience and improved team capabilities.
 
@@ -387,8 +387,8 @@ Additionally, the lack of top-to-bottom management, architects and system analys
 As noted in previous sections, current scientific software developer education does not necessarily cover these elements [@doi:10.1109/CSEET.2009.44].
 
 We do not believe that all the software engineering guidelines employed in the industry are necessarily relevant to the production of scientific software.
-The circumstances differ significantly, mainly due to the more personal and more domain knowledge heavy nature of projects.
-Whether they are optimal or not, personal projects remain the norm, and it would be futile to expect another group member to achieve an equal level of familiarity with one's project.
+The circumstances differ significantly, mainly due to how the outcomes of research projects (papers, tools, protocoles, etc) need to be credited to paricular individual researchers for their career progression.
+Regardless of the optimality of this situation, personal projects remain the norm, and it would be futile to expect another group member to achieve an equal level of familiarity with one's project.
 However, this should not prevent interactions between the people in the group, as it is through these interactions that rules are enforced and quality increased.
 
 In our research groups, we have practically implemented the environment in which we, as a group, learn about and implement software quality practices that have been discussed in literature.
@@ -521,6 +521,11 @@ Through these meetings, we learnt about and adopted various concepts that achiev
 Furthermore, we have established coding standards within our groups, which ease within-group support and collaborative projects.
 We note that the usage of these tools is not necessarily aligned with industry practices, due to the experimental nature of scientific software.
 Nevertheless, as bioinformatics becomes a more and more software-heavy field, we believe a good direction is to collectively lower the barrier to adapting to new technologies.
+
+An emerging notion from our experience with introducing software engineering practices into our bioinformatics work, is the distinct yet integral part played by software development in the scientific research process. 
+Beyond the technical challenges of concretely implementing a particular computational analysis, the software design choices shaping the implementation reflect actual scientific assumptions about our mental representation of the investigated object. 
+Thus the choice of data-structures, integration with particular suite of computational tools, file system to adopt, etc. play an as decisive scientific role in a research project as the choice of model system, protocole optimisation or control experiments do. 
+Both these experimental and computational decisions will determine the questions we can address with the data produced by our experiment.
 
 When discussing our approach, it is implied that team dynamic is important, especially for such bottom-up approaches.
 Huckman et al. found that the overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience [@{http://www.jstor.org/stable/40539129}].

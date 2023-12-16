@@ -7,6 +7,7 @@ bioinformaticians
 bioinformatics
 Biostars
 codebase
+collegial
 consitute
 crutial
 curation
@@ -22,7 +23,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-hovan
+Hovan
 Huckman
 Ieva
 ievarau
@@ -38,7 +39,7 @@ knowlegde
 knowlegebase
 knwoledge
 Kumar
-ladislav
+Ladislav
 maintanability
 Mathelier
 modularise
@@ -48,12 +49,16 @@ NCMM
 Nextflow
 NGS
 OOP
+optimality
+paricular
 performant
 polymorphism
 Posner
 princeps
 priori
 priorization
+protocole
+protocoles
 protoype
 Rauluseviciute
 recourses
