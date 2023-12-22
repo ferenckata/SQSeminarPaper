@@ -15,8 +15,6 @@ authors:
     affiliations:
       - Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
     corresponding: true
-    funders:
-      - Grant XXXXXXXX
   - github: ievarau
     name: Ieva Rauluseviciute
     initials: IR
@@ -35,6 +33,12 @@ authors:
     name: Vipin Kumar
     initials: VK
     email: vipin.kumar@ncmm.uio.no
+    affiliations:
+      - Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+  - name: Marieke Kuijjer
+    initials: MK
+    orcid: 0000-0001-6280-3130
+    email: marieke.kuijjer@ncmm.uio.no
     affiliations:
       - Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
   - name: Anthony Mathelier
