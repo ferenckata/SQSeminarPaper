@@ -15,7 +15,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-Hovan
+hovan
 Ieva
 ievarau
 incentivize
@@ -25,8 +25,10 @@ infantilization
 JASPAR
 Jira
 Katalin
+Kuijjer
 Kumar
-Ladislav
+ladislav
+Marieke
 Mathelier
 modularity
 modularization
@@ -53,5 +55,4 @@ Taschuk
 transactive
 UML
 Vipin
-XXXXXXXX
 Zuckerberg

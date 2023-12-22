@@ -11,6 +11,7 @@ author-meta:
 - Ieva Rauluseviciute
 - Ladislav Hovan
 - Vipin Kumar
+- Marieke Kuijjer
 - Anthony Mathelier
 header-includes: |
   <!--
@@ -26,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-22" />
   <meta name="citation_publication_date" content="2023-12-22" />
   <meta property="article:published_time" content="2023-12-22" />
-  <meta name="dc.modified" content="2023-12-22T12:58:34+00:00" />
-  <meta property="article:modified_time" content="2023-12-22T12:58:34+00:00" />
+  <meta name="dc.modified" content="2023-12-22T13:25:27+00:00" />
+  <meta property="article:modified_time" content="2023-12-22T13:25:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,6 +46,9 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0001-8847-9295" />
   <meta name="citation_author" content="Vipin Kumar" />
   <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author" content="Marieke Kuijjer" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0001-6280-3130" />
   <meta name="citation_author" content="Anthony Mathelier" />
   <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
   <meta name="citation_author_institution" content="Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway" />
@@ -55,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/53b006964ae1df4ca1d11dc8aceb21c25baa7178/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/53b006964ae1df4ca1d11dc8aceb21c25baa7178/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/53b006964ae1df4ca1d11dc8aceb21c25baa7178/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +83,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/53b006964ae1df4ca1d11dc8aceb21c25baa7178/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@61caa50](https://github.com/ferenckata/SQSeminarPaper/tree/61caa5027ce3f5cbc0273bfc9da4235c472de502)
+from [ferenckata/SQSeminarPaper@53b0069](https://github.com/ferenckata/SQSeminarPaper/tree/53b006964ae1df4ca1d11dc8aceb21c25baa7178)
 on December 22, 2023.
 </em></small>
 
@@ -100,7 +104,6 @@ on December 22, 2023.
     <br>
   <small>
      Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
-     · Funded by Grant XXXXXXXX
   </small>
 
 + **Ieva Rauluseviciute**
@@ -129,6 +132,15 @@ on December 22, 2023.
   <br>
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [princeps091-binf](https://github.com/princeps091-binf)
+    <br>
+  <small>
+     Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+  </small>
+
++ **Marieke Kuijjer**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-6280-3130](https://orcid.org/0000-0001-6280-3130)
     <br>
   <small>
      Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
