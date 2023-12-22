@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-22" />
   <meta name="citation_publication_date" content="2023-12-22" />
   <meta property="article:published_time" content="2023-12-22" />
-  <meta name="dc.modified" content="2023-12-22T11:03:05+00:00" />
-  <meta property="article:modified_time" content="2023-12-22T11:03:05+00:00" />
+  <meta name="dc.modified" content="2023-12-22T12:58:34+00:00" />
+  <meta property="article:modified_time" content="2023-12-22T12:58:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/dfb7bc36d3a5910f57c173a9897579a2ec03a149/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/dfb7bc36d3a5910f57c173a9897579a2ec03a149/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/dfb7bc36d3a5910f57c173a9897579a2ec03a149/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/dfb7bc36d3a5910f57c173a9897579a2ec03a149/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/61caa5027ce3f5cbc0273bfc9da4235c472de502/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@dfb7bc3](https://github.com/ferenckata/SQSeminarPaper/tree/dfb7bc36d3a5910f57c173a9897579a2ec03a149)
+from [ferenckata/SQSeminarPaper@61caa50](https://github.com/ferenckata/SQSeminarPaper/tree/61caa5027ce3f5cbc0273bfc9da4235c472de502)
 on December 22, 2023.
 </em></small>
 
@@ -527,7 +527,7 @@ All scientists would benefit from a strong backbone of software solutions, that 
 The lack of funding for the maintenance of software, prevents achieving a level of software quality that would inspire confidence in the results [@doi:10.1109/MIC.2014.88].
 Funding is typically provided for the development of novel software, and it can be hard to justify spending time on maintenance which provides no output in terms of articles.
 Currently, as Alexander Szalay puts it "the funding stops when they [researchers] actually develop the software prototype" [@doi:10.1038/d41586-022-01901-x].
-Researchers want to build on each other's findings, use published novel software as tools, but they might need to spend quite some time adopting or maintaining that software [@doi:10.1371/journal.pcbi.1005412; @doi:10.1016/j.jss.2020.110848; @doi:10.1109/MIC.2014.8].
+Researchers want to build on each other's findings, use published novel software as tools, but they might need to spend quite some time adopting or maintaining that software [@doi:10.1371/journal.pcbi.1005412; @doi:10.1016/j.jss.2020.110848; @doi:10.1109/MIC.2014.88].
 The infrastructure would benefit from funding earmarked for maintenance, and from dedicating time to it in project proposals.
 Fortunately in recent years, the lack of funding is being recognized and addressed by a few agencies, such as the Chan Zuckerberg Initiative Essential Open Source Software for Science fund [@{https://chanzuckerberg.com/eoss/}].
 Scientific community and funding agencies should welcome the efforts of maintaining original software and encourage its updates instead of the development of a replacement software that risks remaining unmaintained.

@@ -15,7 +15,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-hovan
+Hovan
 Ieva
 ievarau
 incentivize
@@ -26,7 +26,7 @@ JASPAR
 Jira
 Katalin
 Kumar
-ladislav
+Ladislav
 Mathelier
 modularity
 modularization
