@@ -5,6 +5,7 @@ bioinformatician
 bioinformaticians
 bioinformatics
 Biostars
+circumstancial
 codebase
 collegial
 deepending
@@ -15,7 +16,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-hovan
+Hovan
 Ieva
 ievarau
 incentivize
@@ -27,7 +28,7 @@ Jira
 Katalin
 Kuijjer
 Kumar
-ladislav
+Ladislav
 Marieke
 Mathelier
 modularity
@@ -41,6 +42,7 @@ paricular
 performant
 princeps
 priori
+promtps
 protocoles
 Rauluseviciute
 recourses
@@ -54,5 +56,6 @@ Szalay
 Taschuk
 transactive
 UML
+varyingly
 Vipin
 Zuckerberg
