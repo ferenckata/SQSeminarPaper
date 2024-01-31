@@ -5,6 +5,7 @@ bioinformatician
 bioinformaticians
 bioinformatics
 Biostars
+Bonthuis
 circumstancial
 codebase
 collegial
@@ -22,6 +23,7 @@ ievarau
 incentivize
 incentivized
 Incentivizing
+Ine
 infantilization
 JASPAR
 Jira
@@ -50,6 +52,7 @@ reproducibility
 reserachers
 responsivity
 reusability
+Romana
 SCA
 suboptimal
 Szalay
