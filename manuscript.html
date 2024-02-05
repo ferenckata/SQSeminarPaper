@@ -10,7 +10,7 @@
   <meta name="author" content="Vipin Kumar" />
   <meta name="author" content="Marieke Kuijjer" />
   <meta name="author" content="Anthony Mathelier" />
-  <meta name="dcterms.date" content="2024-01-31" />
+  <meta name="dcterms.date" content="2024-02-05" />
   <meta name="keywords" content="software quality, bioinformatics, teamwork" />
   <title>Improving software quality in bioinformatics through teamwork</title>
   <style>
@@ -55,11 +55,11 @@
   <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
-  <meta name="dc.date" content="2024-01-31" />
-  <meta name="citation_publication_date" content="2024-01-31" />
-  <meta property="article:published_time" content="2024-01-31" />
-  <meta name="dc.modified" content="2024-01-31T14:40:37+00:00" />
-  <meta property="article:modified_time" content="2024-01-31T14:40:37+00:00" />
+  <meta name="dc.date" content="2024-02-05" />
+  <meta name="citation_publication_date" content="2024-02-05" />
+  <meta property="article:published_time" content="2024-02-05" />
+  <meta name="dc.modified" content="2024-02-05T06:32:38+00:00" />
+  <meta property="article:modified_time" content="2024-02-05T06:32:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -90,9 +90,9 @@
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/a3b1a85e0dff25929c93dde9b42a5862ea6295d0/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a3b1a85e0dff25929c93dde9b42a5862ea6295d0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/a3b1a85e0dff25929c93dde9b42a5862ea6295d0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/55ce38c0ad81edb8b2ecf8df1b23fa8e171461f7/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/55ce38c0ad81edb8b2ecf8df1b23fa8e171461f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/55ce38c0ad81edb8b2ecf8df1b23fa8e171461f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -109,10 +109,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ferenckata.github.io/SQSeminarPaper/v/a3b1a85e0dff25929c93dde9b42a5862ea6295d0/">permalink</a>)
+(<a href="https://ferenckata.github.io/SQSeminarPaper/v/55ce38c0ad81edb8b2ecf8df1b23fa8e171461f7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ferenckata/SQSeminarPaper/tree/a3b1a85e0dff25929c93dde9b42a5862ea6295d0">ferenckata/SQSeminarPaper@a3b1a85</a>
-on January 31, 2024.
+from <a href="https://github.com/ferenckata/SQSeminarPaper/tree/55ce38c0ad81edb8b2ecf8df1b23fa8e171461f7">ferenckata/SQSeminarPaper@55ce38c</a>
+on February 5, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -189,45 +189,34 @@ We found that through weekly meetings, within a year, regular members improved t
 Through within-group knowledge transfer, without investing significant amount of time, each member obtained knowledge about advanced concepts, can now quickly identify and access the expertise of each other, and established standards to which new members are also required to comply.
 We advocate for improvement of software development culture within bioinformatics through local collective effort, while hoping that top-down approaches such as publication requirements for code become standard in the near future.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Bioinformatics and computational biology are continuously gaining importance in biological research.
+<p>Bioinformatics and computational biology are indispensable components of research in biology.
 About 90% of researchers rely on results produced by scientific software <span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span>.
 In turn, scientists are heavily relying on inventions of computer science and software engineering, such as programming languages, programming paradigms, or container solutions.
 However, adopting practices from other fields is not without difficulties and scientific software development tend to lag behind.
 One implication of using outdated or poor software engineering practices is that incorrect software results in invalid scientific findings <span class="citation" data-cites="P66ASHG 10uv4hoEv">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
 Beyond that, even when the software performs as intended, researchers spend significant amount of time on software building using suboptimal practices which can further increase the necessary time investment in the future <span class="citation" data-cites="JfPzXAiK 1F0QZjj0U rJVIBuN0">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-1F0QZjj0U" role="doc-biblioref">4</a>,<a href="#ref-rJVIBuN0" role="doc-biblioref">5</a>]</span>.</p>
-<p>Good software development practices have been established in other software-heavy endeavours to mitigate the risk of incorrect software solutions.
+<p>Good software development practices have been established in other software-heavy endeavours to mitigate the risk of incorrect software solutions and save users’ time.
 However, bioinformaticians or more generally scientists working with scientific software often lack formal education in computer science or software development <span class="citation" data-cites="fJWFe93e 10uv4hoEv KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>.
-The lack of theoretical and practical foundations hinders the adoption of good coding practices (e.g. unit tests, continuous integration, code reviews).
-To prioritize good practices, it is beneficial to know about the target qualities a software may have.
-Although the software engineering community has defined software quality attributes <span class="citation" data-cites="16TRJmxtX">[<a href="#ref-16TRJmxtX" role="doc-biblioref">8</a>]</span>, these are largely unknown to practising bioinformaticians.
-Among these attributes are functional suitability and performance, which are implicitly prioritized within bioinformatics.
-On the other hand, the list also contains usability, reliability, maintainability, and portability, which are implicitly neglected in most bioinformatics endeavour.
-The consequences of this implicit prioritization is that the default behaviour (i.e. producing prototype software) does not change even when the scope of the software product changes.</p>
-<p>Beyond the limits of individual education, many of the good software practices rely on redundancy of knowledge within team members, supported by practices such as pair programming, regular stand-up meetings, and code reviews.
-In contrast, historically, academic research projects are mostly driven by a single person (a PhD student or a post-doc) and these projects are often part of the academic degree evaluation.
-Unfortunately for software development purposes, the academic world still often tends to disregard the team effort, priding itself on enabling individual achievements and career progression instead.
-Taking this into account, with one (or very few) person developing the software for a project, scientific software remains poorly maintained even if it is used by a significant number of researchers worldwide <span class="citation" data-cites="NwrEMaFV 161bJhAyl KdscyQBT 22CUqVv1">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-NwrEMaFV" role="doc-biblioref">9</a>,<a href="#ref-161bJhAyl" role="doc-biblioref">10</a>,<a href="#ref-22CUqVv1" role="doc-biblioref">11</a>]</span>.</p>
-<p>The concept of a team is therefore different in a research-oriented project compared to a software development project.
-While the group members help each other with scientific suggestions, most often there is a single person responsible for the design and implementation of the code base.
-As official guidelines on coding practices are rarely definitive, but rather suggestive, the actual craft of software engineering is treated as secondary task and is often up to individual judgment.
-These guidelines may naturally emerge in larger groups, if software is used or even developed by multiple group members.
+The hinders the adoption of good coding practices (e.g. unit tests, continuous integration, code reviews).
+The software engineering community has defined and described in detail software quality attributes <span class="citation" data-cites="16TRJmxtX">[<a href="#ref-16TRJmxtX" role="doc-biblioref">8</a>]</span>, such as functional suitability and performance, which are implicitly prioritized within bioinformatics.
+Unfortunately, the more complex concepts, such as usability and reliability, are largely unknown or escapes the attention of individual practising bioinformaticians.
+In addition, historically research projects are often carried by a single trainee and are part of academic degree evaluation.
+Thus, software, developed for a particular project, is mostly limited to the skills of an individual person and does not necessarily follow all software quality guidelines and can remain poorly maintained after the projects end date <span class="citation" data-cites="NwrEMaFV 161bJhAyl KdscyQBT 22CUqVv1">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-NwrEMaFV" role="doc-biblioref">9</a>,<a href="#ref-161bJhAyl" role="doc-biblioref">10</a>,<a href="#ref-22CUqVv1" role="doc-biblioref">11</a>]</span>.
+One way to expand the knowledge and application of good software quality practices is to rely on people around and make use of redundancy of the knowledge, where individual practices are enriched by learning from other people through group activities, such as pair programming or code reviews.</p>
+<p>Currently, a team is perceived differently in research-oriented environments compared to the software development projects.
+In research groups, members of the group discuss and help each other with scientific suggestions, but most often a single person is designing and implementing the code base to answer scientific questions.
+Even though there are plenty of guidelines and suggestions how to start coding or improve the quality of your code, they are mostly targeting individuals, and it is up to them to evaluate the importance of software engineering part of their projects.
+Practically it might not be feasible to fulfil a sufficient number of good software quality aspect as an individual due to temporal nature of academic positions, thus software engineering becomes a secondary task in the project.
 It was reported previously that researchers tended to rank software engineering concepts higher if they worked in a team <span class="citation" data-cites="fJWFe93e">[<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>]</span>.
-High-profile code bases often feature larger development teams and their activities are marked with longer commit messaged indicating better communication and documentation of the software <span class="citation" data-cites="161bJhAyl">[<a href="#ref-161bJhAyl" role="doc-biblioref">10</a>]</span>.
-However, it is not always obvious that to follow the guidelines requires a form of team organization not intrinsic to academic groups.
-We hypothesize that a form of team structure organized around individual software products could improve the quality of our scientific code.
-We further argue that the heterogeneous codebase quality observed across research environments doesn’t reflect the quality of the research work itself, but rather results from the chance coincidence of varyingly trained researchers.
-In this manuscript we show that one effective path to systematically improve the codebase quality for any research environment is the adoption of team coding practices, as these average-out circumstancial variations in software engineering competence and contribute to the dynamism of the research environment.</p>
-<p>In this work we start with a literature review on the concepts we build on.
-First, we present guidelines suggested by both software engineers evaluating the computational scientists (emphasizing, but not limiting to bioinformatics), and bioinformaticians.
-Thus, we obtain an external and internal view on the envisioned standards and priorities for the bioinformatics community.
-Next, having identified the lack of team cooperation in bioinformatics as an important point, we explore the main aspect of team management established in non-academic software development settings and consider their usefulness to our reality.
-Finally, we advocate for adopting an approach similar to the one employed by our research groups.
-There we, motivated by personal experience of working with scientific software and inspired by the literature, have created weekly sessions to discuss and learn different aspects of software quality relevant for computational biology.</p>
-<p>We find that good practices require investment in time and effort that may not be feasible to fulfil as an individual (e.g. having limited time to perform and to deliver doctoral thesis).
-However, we suggest that our practices results in shared standards and an overall better code quality of the members with a reduced effort on an individual level.
-These practices include sharing the existing software knowledge base in the group, learning new tool development and implementation together, and normalizing showing and discussing code.
-We thus aim to provide a motivation and framework on how to get started with collective software development by directly or indirectly involving all bioinformatician group members, with or without formal training in software engineering.</p>
-<h2 id="guidelines-and-practices-of-bioinformatics-as-seen-by-software-engineers-and-bioinformaticians">Guidelines and practices of bioinformatics as seen by software engineers and bioinformaticians</h2>
+High-profile code bases often feature larger development teams and their activities, for example, are marked with longer commit message indicating better communication and documentation of the software <span class="citation" data-cites="161bJhAyl">[<a href="#ref-161bJhAyl" role="doc-biblioref">10</a>]</span>.
+We hypothesize that a form of team structure organized around individual software products could improve the quality of our scientific code and subsequently increase the validity of scientific findings and their reproducibility.
+Systematic adoption of team coding practices homogenizes software engineering competence of individuals across the research group and contributes to the dynamism of the research environment.</p>
+<p>In this work we first review relevant literature on the individual and team coding practises that are currently suggested within and outside scientific research groups.
+In light of the obstacles preventing or limiting researchers to adopt more good software quality attributes, we present our groups’ approach, where in a team setting we learn, teach and apply concepts to improve our software quality.
+We have created weekly seminars and code review sessions where group members discuss aspects of software quality relevant for computational biology and show their own code for the rest of the group to discuss and review.
+We suggest that our team-based activities result in shared standards and an overall better code quality of the members with a reduced effort on an individual level.
+We provide a framework on how to get started with collective software development by directly or indirectly involving all bioinformatician group members, with or without formal training in software engineering.</p>
+<h2 id="overview-of-currently-suggested-coding-practises-for-bioinformaticians">Overview of currently suggested coding practises for bioinformaticians</h2>
 <p>The internet is full of learning and support material for developing or working with software products.
 Since bioinformaticians are often self-taught programmers and only a small fraction have formal training in computer science and software engineering, these recourses become vital.
 They include blog posts from peers, freely available lecture materials from universities, forums or articles that propose guidelines on how to code or analyse data in a better way.
@@ -251,162 +240,315 @@ Additionally, relevant articles were selected based on the snowball effect from 
 Already almost two decades ago, Diane F. Kelly wrote that scientific computations keep on being performed using error-prone development practices and reaching suboptimal solutions and poor software quality due to lack of appropriate software engineering practices <span class="citation" data-cites="LAj3scYO">[<a href="#ref-LAj3scYO" role="doc-biblioref">18</a>]</span>.
 Therefore, the software engineering community also writes guidelines on how these practices should be followed after surveying the current state of software in scientific community and specifically the bioinformatics community <span class="citation" data-cites="JfPzXAiK fJWFe93e 5FEfM9Tw 22CUqVv1 P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>,<a href="#ref-22CUqVv1" role="doc-biblioref">11</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>]</span>.
 In addition, an extensive literature review has been published recently in which known issues and suggested solutions are collected <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
-We collected these recommendations into Table <a href="#tbl:sq-recommendations">1</a>.</p>
-<div id="tbl:sq-recommendations" class="tablenos">
-<table id="tbl:sq-recommendations">
-<caption><span>Table 1:</span> Collection of recommendations for improving scientific software quality.
-Some guidelines are more vague than others, they also have varied scope, and they target different stakeholders.
-Therefore, it may be hard to find individual responsibility and actionable points from the literature.
-</caption>
-<colgroup>
-<col style="width: 78%" />
-<col style="width: 21%" />
-</colgroup>
+We collected these recommendations into Table ??.</p>
+<table>
 <thead>
-<tr class="header">
-<th style="text-align: left;">Recommendation</th>
-<th style="text-align: center;">Source</th>
+<tr>
+<th>
+Category
+</th>
+<th>
+Recommendation
+</th>
+<th>
+References
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">standardized tests</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td rowspan="3">
+Software development 101
+</td>
+<td>
+Sanity check on input parameters
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">version control</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 10uv4hoEv KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Do not hard-code changeable parameters and paths
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">user (and developer) documentation</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Do not require superuser privileges
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">independent review of source code</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 5FEfM9Tw P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td rowspan="3">
+Advanced software development
+</td>
+<td>
+Usage of design patterns
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">standardized working environment and automation</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Adoption of international best practice standards of software quality
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">licensing</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Refactoring
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">requirements gathering</td>
-<td style="text-align: center;"><span class="citation" data-cites="10uv4hoEv 5FEfM9Tw">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>]</span></td>
+<tr>
+<td rowspan="7">
+Software development process
+</td>
+<td>
+Continuous integration
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">containerization for portability</td>
-<td style="text-align: center;"><span class="citation" data-cites="10uv4hoEv KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Agile software development methodology
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">reuse existing (reliable) software</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Educated choice of software development methodology
+</td>
+<td>
+<span class="citation" data-cites="5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">agile software development methodology</td>
-<td style="text-align: center;"><span class="citation" data-cites="10uv4hoEv JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span></td>
+<tr>
+<td>
+Independent review of source code
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 5FEfM9Tw P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">educated choice of software development methodology</td>
-<td style="text-align: center;"><span class="citation" data-cites="5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>]</span></td>
+<tr>
+<td>
+Code quality monitoring
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">adoption of international best practice standards of software quality</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Licensing
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">establish validation and acceptance procedures</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Cooperation between developers and users
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">cooperation between developers and users</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td rowspan="4">
+Testing and validation
+</td>
+<td>
+Establish validation and acceptance procedures
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">description of the software version used, its configurations and parameters in publications</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Provide a small test set
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">preferentially selecting freely available open-source software</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Standardized tests
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">encourage user participation in the software development process</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Ensure reproducibility of results
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">tagging of software version for reproducibility</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td rowspan="5">
+Reproducibility
+</td>
+<td>
+Standardized working environment and automation
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">sanity check on input parameters</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Version control
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">do not hard-code changeable parameters and paths</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Rely on package managers
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">rely on package managers</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Containerization for portability
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">do not require superuser privileges</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Tagging of software version for reproducibility
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">provide a small test set</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td rowspan="3">
+Documentation
+</td>
+<td>
+User (and developer) documentation
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">ensure reproducibility of results</td>
-<td style="text-align: center;"><span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span></td>
+<tr>
+<td>
+Requirements gathering
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv 5FEfM9Tw">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">refactoring</td>
-<td style="text-align: center;"><span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span></td>
+<tr>
+<td>
+Description of the software version used, its configurations and parameters in publications
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">usage of design patterns</td>
-<td style="text-align: center;"><span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span></td>
+<tr>
+<td rowspan="8">
+Community effort
+</td>
+<td>
+contribute to open-source development
+</td>
+<td>
+<span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">quality monitoring (e.g. SonarQube)</td>
-<td style="text-align: center;"><span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span></td>
+<tr>
+<td>
+reuse existing (reliable) software
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">continuous integration</td>
-<td style="text-align: center;"><span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span></td>
+<tr>
+<td>
+preferentially selecting freely available open-source software
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">contribute to open-source development</td>
-<td style="text-align: center;"><span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span></td>
+<tr>
+<td>
+Encourage user participation in the software development process
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">recognition and assignment of adequate time for quality-assured development</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q 5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Recognition and assignment of adequate time for quality-assured development
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">19</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">recognition of software development as academic achievement</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Recognition of software development as academic achievement
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">financial support for software development and maintenance</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Support for developer community for long term maintenance (when applicable)
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">support for developer community for long term maintenance (when applicable)</td>
-<td style="text-align: center;"><span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span></td>
+<tr>
+<td>
+Financial support for software development and maintenance
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">20</a>]</span>
+</td>
 </tr>
 </tbody>
 </table>
-</div>
-<p>The first impression Table <a href="#tbl:sq-recommendations">1</a> might give is being intimidated by the sheer amount of recommendations.
+<p>Table 1: Collection of recommendations for improving scientific software quality.
+Some guidelines are more vague than others, they also have varied scope, and they target different stakeholders.
+Therefore, it may be hard to find individual responsibility and actionable points from the literature.{#tbl:sq-recommendations}</p>
+<p>The first impression Table ?? might give is being intimidated by the sheer amount of recommendations.
 It is unrealistic to expect that a bioinformatician on temporary contract, working towards publishing, without formal training in computer science, or institutional support would be able to gain a good understanding and practice in all of them.
-Beyond understanding, Arvanitou et al. note that a scientific software developer, deepending on the application of the software (e.g. whether it is a tool or a data analysis pipeline), needs to prioritize the software quality attributes to make choices among the good practices <span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>.
+Beyond understanding, Arvanitou et al. note that a scientific software developer, depending on the application of the software (e.g. whether it is a tool or a data analysis pipeline), needs to prioritize the software quality attributes to make choices among the good practices <span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>.
 An issue might be that bioinformaticians are rarely familiar with the meaning and importance of software quality attributes or that their incorporation into their current software development environment isn’t trivial <span class="citation" data-cites="5FEfM9Tw 7F3gCGKy">[<a href="#ref-14uh60177" role="doc-biblioref">22</a>]</span>.
 Therefore, it is not surprising, that the guidelines from software engineers are struggling to penetrate the bioinformatics community <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
 This muddled transmission promtps us to re-think our strategies and methods to realise the effective adoption of these software engineering notions.
@@ -454,7 +596,7 @@ Furthermore, some tasks, such as risk, budget and time management, and maintenan
 The remaining management tasks would often be deliberated by the developer(s), eventually, and often implicitly, reaching a consensus on the desired way forward and acted upon.</p>
 <p>This sort of self-management, at times collective, echoes some prescriptions of the SCRUM method <span class="citation" data-cites="mlkBCHTi">[<a href="#ref-mlkBCHTi" role="doc-biblioref">35</a>]</span> and more broadly the agile manifesto <span class="citation" data-cites="UOroAlTk">[<a href="#ref-UOroAlTk" role="doc-biblioref">36</a>]</span>.
 This proposition, advocating for more autonomy and responsivity, was a reaction to the typical blueprint-like management for engineering projects which proved ineffective in addressing the emerging challenges of large software projects <span class="citation" data-cites="mlkBCHTi">[<a href="#ref-mlkBCHTi" role="doc-biblioref">35</a>]</span>.
-Current bioinformatics projects face similar challenges which is why agile practices are part of guidelines for scientific software developers (Table <a href="#tbl:sq-recommendations">1</a>).
+Current bioinformatics projects face similar challenges which is why agile practices are part of guidelines for scientific software developers (Table ??).
 As agile is the only recommendation about team management present in these guidelines, we discuss it here in detail.</p>
 <p>While agile advocates for more team communication, a focus on outcomes and quick feedback cycles with stakeholders, one outstanding aim is the aspiration for more autonomy in organizing the work of software developers.
 In the particular context of large computational project, agile opened the opportunity for collective governance and a move away from a project structure with a division of labour coupling one developer to a particular task or aspect indefinitely.
@@ -514,7 +656,7 @@ Presentations and demonstrations of basic concepts, new techniques and tools tha
 In this sense, they form almost a substitute for a more formal computer science education, which most bioinformaticians lack <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
 Topics can arise from literature recommendations, previous education, own projects, code reviews, or effectively be a reproduction of a useful talk or seminar given elsewhere.
 The presenters benefit as well by having to research the topic further and present it coherently.
-We recommend keeping these meetings regular, e.g. at least once a month, given the amount of knowledge that can be learnt together (see Table <a href="#tbl:sq-recommendations">1</a>).</p>
+We recommend keeping these meetings regular, e.g. at least once a month, given the amount of knowledge that can be learnt together (see Table ??).</p>
 <p>The outcomes of these sessions are manifold.
 A few examples:</p>
 <ol type="1">
@@ -715,7 +857,7 @@ We would also like to acknowledge the contributions made by all the participants
 <div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Studying the impact of social interactions on software quality</strong> <div class="csl-block">Nicolas Bettenburg, Ahmed E Hassan</div> <em>Empirical Software Engineering</em> (2012-04-28) <a href="https://doi.org/f4mhdp">https://doi.org/f4mhdp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s10664-012-9205-0">10.1007/s10664-012-9205-0</a></div></div>
 </div>
 <div id="ref-GTTqWzhD" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><a href="http://www.jstor.org/stable/40539129">http://www.jstor.org/stable/40539129</a></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Team Familiarity, Role Experience, and Performance: Evidence from Indian Software Services</strong> <div class="csl-block">Robert S Huckman, Bradley R Staats, David M Upton</div> <em>Management Science</em> (2009) <a href="https://www.jstor.org/stable/40539129">https://www.jstor.org/stable/40539129</a></div>
 </div>
 <div id="ref-13xuO2R5H" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>The psychology of computer programming</strong> <div class="csl-block">Gerald M Weinberg</div> <em>Dorset House Pub</em> (1998) <div class="csl-block">ISBN: 9780932633422</div></div>

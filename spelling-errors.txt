@@ -6,10 +6,8 @@ bioinformaticians
 bioinformatics
 Biostars
 Bonthuis
-circumstancial
 codebase
 collegial
-deepending
 DSA
 EMBL
 extensibility
@@ -30,7 +28,7 @@ Jira
 Katalin
 Kuijjer
 Kumar
-Ladislav
+ladislav
 Marieke
 Mathelier
 modularity
@@ -59,6 +57,5 @@ Szalay
 Taschuk
 transactive
 UML
-varyingly
 Vipin
 Zuckerberg
