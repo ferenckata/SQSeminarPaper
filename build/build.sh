@@ -137,6 +137,6 @@ echo >&2 "Build complete"
 
 echo "; Build supplementary material"
 
-pandoc content/supplementary_file/supplementary_file.md --lua-filter=content/supplementary_file/scholarly-metadata.lua --lua-filter=content/supplementary_file/author-info-blocks.lua --pdf-engine=xelatex -o output/supplementary_file.pdf
+pandoc content/supplementary_file/supplementary_file.md --lua-filter=content/supplementary_file/scholarly-metadata.lua --lua-filter=content/supplementary_file/author-info-blocks.lua -o output/supplementary_file.pdf
 
 echo "; Supplementary file built."
