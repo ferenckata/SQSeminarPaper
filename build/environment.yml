@@ -35,4 +35,3 @@ dependencies:
     - pybase62==0.5.0
     - python-bitcoinlib==0.11.2
     - pyyaml==6.0
-    - pdflatex==0.1.3
