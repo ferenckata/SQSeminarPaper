@@ -40,11 +40,56 @@ Following the standard methods of literature review, here we list the phrases an
 
 ## SUPPLEMENTARY FIGURES ##
 
-
 TODO: code examples
 
 ## SUPPLEMENTARY TABLES ##
 
 TODO: SQ attributes description
-TODO: software seminar topics - corresponding to themes in table 1
 
+***Supplementary Table 2:*** **Examples of software quality meeting topics** This table contains examples of the topics of past software quality meetings. It has been organise to follow the same categories as **Table 1**.
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Software development 101</td>
+            <td>To be identified</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Advanced software development</td>
+            <td>Design patterns</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Software development process</td>
+            <td>Code review</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Testing and validation</td>
+            <td>Why testing?</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Reproducibility</td>
+            <td>Dependency management</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Documentation</td>
+            <td>On Pages and Reports</td>
+            <td>To be filled</td>
+        </tr>
+        <tr>
+            <td>Community effort</td>
+            <td>To be identified / we never covered it probably</td>
+            <td>To be filled</td>
+        </tr>
+    </tbody>
+</table> 
