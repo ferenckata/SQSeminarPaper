@@ -1,4 +1,5 @@
 Arvanitou
+Bieman
 binf
 bioinformatic
 bioinformatician
@@ -8,6 +9,7 @@ Biostars
 Bonthuis
 codebase
 collegial
+cummulative
 dataset
 DSA
 EMBL
@@ -24,11 +26,11 @@ Incentivizing
 Ine
 JASPAR
 Jira
+Kanewala
 Katalin
 Kuijjer
 Kumar
 Ladislav
-leant
 Marieke
 Mathelier
 modularity
