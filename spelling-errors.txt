@@ -4,7 +4,7 @@ binf
 bioinformatic
 bioinformatician
 bioinformaticians
-Bioinformatics
+bioinformatics
 Biostars
 Bonthuis
 codebase
@@ -46,8 +46,7 @@ princeps
 priori
 protocoles
 Rauluseviciute
-reproducibility
-reserachers
+Reproducibility
 reusability
 Romana
 SCA

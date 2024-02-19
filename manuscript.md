@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-19" />
   <meta name="citation_publication_date" content="2024-02-19" />
   <meta property="article:published_time" content="2024-02-19" />
-  <meta name="dc.modified" content="2024-02-19T18:44:33+00:00" />
-  <meta property="article:modified_time" content="2024-02-19T18:44:33+00:00" />
+  <meta name="dc.modified" content="2024-02-19T18:54:53+00:00" />
+  <meta property="article:modified_time" content="2024-02-19T18:54:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/e14f4ed64e3a319b98928b63a33159f4088054c3/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/e14f4ed64e3a319b98928b63a33159f4088054c3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/e14f4ed64e3a319b98928b63a33159f4088054c3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/657c186e695f8689bce87e8f48e30e5834be3963/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/657c186e695f8689bce87e8f48e30e5834be3963/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/657c186e695f8689bce87e8f48e30e5834be3963/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/e14f4ed64e3a319b98928b63a33159f4088054c3/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/657c186e695f8689bce87e8f48e30e5834be3963/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@e14f4ed](https://github.com/ferenckata/SQSeminarPaper/tree/e14f4ed64e3a319b98928b63a33159f4088054c3)
+from [ferenckata/SQSeminarPaper@657c186](https://github.com/ferenckata/SQSeminarPaper/tree/657c186e695f8689bce87e8f48e30e5834be3963)
 on February 19, 2024.
 </em></small>
 
@@ -601,14 +601,11 @@ The overall performance increases when team members are familiar with each other
 In a group the knowledge on who knows what speeds up the problem-solving [@doi:10.1177/1046496420967764]; time spent together and social factors ease technical knowledge transfer [@{http://www.jstor.org/stable/40539129}].
 We therefore motivate group leaders of groups with even a small computational component to build an environment for their trainees to communicate and discuss software quality aspects.
 
-Working in teams is not an option, but a must for large projects which support thousands of reserachers world-wide, and contribute to novel findings.
-Although it is not necessary in smaller projects, the benefits are significant.
-All software projects start as small prototype-like software.
-Then they may be abandoned by the original developer.
-They could also technically survive the original developer, deposited on platforms like GitHub, but they might be overly cryptic and poorly documented so that no other scientist can take over [@doi:10.1038/d41586-022-01901-x].
-Over time a small project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication.
-Lack of standards and good practices undermine maturation, addition of new features, and general maintainability.
-Thus, they may prevent a smart solution to be used and reused over time.
+For large software project which supports many researchers and contributes to novel findings, working in team and following standards is a necessity and not an option.
+While this may not be necessary for smaller projects, we argue that following good software quality practices is still very beneficial.
+If single-person projects survive the original developer, deposited on platforms like GitHub, they might be overly cryptic and poorly documented so that no other scientist can take over [@doi:10.1038/d41586-022-01901-x].
+Over time a project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication.
+Lack of standards and good practices thus undermine maturation, addition of new features, and general maintainability.
 
 We envision a future where scientific software for core applications is appreciated, reliable, and actively maintained.
 All scientists would benefit from a strong backbone of software solutions, that would support quick and efficient prototyping, as well as maturation of working solutions.

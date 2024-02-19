@@ -76,9 +76,8 @@ content/06.our-experience.md:84:incentivized
 content/06.our-experience.md:86:modularize
 content/07.conclusions_perspectives.md:5:bioinformatics
 content/07.conclusions_perspectives.md:12:bioinformatics
-content/07.conclusions_perspectives.md:19:reserachers
-content/07.conclusions_perspectives.md:32:Szalay
-content/07.conclusions_perspectives.md:35:Zuckerberg
+content/07.conclusions_perspectives.md:29:Szalay
+content/07.conclusions_perspectives.md:32:Zuckerberg
 content/08.acknowledgements.md:3:Bonthuis
 content/08.acknowledgements.md:3:Ine
 content/08.acknowledgements.md:3:Romana
