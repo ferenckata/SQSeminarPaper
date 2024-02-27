@@ -4,7 +4,7 @@ binf
 bioinformatic
 bioinformatician
 bioinformaticians
-bioinformatics
+Bioinformatics
 Biostars
 Bonthuis
 codebase
@@ -32,7 +32,7 @@ Kanewala
 Katalin
 Kuijjer
 Kumar
-ladislav
+Ladislav
 Marieke
 Mathelier
 modularity
