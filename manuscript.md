@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-27" />
   <meta name="citation_publication_date" content="2024-02-27" />
   <meta property="article:published_time" content="2024-02-27" />
-  <meta name="dc.modified" content="2024-02-27T10:06:59+00:00" />
-  <meta property="article:modified_time" content="2024-02-27T10:06:59+00:00" />
+  <meta name="dc.modified" content="2024-02-27T10:20:42+00:00" />
+  <meta property="article:modified_time" content="2024-02-27T10:20:42+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/b3304316dc5a16ff0519d003f6d24ad60141ca2b/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b3304316dc5a16ff0519d003f6d24ad60141ca2b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/b3304316dc5a16ff0519d003f6d24ad60141ca2b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/b3304316dc5a16ff0519d003f6d24ad60141ca2b/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@b330431](https://github.com/ferenckata/SQSeminarPaper/tree/b3304316dc5a16ff0519d003f6d24ad60141ca2b)
+from [ferenckata/SQSeminarPaper@13c5a58](https://github.com/ferenckata/SQSeminarPaper/tree/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2)
 on February 27, 2024.
 </em></small>
 
