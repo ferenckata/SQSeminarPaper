@@ -40,7 +40,13 @@ Following the standard methods of literature review, here we list the phrases an
 
 ## SUPPLEMENTARY FIGURES ##
 
-TODO: code examples
+### Modularization ###
+
+![***Figure 6:*** **Improving the modularization of a large codebase: previous**
+In the previous design the files were arranged by on their type. The numbers denote the number of files in each directory represented by the rectangle. mk: makefile](content/images/modularization_jaspar_old.svg "Previous structure"){height="500px"}
+
+![***Figure 7:*** **Improving the modularization of a large codebase: current**
+In the current design the files are arranged by their function. The numbers denote the number of files in each directory represented by the rectangle. pfm: position frequency matrix](content/images/modularization_jaspar_old.svg "Current structure"){height="500px"}
 
 ## SUPPLEMENTARY TABLES ##
 
