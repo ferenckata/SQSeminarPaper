@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2024-02-21'
+date-meta: '2024-02-27'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
-  <meta name="dc.date" content="2024-02-21" />
-  <meta name="citation_publication_date" content="2024-02-21" />
-  <meta property="article:published_time" content="2024-02-21" />
-  <meta name="dc.modified" content="2024-02-21T08:21:24+00:00" />
-  <meta property="article:modified_time" content="2024-02-21T08:21:24+00:00" />
+  <meta name="dc.date" content="2024-02-27" />
+  <meta name="citation_publication_date" content="2024-02-27" />
+  <meta property="article:published_time" content="2024-02-27" />
+  <meta name="dc.modified" content="2024-02-27T09:51:36+00:00" />
+  <meta property="article:modified_time" content="2024-02-27T09:51:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/2547bc2e3ad5049481f0a1bf379430ce186ccd7e/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/2547bc2e3ad5049481f0a1bf379430ce186ccd7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/2547bc2e3ad5049481f0a1bf379430ce186ccd7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/d9c8314a5face7aae4d7c00795f856fcd5a04cc3/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/d9c8314a5face7aae4d7c00795f856fcd5a04cc3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/d9c8314a5face7aae4d7c00795f856fcd5a04cc3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/2547bc2e3ad5049481f0a1bf379430ce186ccd7e/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/d9c8314a5face7aae4d7c00795f856fcd5a04cc3/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@2547bc2](https://github.com/ferenckata/SQSeminarPaper/tree/2547bc2e3ad5049481f0a1bf379430ce186ccd7e)
-on February 21, 2024.
+from [ferenckata/SQSeminarPaper@d9c8314](https://github.com/ferenckata/SQSeminarPaper/tree/d9c8314a5face7aae4d7c00795f856fcd5a04cc3)
+on February 27, 2024.
 </em></small>
 
 

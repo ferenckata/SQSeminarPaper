@@ -4,7 +4,7 @@ binf
 bioinformatic
 bioinformatician
 bioinformaticians
-Bioinformatics
+bioinformatics
 Biostars
 Bonthuis
 codebase
@@ -47,7 +47,7 @@ priori
 protocoles
 pytest
 Rauluseviciute
-Reproducibility
+reproducibility
 reusability
 Romana
 SCA
