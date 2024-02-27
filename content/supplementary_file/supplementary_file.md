@@ -40,6 +40,14 @@ Following the standard methods of literature review, here we list the phrases an
 
 ## SUPPLEMENTARY FIGURES ##
 
+### Dependency management ###
+
+There are two angles of dependency management we give example to here.
+First, we share a previous and current version of a code where the placing of the package imports are improved.
+This code also can be seen as an example for modularization with the rearrangement of the linear script to setup and functions.
+Furthermore, we improved the documentation and usability with using named arguments instead of positional ones.
+Second, we share an example of documenting the requirements where the responsibility of installing the software is moved from the user to the developer.
+
 ### Modularization ###
 
 ![***Figure 6:*** **Improving the modularization of a large codebase: previous.**
