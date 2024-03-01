@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2024-03-01" />
   <meta name="citation_publication_date" content="2024-03-01" />
   <meta property="article:published_time" content="2024-03-01" />
-  <meta name="dc.modified" content="2024-03-01T15:30:08+00:00" />
-  <meta property="article:modified_time" content="2024-03-01T15:30:08+00:00" />
+  <meta name="dc.modified" content="2024-03-01T15:49:38+00:00" />
+  <meta property="article:modified_time" content="2024-03-01T15:49:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/6c8d72e5c16829f68633b68842f9eab2ab33b5d4/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/6c8d72e5c16829f68633b68842f9eab2ab33b5d4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/6c8d72e5c16829f68633b68842f9eab2ab33b5d4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/6c8d72e5c16829f68633b68842f9eab2ab33b5d4/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@6c8d72e](https://github.com/ferenckata/SQSeminarPaper/tree/6c8d72e5c16829f68633b68842f9eab2ab33b5d4)
+from [ferenckata/SQSeminarPaper@088a5ac](https://github.com/ferenckata/SQSeminarPaper/tree/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b)
 on March 1, 2024.
 </em></small>
 
@@ -524,6 +524,7 @@ In the next sections we discuss how software quality seminars and code reviews h
 ### Modularization ###
 
 The first example we give is the shift in our work towards increased modularization.
+Modular design is one of the most common approach for team programming to ensure maintainability and extensibility of a software product.
 We understood from the guidelines and experiences from within the team that moving from unstructured scripts to organized code with functions brings several benefits at a low cost.
 Understanding the ways we can improve code organization was a theme we touched several times during the software quality seminars.
 In parallel, during code reviews we encountered and discussed several examples where modularization was implemented.
@@ -549,6 +550,7 @@ This definition would potentially include the majority of code written by bioinf
 ### Testing ###
 
 As highlighted in the literature [@doi:10.48550/arXiv.1804.01954], testing is a difficult concept for scientific software.
+However, it is also a central concept in team programming, as test coverage increases trust and allows the safe addition of new features by any member.
 We revisited testing multiple times: discussed debugging tools, how to write unit tests in python (```pytest``` and ```unittest```) and R (```testthat```), what type of functions can be tested, why automated tests are beneficial and how to implement them via continuous integration services (e.g. GitHub Actions).
 The main difficulty was for us to see testing as software testing beyond the validation of the scientific feature of the software that can be shown on a small test data.
 Similarly to modularization, a recurring question was when to start adding tests.
@@ -560,6 +562,7 @@ This part is actually a scientific endeavour, when edge cases can be thought of 
 ### Dependency management ###
 
 Given the large number of dependencies, even whole ecosystems of tools, dependency management is one of the most important task to ensure reproducibility of the findings.
+In a team setting, where all members need to be able to run the code, it is natural to create identical environments for all developers.
 In the software quality seminars we covered: container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}], R package development, and Anaconda [@doi:https://www.anaconda.com/].
 We established the DockerHub account for our group [@{https://hub.docker.com/u/cbgr}] to share our custom containers.
 This resource also enables easy installation of our Snakemake pipelines across different servers.
