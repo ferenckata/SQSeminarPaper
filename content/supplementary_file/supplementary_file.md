@@ -41,10 +41,10 @@ Following the standard methods of literature review, here we list the phrases an
 
 ### Modularization ###
 
-![***Figure 3:*** **Improving the modularization of a large codebase: previous.**
+![***Supplementary Figure 3:*** **Improving the modularization of a large codebase: previous.**
 In the previous design the files were arranged by on their type. The numbers denote the number of files in each directory represented by the rectangle. mk: makefile](content/images/modularization_jaspar_old.svg "Previous structure"){height="300px"}
 
-![***Figure 4:*** **Improving the modularization of a large codebase: current.**
+![***Supplementary Figure 4:*** **Improving the modularization of a large codebase: current.**
 In the current design the files are arranged by their function. The numbers denote the number of files in each directory represented by the rectangle. The number of files are different due to added features and changes beyond the organization. pfm: position frequency matrix](content/images/modularization_jaspar_new.svg "Current structure"){height="500px"}
 
 
@@ -168,10 +168,10 @@ First, we share a previous and current version of a code where the placing of th
 This code also can be seen as an example for modularization with the rearrangement of the linear script to setup and functions.
 Furthermore, we improved the documentation and usability with using named arguments instead of positional ones.
 
-![***Figure 5:*** **An example for dependency management within the code: before.**
+![***Supplementary Figure 5:*** **An example for dependency management within the code: before.**
 ](content/images/SQpaper_figures_dependency_before.svg "Within code dependencies: placement according to the flow of the ideas"){height="500px"}
 
-![***Figure 6:*** **An example for dependency management within the code: after.**
+![***Supplementary Figure 6:*** **An example for dependency management within the code: after.**
 ](content/images/SQpaper_figures_dependency_after.svg "Within code dependencies: placement following refactoring to enhance reusability and clarity"){height="500px"}
 
 Second, we share an example of documenting the requirements where the responsibility of installing the software is moved from the user to the developer.
@@ -243,7 +243,7 @@ ENV R_LIBS=${R_LIBS}:/opt/software
 
 ## SUPPLEMENTARY TABLES ##
 
-TODO: SQ attributes description
+***Supplementary Table 1:*** **Software quality attributes and their description** TODO
 
 ***Supplementary Table 2:*** **Examples of software quality meeting topics** This table contains examples of the topics of past software quality meetings. It has been organise to follow the same categories as **Table 1**.
 <table>
