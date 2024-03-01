@@ -4,7 +4,7 @@ binf
 bioinformatic
 bioinformatician
 bioinformaticians
-Bioinformatics
+bioinformatics
 Biostars
 Bonthuis
 codebase
@@ -18,7 +18,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-Hovan
+hovan
 Ieva
 ievarau
 Incentivizing
@@ -29,7 +29,7 @@ Kanewala
 Katalin
 Kuijjer
 Kumar
-ladislav
+Ladislav
 Marieke
 Mathelier
 modularity
