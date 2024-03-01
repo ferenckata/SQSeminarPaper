@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2024-02-27'
+date-meta: '2024-03-01'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
-  <meta name="dc.date" content="2024-02-27" />
-  <meta name="citation_publication_date" content="2024-02-27" />
-  <meta property="article:published_time" content="2024-02-27" />
-  <meta name="dc.modified" content="2024-02-27T10:20:42+00:00" />
-  <meta property="article:modified_time" content="2024-02-27T10:20:42+00:00" />
+  <meta name="dc.date" content="2024-03-01" />
+  <meta name="citation_publication_date" content="2024-03-01" />
+  <meta property="article:published_time" content="2024-03-01" />
+  <meta name="dc.modified" content="2024-03-01T15:01:46+00:00" />
+  <meta property="article:modified_time" content="2024-03-01T15:01:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,7 +86,7 @@ This manuscript
 ([permalink](https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/))
 was automatically generated
 from [ferenckata/SQSeminarPaper@13c5a58](https://github.com/ferenckata/SQSeminarPaper/tree/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2)
-on February 27, 2024.
+on March 1, 2024.
 </em></small>
 
 
