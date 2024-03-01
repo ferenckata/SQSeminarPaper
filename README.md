@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/ferenckata/SQSeminarPaper/tree/gh-pages) branch hosts the contents of this directory at <https://ferenckata.github.io/SQSeminarPaper/>.
-The permalink for this webpage version is <https://ferenckata.github.io/SQSeminarPaper/v/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2/>.
+The permalink for this webpage version is <https://ferenckata.github.io/SQSeminarPaper/v/6c8d72e5c16829f68633b68842f9eab2ab33b5d4/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://ferenckata.github.io/SQSeminarPaper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`13c5a58be182630c1e3b18a3bc9d7ab9e134dce2`](https://github.com/ferenckata/SQSeminarPaper/commit/13c5a58be182630c1e3b18a3bc9d7ab9e134dce2).
+[`6c8d72e5c16829f68633b68842f9eab2ab33b5d4`](https://github.com/ferenckata/SQSeminarPaper/commit/6c8d72e5c16829f68633b68842f9eab2ab33b5d4).
