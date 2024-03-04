@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   sodipodi:docname="old_version.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.64605143"
+     inkscape:cx="205.09203"
+     inkscape:cy="445.01101"
+     inkscape:window-width="1920"
+     inkscape:window-height="973"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1"><rect
+       x="137.20931"
+       y="489.86649"
+       width="591.29893"
+       height="228.69838"
+       id="rect4" /><rect
+       x="137.58317"
+       y="163.17211"
+       width="487.79046"
+       height="260.25188"
+       id="rect3" /></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       d="m 197.24717,57.151121 c -0.001,-1.451149 1.24569,-2.723185 -1.58874,-3.108257 L 164.95229,26.294037 c -1.22583,-0.753658 -3.07945,-1.191258 -5.03746,-1.189235 H 32.177838 c -6.485714,-0.005 -8.041793,-0.525121 -8.031686,2.676341 V 160.16333 c -0.01011,3.20146 -0.194402,1.17561 1.681686,0.95186 H 195.29143 c 1.9318,0.31354 2.28288,2.10945 1.95574,-1.48977 V 57.797676 Z M 166.43068,31.588399 190.81871,54.556423 H 166.43068 Z M 26.138381,159.50567 V 27.781143 H 163.34361 v 26.764171 c 2e-5,1.796224 1.36242,3.252349 5.00132,3.252362 h 26.9465 V 159.50567 Z"
+       id="path1"
+       style="stroke-width:1.28233"
+       sodipodi:nodetypes="cccccccccccccccccccccccc" /><text
+       xml:space="preserve"
+       style="font-size:5.64444px;fill:#000000;stroke-width:0.264583"
+       x="34.726395"
+       y="50.929466"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="34.726395"
+         y="50.929466">Function block</tspan></text><text
+       xml:space="preserve"
+       style="font-size:5.64444px;fill:#000000;stroke-width:0.264583"
+       x="34.726395"
+       y="124.35844"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="34.726395"
+         y="124.35844">Execution block</tspan></text><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,6.0171745,10.935904)"
+       id="text3"
+       style="font-size:16px;white-space:pre;shape-inside:url(#rect3);fill:#000000"><tspan
+         x="137.58398"
+         y="177.32812"
+         id="tspan6">def preprocess_step1():
+</tspan><tspan
+         x="137.58398"
+         y="197.32812"
+         id="tspan7">    ...
+</tspan><tspan
+         x="137.58398"
+         y="217.32812"
+         id="tspan8">    return modified_tbl
+</tspan><tspan
+         x="137.58398"
+         y="237.32812"
+         id="tspan9">
+</tspan><tspan
+         x="137.58398"
+         y="257.32812"
+         id="tspan10">def analysis_step1():
+</tspan><tspan
+         x="137.58398"
+         y="277.32812"
+         id="tspan11">    ...
+</tspan><tspan
+         x="137.58398"
+         y="297.32812"
+         id="tspan12">    return summary_tbl
+</tspan><tspan
+         x="137.58398"
+         y="317.32812"
+         id="tspan13">
+</tspan><tspan
+         x="137.58398"
+         y="337.32812"
+         id="tspan14">def visualisation_step1():
+</tspan><tspan
+         x="137.58398"
+         y="357.32812"
+         id="tspan15">    ...
+</tspan><tspan
+         x="137.58398"
+         y="377.32812"
+         id="tspan16">    return plot</tspan></text><text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text4"
+       style="font-size:16px;white-space:pre;shape-inside:url(#rect4);fill:#000000"><tspan
+         x="137.20898"
+         y="504.02344"
+         id="tspan17">processed_data_tbl = preprocess_step1(raw_data_tbl)
+</tspan><tspan
+         x="137.20898"
+         y="524.02344"
+         id="tspan18">
+</tspan><tspan
+         x="137.20898"
+         y="544.02344"
+         id="tspan19">summary_tbl = analysis_step1(processed_data_tbl)
+</tspan><tspan
+         x="137.20898"
+         y="564.02344"
+         id="tspan20">
+</tspan><tspan
+         x="137.20898"
+         y="584.02344"
+         id="tspan21">plot_obj = visualisation_step1(summary_tbl)
+</tspan><tspan
+         x="137.20898"
+         y="604.02344"
+         id="tspan22">
+</tspan></text><text
+       xml:space="preserve"
+       style="font-size:7.7611px;fill:#000000;stroke-width:0.264583"
+       x="76.177879"
+       y="37.503021"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="stroke-width:0.264583"
+         x="76.177879"
+         y="37.503021">Analysis_script.py</tspan></text></g></svg>
