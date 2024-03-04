@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2024-03-01'
+date-meta: '2024-03-04'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
-  <meta name="dc.date" content="2024-03-01" />
-  <meta name="citation_publication_date" content="2024-03-01" />
-  <meta property="article:published_time" content="2024-03-01" />
-  <meta name="dc.modified" content="2024-03-01T15:49:38+00:00" />
-  <meta property="article:modified_time" content="2024-03-01T15:49:38+00:00" />
+  <meta name="dc.date" content="2024-03-04" />
+  <meta name="citation_publication_date" content="2024-03-04" />
+  <meta property="article:published_time" content="2024-03-04" />
+  <meta name="dc.modified" content="2024-03-04T19:45:51+00:00" />
+  <meta property="article:modified_time" content="2024-03-04T19:45:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/92a778ac69f2ee85c2ffea5abe048594ea0858e6/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/92a778ac69f2ee85c2ffea5abe048594ea0858e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/92a778ac69f2ee85c2ffea5abe048594ea0858e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/92a778ac69f2ee85c2ffea5abe048594ea0858e6/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@088a5ac](https://github.com/ferenckata/SQSeminarPaper/tree/088a5acb70b0718a0ffa66b8d0fabe64265e5b2b)
-on March 1, 2024.
+from [ferenckata/SQSeminarPaper@92a778a](https://github.com/ferenckata/SQSeminarPaper/tree/92a778ac69f2ee85c2ffea5abe048594ea0858e6)
+on March 4, 2024.
 </em></small>
 
 
@@ -563,7 +563,7 @@ This part is actually a scientific endeavour, when edge cases can be thought of 
 
 Given the large number of dependencies, even whole ecosystems of tools, dependency management is one of the most important task to ensure reproducibility of the findings.
 In a team setting, where all members need to be able to run the code, it is natural to create identical environments for all developers.
-In the software quality seminars we covered: container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}], R package development, and Anaconda [@doi:https://www.anaconda.com/].
+In the software quality seminars we covered: container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}], R package development, and Anaconda [@{https://www.anaconda.com/}].
 We established the DockerHub account for our group [@{https://hub.docker.com/u/cbgr}] to share our custom containers.
 This resource also enables easy installation of our Snakemake pipelines across different servers.
 
