@@ -325,7 +325,7 @@ Below is a high level overview of the software quality attributes of the ISO 250
             <td>How to improve figures</td>
         </tr>
         <tr>
-            <td rowspan=6>Advanced software development</td>
+            <td rowspan=8>Advanced software development</td>
             <td>Design patterns</td>
             <td>Review the concept of design patterns through a set of common examples</td>
         </tr>
@@ -358,7 +358,7 @@ Below is a high level overview of the software quality attributes of the ISO 250
             <td>Introduction to error handling and expecting the unexpected</td>
         </tr>
         <tr>
-            <td rowspan=6>Software development process</td>
+            <td rowspan=5>Software development process</td>
             <td>Code review</td>
             <td>Reviewing a github repository and discussing how to make your code understandable for others</td>
         </tr>
