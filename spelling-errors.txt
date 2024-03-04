@@ -18,7 +18,7 @@ Ferenc
 ferenckata
 Hagan
 hoc
-hovan
+Hovan
 Ieva
 ievarau
 Incentivizing
@@ -29,7 +29,7 @@ Kanewala
 Katalin
 Kuijjer
 Kumar
-ladislav
+Ladislav
 Marieke
 Mathelier
 modularity
@@ -41,7 +41,7 @@ performant
 princeps
 priori
 Rauluseviciute
-reproducibility
+Reproducibility
 reusability
 Romana
 SCA
