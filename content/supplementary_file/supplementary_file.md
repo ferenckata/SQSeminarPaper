@@ -35,11 +35,19 @@ author:
 
 ## SUPPLEMENTARY METHODS ##  
 
-Following the standard methods of literature review, here we list the phrases and platforms of search. The literature search was performed in multiple iterations using Google (to include grey literature), PubMed and Google Scholar based on phrases “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”, "scientific software development", "software engineering bioinformatics" and "bioinformatics software recommendations" throughout 2023. Additionally, relevant articles were selected based on the snowball effect from the references of the initial publications.
+Following the standard methods of literature review, here we list the phrases and platforms of search. 
+The literature search was performed in multiple iterations using Google (to include grey literature), PubMed and Google Scholar based on phrases “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”, "scientific software development", "software engineering bioinformatics" and "bioinformatics software recommendations" throughout 2023. 
+Additionally, relevant articles were selected based on the snowball effect from the references of the initial publications.
 
 ## SUPPLEMENTARY FIGURES ##
 
 ### Modularization ###
+
+![***Supplementary Figure 1:*** **Improving the modularization of a small codebase: previous.**
+In the previous design a single script was used that processed data in one-off manner without consideration for extendability.](content/images/small_code_previous.svg "Previous structure"){height="1000px"}
+
+![***Supplementary Figure 2:*** **Improving the modularization of a small codebase: current.**
+In the current design we separate different aspects of the analysis into dedicated modules, which can be more robustly be extended.](content/images/small_code_current.svg "Current structure"){height="1000px"}
 
 ![***Supplementary Figure 3:*** **Improving the modularization of a large codebase: previous.**
 In the previous design the files were arranged by on their type. The numbers denote the number of files in each directory represented by the rectangle. mk: makefile](content/images/modularization_jaspar_old.svg "Previous structure"){height="300px"}
@@ -53,19 +61,13 @@ In the current design the files are arranged by their function. The numbers deno
 This is an example of testing, represented by a subset of test used by the SPONGE package.
 The unit tests check the correctness of individual functions.
 Some of the tests shown test the plogp function, which calculates the value of p * log2(p) while treating the zero case correctly.
-Also tested is the calculation of the information content for individual motifs in the calculate_ic function.
-The integration tests check that the entire workflow produces the expected output, effectively checking that the components work well together.
-In this case, the full functionality of SPONGE with the default parameters is checked.
-
-Selected content of `tests/test_sponge.py` is shown below.
+Selected content of `tests/test_helper_functions.py` is shown below.
 
 ```
 import pytest
 
-### Unit tests ###
-
 # Helper functions
-import sponge.helper_functions as helper_f
+import sponge.helper_functions
 
 # parametrize allows testing multiple inputs without code duplication
 @pytest.mark.parametrize("input, expected_output", [
@@ -73,56 +75,13 @@ import sponge.helper_functions as helper_f
     (0.5, -0.5),
     (1, 0),
 ])
+
 def test_plogp(input, expected_output):
-    assert helper_f.plogp(input) == expected_output
+    assert helper_functions.plogp(input) == expected_output
 ```
 
-```
-import pytest
-from sponge.test_motifs import *
-
-def test_calculate_ic_no_info(no_info_motif):
-    assert helper_f.calculate_ic(no_info_motif) == 0
-
-
-def test_calculate_ic_all_the_same(all_A_motif):
-    # Length of the test motif is 6, so expected value is 2 * 6 = 12
-    assert helper_f.calculate_ic(all_A_motif) == 12
-
-
-def test_calculate_ic_SOX2(SOX2_motif):
-    assert (helper_f.calculate_ic(SOX2_motif) == 
-        pytest.approx(12.95, abs=0.01))
-```
-
-```
-### Integration tests ###
-import os
-import pytest
-
-from sponge.sponge import Sponge
-
-# The test is marked as slow because the download of the bigbed file takes 
-# a lot of time and the filtering is also time consuming unless parallelised
-@pytest.mark.slow
-def test_full_default_workflow(tmp_path):
-    # Tests the full SPONGE workflow with default values
-
-    ppi_output = os.path.join(tmp_path, 'ppi_prior.tsv')
-    motif_output = os.path.join(tmp_path, 'motif_prior.tsv')
-
-    sponge_obj = Sponge(
-        run_default=True,
-        temp_folder=tmp_path,
-        ppi_outfile=ppi_output,
-        motif_outfile=motif_output,
-    )
-
-    assert os.path.exists(ppi_output)
-    assert os.path.exists(motif_output)
-```
-
-The motifs used by the tests are defined in a separate file and accessible as pytest fixtures.
+Also tested is the calculation of the information content for individual motifs in the calculate_ic function.
+The motifs used by the tests are defined in a separate file `test_motifs` and accessible as pytest fixtures.
 
 ```
 import pytest
@@ -161,6 +120,58 @@ def SOX2_motif():
     yield SOX2_motif
 ```
 
+Selected content of `tests/test_helper_functions.py` is shown below.
+
+```
+import pytest
+from test_motifs import *
+from sponge.helper_functions import calculate_ic
+
+def test_calculate_ic_no_info(no_info_motif):
+    assert calculate_ic(no_info_motif) == 0
+
+
+def test_calculate_ic_all_the_same(all_A_motif):
+    # Length of the test motif is 6, so expected value is 2 * 6 = 12
+    assert calculate_ic(all_A_motif) == 12
+
+
+def test_calculate_ic_SOX2(SOX2_motif):
+    assert calculate_ic(SOX2_motif) == pytest.approx(12.95, abs=0.01)
+```
+
+The integration tests check that the entire workflow produces the expected output, effectively checking that the components work well together.
+In this case, the full functionality of SPONGE with the default parameters is checked.
+Selected content of `tests/test_sponge.py` is shown below.
+
+```
+### Integration tests ###
+import os
+import pytest
+
+from sponge.sponge import Sponge
+
+# The test is marked as slow because the download of the bigbed file takes 
+# a lot of time and the filtering is also time consuming unless parallelised
+@pytest.mark.slow
+def test_full_default_workflow(tmp_path):
+    # Tests the full SPONGE workflow with default values
+
+    ppi_output = os.path.join(tmp_path, 'ppi_prior.tsv')
+    motif_output = os.path.join(tmp_path, 'motif_prior.tsv')
+
+    sponge_obj = Sponge(
+        run_default=True,
+        temp_folder=tmp_path,
+        ppi_outfile=ppi_output,
+        motif_outfile=motif_output,
+    )
+
+    assert os.path.exists(ppi_output)
+    assert os.path.exists(motif_output)
+```
+
+
 ### Dependency management ###
 
 There are two angles of dependency management we give example to here.
@@ -168,11 +179,11 @@ First, we share a previous and current version of a code where the placing of th
 This code also can be seen as an example for modularization with the rearrangement of the linear script to setup and functions.
 Furthermore, we improved the documentation and usability with using named arguments instead of positional ones.
 
-![***Supplementary Figure 5:*** **An example for dependency management within the code: before.**
-](content/images/SQpaper_figures_dependency_before.svg "Within code dependencies: placement according to the flow of the ideas"){height="500px"}
+![***Supplementary Figure 5:*** **An example for dependency management within the code: previous**
+](content/images/SQpaper_figures_dependency_before.svg "Within code dependencies: placement according to the flow of the ideas"){height="600px"}
 
-![***Supplementary Figure 6:*** **An example for dependency management within the code: after.**
-](content/images/SQpaper_figures_dependency_after.svg "Within code dependencies: placement following refactoring to enhance reusability and clarity"){height="500px"}
+![***Supplementary Figure 6:*** **An example for dependency management within the code: current**
+](content/images/SQpaper_figures_dependency_after.svg "Within code dependencies: placement following refactoring to enhance reusability and clarity"){height="600px"}
 
 Second, we share an example of documenting the requirements where the responsibility of installing the software is moved from the user to the developer.
 README-based solution: the user is required to install the dependencies, version and source might be given but compatibility following updates is not ensured.
@@ -243,7 +254,20 @@ ENV R_LIBS=${R_LIBS}:/opt/software
 
 ## SUPPLEMENTARY TABLES ##
 
-***Supplementary Table 1:*** **Software quality attributes and their description** TODO
+***Supplementary Table 1:*** **Software quality attributes and their description**
+
+Below is a high level overview of the software quality attributes of the ISO 25010 standard.
+
+| Attribute | Description |
+| --------- | ----------- |
+| Functional Suitability | Whether the software functions as expected. |
+| Performance Efficiency | Characterizes how well does the software product utilizes computational resources. |
+| Compatibility | Describes how well does the software can work together with other components, e.g. other tools. |
+| Usability | The quality of the software from the perspective of the experience of the user. |
+| Reliability | A software product to behave as expected under pressure, tolerate failures, and recover quickly. |
+| Security | A software product to protect information and ensure authorized access only. |
+| Maintainability | The ease at which new features can be added and bugs can be fixed. |
+| Portability | The ease of moving the system onto a different environment, such as installing to a new device. |
 
 ***Supplementary Table 2:*** **Examples of software quality meeting topics** This table contains examples of the topics of past software quality meetings. It has been organise to follow the same categories as **Table 1**.
 <table>
@@ -256,39 +280,135 @@ ENV R_LIBS=${R_LIBS}:/opt/software
     </thead>
     <tbody>
         <tr>
-            <td>Software development 101</td>
-            <td>To be identified</td>
-            <td>To be filled</td>
+            <td rowspan=11>Software development 101</td>
+            <td>Big O notation, Stack and Queue</td>
+            <td>Review of Data Structures and Algorithms</td>
         </tr>
         <tr>
-            <td>Advanced software development</td>
+            <td>Union Find and Hash Table</td>
+            <td>Review of Data Structures and Algorithms</td>
+        </tr>
+        <tr>
+            <td>Heaps and Binary Search Trees</td>
+            <td>Review of Data Structures and Algorithms</td>
+        </tr>
+        <tr>
+            <td>Graphs, graph algorithms</td>
+            <td>Review of Data Structures and Algorithms</td>
+        </tr>
+        <tr>
+            <td>Dynamic programming and Sorting</td>
+            <td>Review of Data Structures and Algorithms</td>
+        </tr>
+        <tr>
+            <td>Databases</td>
+            <td>Review of Database solutions</td>
+        </tr>
+        <tr>
+            <td>Introduction to sed</td>
+            <td>Understanding command line tricks used in bioinformatics</td>
+        </tr>
+        <tr>
+            <td>Introduction to awk</td>
+            <td>Understanding command line tricks used in bioinformatics</td>
+        </tr>
+        <tr>
+            <td>S4 R objects</td>
+            <td>Understand class objects in R</td>
+        </tr>
+        <tr>
+            <td>Snakemake</td>
+            <td>How to build pipelines using Snakemake workflow manager</td>
+        </tr>
+        <tr>
+            <td>Plotting</td>
+            <td>How to improve figures</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Advanced software development</td>
             <td>Design patterns</td>
-            <td>To be filled</td>
+            <td>Review the concept of design patterns through a set of common examples</td>
         </tr>
         <tr>
-            <td>Software development process</td>
+            <td>Class diagrams</td>
+            <td>Unified Modeling Language and its usage for software analysis and design</td>
+        </tr>
+        <tr>
+            <td>The Pragmatic Programmer</td>
+            <td>Book review</td>
+        </tr>
+        <tr>
+            <td>Inheritance and decorators</td>
+            <td>Review of miscellaneous concepts in object oriented programming in Python</td>
+        </tr>
+        <tr>
+            <td>Introduction to software architecture</td>
+            <td>How to handle medium to large sized code bases</td>
+        </tr>
+        <tr>
+            <td>Parallelization in R</td>
+            <td>Review of methods to parallel processing in R</td>
+        </tr>
+        <tr>
+            <td>Parallelization in Python</td>
+            <td>Review of methods to parallel processing in Python</td>
+        </tr>
+        <tr>
+            <td>Error handling and defensive programming</td>
+            <td>Introduction to error handling and expecting the unexpected</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Software development process</td>
             <td>Code review</td>
-            <td>To be filled</td>
+            <td>Reviewing a github repository and discussing how to make your code understandable for others</td>
         </tr>
         <tr>
-            <td>Testing and validation</td>
-            <td>Why testing?</td>
-            <td>To be filled</td>
+            <td>Git and GitFlow</td>
+            <td>Understand the version controlling with Git. Branching and merging</td>
         </tr>
         <tr>
-            <td>Reproducibility</td>
-            <td>Dependency management</td>
-            <td>To be filled</td>
+            <td>R package development</td>
+            <td>How to create an R package to share with the community</td>
         </tr>
         <tr>
-            <td>Documentation</td>
-            <td>On Pages and Reports</td>
-            <td>To be filled</td>
+            <td>Technical debt</td>
+            <td>Understand the concept of technical debt and discuss the impact on our work</td>
+        </tr>
+        <tr>
+            <td>A project management example: JASPAR database update codebase</td>
+            <td>Software development practices in a team settings using requirement elicitation, JIRA, docstring, code reviews, testing and more</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Testing and validation</td>
+            <td>Debugging and testing</td>
+            <td>Basic introduction about tools and methods for catching bugs</td>
+        </tr>
+        <tr>
+            <td>Testing workshop</td>
+            <td>Try out refactoring and test writing of our tools</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Reproducibility</td>
+            <td>Docker & conda</td>
+            <td>Discuss platforms and tools for dependency management</td>
+        </tr>
+        <tr>
+            <td>Docker & continuous integration</td>
+            <td>Workshop on how to use docker and GitHub Actions</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Documentation</td>
+            <td>RMarkdown</td>
+            <td>Basic aspects of writing a report in markdown with text, tables and plots.</td>
+        </tr>
+        <tr>
+            <td>GitHub and Bitbucket pages</td>
+            <td>Extended online documentation of tools and research results</td>
         </tr>
         <tr>
             <td>Community effort</td>
-            <td>To be identified / we never covered it probably</td>
-            <td>To be filled</td>
+            <td>Sustainable computation in bioinformatics</td>
+            <td>Get to know our computational footprint. How to choose "green" software.</td>
         </tr>
     </tbody>
 </table> 
