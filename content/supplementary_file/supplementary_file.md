@@ -3,6 +3,7 @@ title: "Improving software quality in bioinformatics through teamwork"
 institute:
   - ncmm: Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
   - ouh: Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway
+  - cb: Center for Bioinformatics, Department of Informatics, Faculty of Mathematics and Natural Sciences, University of Oslo, Oslo, Norway
 author:
   - Katalin Ferenc:
       institute:
@@ -24,6 +25,7 @@ author:
       institute:
         - ncmm
         - ouh
+        - cb
       correspondence: "yes"
       email: anthony.mathelier@ncmm.uio.no
 ---
@@ -33,35 +35,57 @@ author:
 
 # SUPPLEMENTARY FILE #  
 
+<div style="page-break-after: always;"></div>
+
 ## SUPPLEMENTARY METHODS ##  
 
+<div style='text-align: justify;'>
 Following the standard methods of literature review, here we list the phrases and platforms of search. 
 The literature search was performed in multiple iterations using Google (to include grey literature), PubMed and Google Scholar based on phrases “guidelines for bioinformatics software”, “rules for biologists learning bioinformatics”, "scientific software development", "software engineering bioinformatics" and "bioinformatics software recommendations" throughout 2023. 
 Additionally, relevant articles were selected based on the snowball effect from the references of the initial publications.
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ## SUPPLEMENTARY FIGURES ##
 
 ### Modularization ###
 
-![***Supplementary Figure 1:*** **Improving the modularization of a small codebase: previous.**
-In the previous design a single script was used that processed data in one-off manner without consideration for extendability.](content/images/small_code_previous.svg "Previous structure"){height="1000px"}
+<div style='text-align: justify;'>
 
-![***Supplementary Figure 2:*** **Improving the modularization of a small codebase: current.**
-In the current design we separate different aspects of the analysis into dedicated modules, which can be more robustly be extended.](content/images/small_code_current.svg "Current structure"){height="1000px"}
+![***Supplementary Figure S1.*** **Improving the modularization of a small codebase: previous.** In the previous design a single script was used that processed data in one-off manner without consideration for extendability.](content/images/small_code_previous.svg)
 
-![***Supplementary Figure 3:*** **Improving the modularization of a large codebase: previous.**
-In the previous design the files were arranged by on their type. The numbers denote the number of files in each directory represented by the rectangle. mk: makefile](content/images/modularization_jaspar_old.svg "Previous structure"){height="300px"}
+</div>
 
-![***Supplementary Figure 4:*** **Improving the modularization of a large codebase: current.**
-In the current design the files are arranged by their function. The numbers denote the number of files in each directory represented by the rectangle. The number of files are different due to added features and changes beyond the organization. pfm: position frequency matrix](content/images/modularization_jaspar_new.svg "Current structure"){height="500px"}
+<div style='text-align: justify;'>
 
+![***Supplementary Figure S2.*** **Improving the modularization of a small codebase: current.** In the current design we separate different aspects of the analysis into dedicated modules, which can be more robustly be extended.](content/images/small_code_current.svg)
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
+<div style='text-align: justify;'>
+
+![***Supplementary Figure S3.*** **Improving the modularization of a large codebase: previous.** In the previous design the files were arranged by on their type. The numbers denote the number of files in each directory represented by the rectangle. mk: makefile](content/images/modularization_jaspar_old.svg)
+
+</div>
+
+<div style='text-align: justify;'>
+
+![***Supplementary Figure S4.*** **Improving the modularization of a large codebase: current.** In the current design the files are arranged by their function. The numbers denote the number of files in each directory represented by the rectangle. The number of files are different due to added features and changes beyond the organization. pfm: position frequency matrix](content/images/modularization_jaspar_new.svg)
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ### Testing ###
 
-This is an example of testing, represented by a subset of test used by the SPONGE package.
-The unit tests check the correctness of individual functions.
-Some of the tests shown test the plogp function, which calculates the value of p * log2(p) while treating the zero case correctly.
-Selected content of `tests/test_helper_functions.py` is shown below.
+<div style='text-align: justify;'>
+This is an example of testing, represented by a subset of test used by the SPONGE package. The unit tests check the correctness of individual functions.
+Some of the tests shown test the plogp function, which calculates the value of p * log2(p) while treating the zero case correctly. Selected content of `tests/test_helper_functions.py` is shown below.
+</div>
+
 
 ```
 import pytest
@@ -80,8 +104,10 @@ def test_plogp(input, expected_output):
     assert helper_functions.plogp(input) == expected_output
 ```
 
+<div style='text-align: justify;'>
 Also tested is the calculation of the information content for individual motifs in the calculate_ic function.
 The motifs used by the tests are defined in a separate file `test_motifs` and accessible as pytest fixtures.
+</div>
 
 ```
 import pytest
@@ -99,7 +125,6 @@ def no_info_motif():
 
     yield no_info_motif
 
-
 # A motif with perfect information
 @pytest.fixture
 def all_A_motif():
@@ -110,7 +135,6 @@ def all_A_motif():
 
     yield all_A_motif
 
-
 # A real motif for SOX2
 @pytest.fixture
 def SOX2_motif():
@@ -120,7 +144,9 @@ def SOX2_motif():
     yield SOX2_motif
 ```
 
+<div style='text-align: justify;'>
 Selected content of `tests/test_helper_functions.py` is shown below.
+</div>
 
 ```
 import pytest
@@ -130,19 +156,19 @@ from sponge.helper_functions import calculate_ic
 def test_calculate_ic_no_info(no_info_motif):
     assert calculate_ic(no_info_motif) == 0
 
-
 def test_calculate_ic_all_the_same(all_A_motif):
     # Length of the test motif is 6, so expected value is 2 * 6 = 12
     assert calculate_ic(all_A_motif) == 12
-
 
 def test_calculate_ic_SOX2(SOX2_motif):
     assert calculate_ic(SOX2_motif) == pytest.approx(12.95, abs=0.01)
 ```
 
+<div style='text-align: justify;'>
 The integration tests check that the entire workflow produces the expected output, effectively checking that the components work well together.
 In this case, the full functionality of SPONGE with the default parameters is checked.
 Selected content of `tests/test_sponge.py` is shown below.
+</div>
 
 ```
 ### Integration tests ###
@@ -171,22 +197,34 @@ def test_full_default_workflow(tmp_path):
     assert os.path.exists(motif_output)
 ```
 
+<div style="page-break-after: always;"></div>
 
 ### Dependency management ###
 
+<div style='text-align: justify;'>
 There are two angles of dependency management we give example to here.
 First, we share a previous and current version of a code where the placing of the package imports are improved.
 This code also can be seen as an example for modularization with the rearrangement of the linear script to setup and functions.
 Furthermore, we improved the documentation and usability with using named arguments instead of positional ones.
+</div>
 
-![***Supplementary Figure 5:*** **An example for dependency management within the code: previous**
-](content/images/SQpaper_figures_dependency_before.svg "Within code dependencies: placement according to the flow of the ideas"){height="600px"}
+<div style='text-align: justify;'>
 
-![***Supplementary Figure 6:*** **An example for dependency management within the code: current**
-](content/images/SQpaper_figures_dependency_after.svg "Within code dependencies: placement following refactoring to enhance reusability and clarity"){height="600px"}
+![***Supplementary Figure S5.*** **An example for dependency management within the code: previous.**](content/images/SQpaper_figures_dependency_before.png )
 
+</div>
+
+<div style='text-align: justify;'>
+
+![***Supplementary Figure S6.*** **An example for dependency management within the code: current.**](content/images/SQpaper_figures_dependency_after.png)
+
+</div>
+
+<div style='text-align: justify;'>
 Second, we share an example of documenting the requirements where the responsibility of installing the software is moved from the user to the developer.
 README-based solution: the user is required to install the dependencies, version and source might be given but compatibility following updates is not ensured.
+</div>
+
 ```
 ## Installation
 
@@ -251,12 +289,32 @@ ENV R_LIBS=${R_LIBS}:/opt/software
 
 ```
 
+<div style="page-break-after: always;"></div>
+
 
 ## SUPPLEMENTARY TABLES ##
 
-***Supplementary Table 1:*** **Software quality attributes and their description**
+<style>
+  table {
+    border-collapse: collapse;
+    color: #333;
+    margin: auto;
+  }
+  td, th {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+  }
+  th {
+    text-align: center;
+  }
+</style>
 
-Below is a high level overview of the software quality attributes of the ISO 25010 standard.
+
+<div style='text-align: justify;'>
+
+***Supplementary Table S1.*** **Software quality attributes and their description.** Below is a high level overview of the software quality attributes of the ISO 25010 standard.
+
+</div>
 
 | Attribute | Description |
 | --------- | ----------- |
@@ -269,7 +327,16 @@ Below is a high level overview of the software quality attributes of the ISO 250
 | Maintainability | The ease at which new features can be added and bugs can be fixed. |
 | Portability | The ease of moving the system onto a different environment, such as installing to a new device. |
 
-***Supplementary Table 2:*** **Examples of software quality meeting topics** This table contains examples of the topics of past software quality meetings. It has been organise to follow the same categories as **Table 1**.
+
+
+<div style="page-break-after: always;"></div>
+
+<div style='text-align: justify;'>
+
+***Supplementary Table S2.*** **Examples of software quality meeting topics.** This table contains examples of the topics of past software quality meetings. It has been organise to follow the same categories as Supplementary Table S1.
+
+</div>
+
 <table>
     <thead>
         <tr>
@@ -411,4 +478,4 @@ Below is a high level overview of the software quality attributes of the ISO 250
             <td>Get to know our computational footprint. How to choose "green" software.</td>
         </tr>
     </tbody>
-</table> 
+</table>
