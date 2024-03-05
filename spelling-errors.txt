@@ -3,7 +3,7 @@ Bieman
 binf
 bioinformatician
 bioinformaticians
-bioinformatics
+Bioinformatics
 Biostars
 Bonthuis
 codebase
@@ -16,7 +16,7 @@ extensibility
 Ferenc
 ferenckata
 Hagan
-Hovan
+hovan
 Ieva
 ievarau
 imprtant
@@ -32,7 +32,7 @@ ladislav
 Marieke
 Mathelier
 modularity
-modularization
+Modularization
 NCMM
 OOP
 optimality
