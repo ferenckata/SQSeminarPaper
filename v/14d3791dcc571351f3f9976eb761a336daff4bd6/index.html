@@ -1,0 +1,4055 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Katalin Ferenc" />
+  <meta name="author" content="Ieva Rauluseviciute" />
+  <meta name="author" content="Ladislav Hovan" />
+  <meta name="author" content="Vipin Kumar" />
+  <meta name="author" content="Marieke Kuijjer" />
+  <meta name="author" content="Anthony Mathelier" />
+  <meta name="dcterms.date" content="2024-03-05" />
+  <meta name="keywords" content="software quality, bioinformatics, teamwork" />
+  <title>Improving software quality in bioinformatics through teamwork</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
+  <meta name="dc.title" content="Improving software quality in bioinformatics through teamwork" />
+  <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
+  <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
+  <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
+  <meta name="dc.date" content="2024-03-05" />
+  <meta name="citation_publication_date" content="2024-03-05" />
+  <meta property="article:published_time" content="2024-03-05" />
+  <meta name="dc.modified" content="2024-03-05T12:27:51+00:00" />
+  <meta property="article:modified_time" content="2024-03-05T12:27:51+00:00" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Katalin Ferenc" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0002-3006-4297" />
+  <meta name="citation_author" content="Ieva Rauluseviciute" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0001-9253-8825" />
+  <meta name="citation_author" content="Ladislav Hovan" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0001-8847-9295" />
+  <meta name="citation_author" content="Vipin Kumar" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author" content="Marieke Kuijjer" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0001-6280-3130" />
+  <meta name="citation_author" content="Anthony Mathelier" />
+  <meta name="citation_author_institution" content="Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway" />
+  <meta name="citation_author_institution" content="Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway" />
+  <meta name="citation_author_orcid" content="0000-0001-5127-5459" />
+  <link rel="canonical" href="https://ferenckata.github.io/SQSeminarPaper/" />
+  <meta property="og:url" content="https://ferenckata.github.io/SQSeminarPaper/" />
+  <meta property="twitter:url" content="https://ferenckata.github.io/SQSeminarPaper/" />
+  <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
+  <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Improving software quality in bioinformatics through teamwork</h1>
+</header>
+<p><small><em>
+This manuscript
+(<a href="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/ferenckata/SQSeminarPaper/tree/14d3791dcc571351f3f9976eb761a336daff4bd6">ferenckata/SQSeminarPaper@14d3791</a>
+on March 5, 2024.
+</em></small></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Katalin Ferenc</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-3006-4297">0000-0002-3006-4297</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/ferenckata">ferenckata</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+</small></p></li>
+<li><p><strong>Ieva Rauluseviciute</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-9253-8825">0000-0001-9253-8825</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/ievarau">ievarau</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+</small></p></li>
+<li><p><strong>Ladislav Hovan</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-8847-9295">0000-0001-8847-9295</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/ladislav-hovan">ladislav-hovan</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+</small></p></li>
+<li><p><strong>Vipin Kumar</strong>
+<br>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/princeps091-binf">princeps091-binf</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+</small></p></li>
+<li><p><strong>Marieke Kuijjer</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-6280-3130">0000-0001-6280-3130</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway
+</small></p></li>
+<li><p><strong>Anthony Mathelier</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-5127-5459">0000-0001-5127-5459</a>
+<br>
+<small>
+Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, University of Oslo, 0318 Oslo, Norway; Department of Medical Genetics, Institute of Clinical Medicine, University of Oslo and Oslo University Hospital, Oslo, Norway
+</small></p></li>
+</ul>
+<div id="correspondence">
+<p>✉ — Correspondence possible via <a href="https://github.com/ferenckata/SQSeminarPaper/issues">GitHub Issues</a>
+or email to
+Katalin Ferenc &lt;k.t.ferenc@ncmm.uio.no&gt;,
+Anthony Mathelier &lt;anthony.mathelier@ncmm.uio.no&gt;.</p>
+</div>
+<h2 class="page_break_before" id="abstract">Abstract</h2>
+<p>Ever since the high-throughput techniques became a staple in science laboratories, the generation of computational algorithms and scientific software boomed.
+However, it has been noted that scientific software, and specifically bioinformatics software, lacks the quality standards of software development.
+The consequence of this is code hard to test (or independently verify), reuse, and maintain.
+We believe the root of inefficiency in implementing the best software development practices in the academic settings is the individualistic approach, which has traditionally been the norm for recognition of scientific achievements and by extension for software development.
+Software development is a collective effort in most software-heavy endeavours.
+The literature suggests that team work directly impacts code quality through knowledge sharing, collective software development, and established coding standards.
+In our computational biology research groups, we explored ways to sustainably involve all group members in learning, sharing, and discussing software, while maintaining the personal ownership of research projects and related software products.
+We found that through weekly meetings, within a year, regular members improved their coding skills, became more efficient bioinformaticians, and obtained a detailed knowledge about the work of their peers.
+Through within-group knowledge transfer, each member obtained knowledge about advanced concepts without investing significant amount of time.
+We can now quickly identify and access the expertise of each other, and we established standards to which new members are also required to comply.
+We advocate for improvement of software development culture within bioinformatics through local collective effort in computational biology groups or institutes with 3 or more bioinformaticians.
+Our three pillars of improving coding culture are: 1 - software quality seminars, 2 - code reviews, and 3 - resource sharing.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Bioinformatics and computational biology are indispensable components of research in biology.
+About 90% of researchers rely on results produced by scientific software <span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span>.
+In turn, scientists are heavily relying on inventions of computer science and software engineering, such as programming languages, programming paradigms, or container solutions.
+However, adopting practices from other fields is not without difficulties and scientific software development tends to lag behind.
+One implication of using outdated or poor software engineering practices is that incorrect software results in invalid scientific findings <span class="citation" data-cites="P66ASHG 10uv4hoEv">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
+Beyond that, even when the software performs as intended, researchers spend significant amount of time on software building using suboptimal practices which can further increase the necessary time investment in the future <span class="citation" data-cites="JfPzXAiK 1F0QZjj0U rJVIBuN0">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-1F0QZjj0U" role="doc-biblioref">4</a>,<a href="#ref-rJVIBuN0" role="doc-biblioref">5</a>]</span>.</p>
+<p>Good software development practices (e.g. pair programming, code reviews) have been established in other software-heavy endeavours to mitigate the risk of incorrect software solutions and save development time in the long run.
+However, bioinformaticians or more generally scientists working with scientific software often lack formal education in computer science or software development <span class="citation" data-cites="fJWFe93e 10uv4hoEv KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>.
+This hinders the adoption of good coding practices (e.g. unit tests, continuous integration).
+In addition, historically research projects are often carried by a single trainee and are part of academic degree evaluation.
+Thus, software developed for a particular project is mostly limited to the skills of an individual person, does not follow many software development guidelines, and can remain poorly maintained after the end of the project <span class="citation" data-cites="NwrEMaFV 161bJhAyl KdscyQBT 22CUqVv1">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-NwrEMaFV" role="doc-biblioref">8</a>,<a href="#ref-161bJhAyl" role="doc-biblioref">9</a>,<a href="#ref-22CUqVv1" role="doc-biblioref">10</a>]</span>.
+One way to expand the knowledge and application of good software quality practices is to rely on people around and make use of redundancy of the knowledge.
+We suggest that software development practices, such as code reviews, can be repurposed as learning opportunities.</p>
+<p>Currently, a team is perceived differently in research-oriented environments compared to the software development projects.
+In research groups, members of the group discuss and help each other with scientific suggestions, but most often a single person is designing and implementing the code base to answer scientific questions.
+Without shared standards, the available guidelines on coding practices are only suggestive and often anecdotal.
+As following or ignoring these guidelines is up to individual judgment, the actual craft of software engineering is often treated as an afterthought.
+However, when software is developed by multiple group members, researchers tend to appreciate software engineering concepts <span class="citation" data-cites="fJWFe93e">[<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>]</span>.
+High-profile code bases often feature larger development teams and their activities indicates better communication and documentation of the software <span class="citation" data-cites="161bJhAyl">[<a href="#ref-161bJhAyl" role="doc-biblioref">9</a>]</span>.
+To summarize, systematic adoption of team coding practices homogenizes software engineering competence of individuals across the research group and contributes to the dynamism of the research environment.
+We hypothesize that a form of team structure organized around individual software products could improve the quality of our scientific code.
+According to the literature, we expected an increased validity and reproducibility of scientific findings, as well as better maintenance of our computational resources for the community <span class="citation" data-cites="GwNdLY9X jJdEHq1p">[<a href="#ref-GwNdLY9X" role="doc-biblioref">11</a>,<a href="#ref-jJdEHq1p" role="doc-biblioref">12</a>]</span>.</p>
+<p>In this work we first review relevant literature on the individual and team coding practices that are currently suggested within and outside scientific research groups.
+To overcome the obstacles limiting researchers to adopt good practices, we present our groups’ approach, where in a team setting we learn, teach, and apply concepts to improve the quality of our software products.
+We have created weekly meetings and code review sessions where group members discuss aspects of software quality relevant for computational biology and show their own code for the rest of the group to discuss and review.
+We suggest that our team-based activities result in shared standards and an overall better code quality of the members with a reduced effort on an individual level.
+Furthermore, we provide a framework on how to get started with collective software development by directly or indirectly involving all bioinformatician group members, with or without formal training in software engineering.</p>
+<p>With this work we want to emphasize that good software quality can be learned through collaborative effort.
+We offer a visual metaphor, where improvement of software quality is like an exercise of rock-climbing (<strong>Figure 1</strong>).
+At the top of the rock is our goal of good quality software.
+Specifically, we identified reliable, performant, and extensible software as our aim, as we wished to improve our skills in creating and maintaining a lasting piece of software as is the scope of our teams <span class="citation" data-cites="GwNdLY9X jJdEHq1p">[<a href="#ref-GwNdLY9X" role="doc-biblioref">11</a>,<a href="#ref-jJdEHq1p" role="doc-biblioref">12</a>]</span>.
+In order to reach it, we need to become proficient in the various concepts depicted by the holds.
+These concepts were selected from the literature and our professional experience, but are not exhaustive and can be tailored to the specific needs of each group.
+The higher they are on the wall, the more advanced we consider the concepts to be.
+As the progress is cumulative, we have chosen to show the holds in the same colour if they represent related concepts that build upon each other.
+This way, we mimic traditional CS education.
+We found reiterating certain core concepts (e.g., modularization, testing) valuable.
+The actual order of visiting the topics and emphasis on them can vary between groups.
+The most important point, however, is the fact that rock climbing requires a partner to belay you, just as we believe the input of other people helps us become better programmers.</p>
+<figure>
+<img src="content/images/wall_climbing.png" height="700" alt="Figure 1: An illustration comparing the process of improvement in software writing to rock climbing. DSA: data structures and algorithms, OOP: object-oriented programming, UML: Unified Modelling Language, CI: continuous integration, SCA: static code analysis" />
+<figcaption aria-hidden="true"><strong><em>Figure 1:</em></strong> <strong>An illustration comparing the process of improvement in software writing to rock climbing.</strong>
+DSA: data structures and algorithms, OOP: object-oriented programming, UML: Unified Modelling Language, CI: continuous integration, SCA: static code analysis</figcaption>
+</figure>
+<h2 id="overview-of-currently-suggested-coding-practices-for-bioinformaticians">Overview of currently suggested coding practices for bioinformaticians</h2>
+<p>The current coding practices in the field of bioinformatics is extremely variable and depends on many factors including the background of individual scientists, and the research field they are in.
+However, it has generally been noted wrote that most scientific computations keep on being performed using error-prone development practices and reaching suboptimal solutions and poor software quality due to lack of appropriate software engineering practices <span class="citation" data-cites="LAj3scYO">[<a href="#ref-LAj3scYO" role="doc-biblioref">13</a>]</span>.
+In the past two decades, limitations and caveats of scientific software development practices and products has been surveyed and discussed by software engineering researchers <span class="citation" data-cites="JfPzXAiK fJWFe93e 5FEfM9Tw 22CUqVv1 P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-fJWFe93e" role="doc-biblioref">6</a>,<a href="#ref-22CUqVv1" role="doc-biblioref">10</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>]</span>.
+For bioinformaticians who are self-taught programmers, the online learning and support resources are vital.
+These include blog posts from peers, open-source lecture materials from universities, and forums.
+There are also articles that propose guidelines on how to code or analyse data in a better way.
+The encouraged practices are plenty, however they vary a lot and do not necessarily include a consistent view in line with the mainstream software standards.</p>
+<p>For a general overview, we selected articles (<strong>Supplementary Methods</strong>) which would be the entry point for bioinformatician who aim to improve their programming skills and collected their suggestions in <strong>Table 1</strong>.
+Many of these papers focus on a set of selected suggestions, often referred to as rules or “tips &amp; tricks”.
+Others, as a form of guidelines, direct the readers towards good practices of coding.
+While the targets of these type of articles are early career researchers with minimal coding experience (e.g. first time terminal users), they also encourage the usage of state-of-the-art software solutions (e.g. containers).
+Therefore, their guidelines are often a mix of basic and advanced concepts, especially from the perspective of a standard computer science and software engineering curriculum.
+This highlights the unique challenges emerging in bioinformatics even for routine analyses.</p>
+<p>The first impression <strong>Table 1</strong> might give is being intimidating due to the sheer amount of recommendations.
+Many of these guidelines are struggling to establish themselves within the bioinformatics community <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
+These difficulties prompts us to re-think our strategies and methods to realize the effective adoption of these guidelines.
+More specifically, our own experience indicated a greater likelihood of adoption for these notions when engaged as part of a collective effort towards better software engineering proficiency.</p>
+<p>Updating development practices, or even gaining a good understanding of new concepts is not a trivial task.
+Beyond understanding, Arvanitou et al. note that a scientific software developer, depending on the application of the software (e.g. whether it is a tool or a data analysis pipeline), needs to make choices among the good practices <span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>.
+The authors argue that selection can be done via the prioritization of software quality attributes <span class="citation" data-cites="16TRJmxtX">[<a href="#ref-16TRJmxtX" role="doc-biblioref">15</a>]</span>.
+Due to the trade-offs between these attributes (e.g. performance vs security), priorities needs to be set for each software product.
+As bioinformaticians are rarely familiar with the meaning and importance of these attributes <span class="citation" data-cites="5FEfM9Tw 7F3gCGKy">[<a href="#ref-14uh60177" role="doc-biblioref">17</a>]</span>, we list these attributes and provide short descriptions for them in the <strong>Supplementary Table 1</strong>.
+Some, such as functional suitability and performance are implicitly prioritized within bioinformatics.
+Others, such as maintainability, portability, and reliability, are neglected in most bioinformatics endeavour.
+Through implicit prioritization most software are developed as a prototype, even when the goal is to create a long-term product <span class="citation" data-cites="TWrdAuSr">[<a href="#ref-TWrdAuSr" role="doc-biblioref">18</a>]</span>.
+Therefore, we decided to set three target quality attributes as our learning goals that we consider the most imprtant for our work: reliability, performance, and extensibility (<strong>Figure 1</strong>).</p>
+<p>The hardship of systematic, automated testing of scientific software has been discussed in detail <span class="citation" data-cites="14uh60177 7F3gCGKy P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-7F3gCGKy" role="doc-biblioref">16</a>,<a href="#ref-14uh60177" role="doc-biblioref">17</a>]</span>.
+Uncovered faults can and do lead to incorrect scientific insights as shown in multiple examples <span class="citation" data-cites="1AlfTlwqW">[<a href="#ref-1AlfTlwqW" role="doc-biblioref">19</a>]</span>, which prompted us to investigate this issue further.
+Often in science we use software to find new knowledge and do not know <em>a priori</em> the exact output a software should give for a new input dataset.
+Furthermore, according to the Kanewala and Bieman <span class="citation" data-cites="14uh60177">[<a href="#ref-14uh60177" role="doc-biblioref">17</a>]</span>, scientists view their scientific model and the implementation as a single entity.
+Therefore, the validity of the model tends to be tested, but the code which produces it is not verified.
+In our sessions, we covered unit testing and discussed verification for scientific software (<strong>Figure 1</strong>, <strong>Supplementary Table 2</strong>).</p>
+<p>Another insight is about the complexity of bioinformatics software.
+In bioinformatics analysis it is common to combine the functionalities that are coming from various packages.
+This has several implications <span class="citation" data-cites="KdscyQBT JfPzXAiK P66ASHG NwrEMaFV">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-NwrEMaFV" role="doc-biblioref">8</a>]</span>, here we highlight two of them.
+First, over time the software becomes increasingly hard to maintain.
+The complexity, size, age, and the change-proneness of a code heavily affect maintainability <span class="citation" data-cites="5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>]</span>.
+To address this question, we built a shared understanding of functions and modularization (<strong>Figure 1</strong>, <strong>Supplementary Table 2</strong>), and expect the members of our code reviews to organize their code into modules.
+Second, package management (including versioning) is a crucial aspect to ensure not only maintenance, but also ease of development, reproducibility, and reusability.
+Frameworks <span class="citation" data-cites="fVLvtRTc 4XDvZWxk">[<a href="#ref-fVLvtRTc" role="doc-biblioref">20</a>,<a href="#ref-4XDvZWxk" role="doc-biblioref">21</a>]</span> and package management solutions <span class="citation" data-cites="ejrNkEAL qX419rCR BTJpICMh">[<a href="#ref-ejrNkEAL" role="doc-biblioref">22</a>,<a href="#ref-qX419rCR" role="doc-biblioref">23</a>,<a href="#ref-BTJpICMh" role="doc-biblioref">24</a>]</span> are required to achieve these qualities.
+Similarly to modularization, we first learnt about version control and container solutions (<strong>Figure 1</strong>, <strong>Supplementary Table 2</strong>), so that we can expect members to follow these practices.</p>
+<p>Interestingly, in our reviewed literature mainly dedicated to bioinformaticians, suggestions on how to systematically code in a team setting and utilize multiple people’s expertise on software development are extremely rare.
+Often guidelines for starting bioinformaticians encourage reaching out to others, but mostly to seek help when encountering a problem with their code.
+This could include consulting with colleagues, finding a mentor or participating in online communities (e.g., Stack Overflow or Biostars) <span class="citation" data-cites="1AjC5sp3x">[<a href="#ref-1AjC5sp3x" role="doc-biblioref">25</a>]</span>.
+However, it is still mainly focused on individual practices, called upon a specific (often scientific) issue, and insufficient to recognize unknown unknowns.
+It is in contrary to software engineering-oriented literature, where the main focus is on practices when coding in a team <span class="citation" data-cites="BMxKyBvU EhDaAbSA">[<a href="#ref-BMxKyBvU" role="doc-biblioref">26</a>,<a href="#ref-EhDaAbSA" role="doc-biblioref">27</a>]</span>.
+The one counter example is the Code Clubs described by Hagan et al. <span class="citation" data-cites="H5HCY7no">[<a href="#ref-H5HCY7no" role="doc-biblioref">28</a>]</span>.
+In their research group, members are collectively engaged in software development through code reviews, pair coding, and software engineering education through workshops or seminars <span class="citation" data-cites="H5HCY7no">[<a href="#ref-H5HCY7no" role="doc-biblioref">28</a>]</span>.
+Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, helps to establish and maintain standards, and helps to write a better quality software.
+We therefore established a learning club called software quality seminars, regular code reviews, and a resource sharing platform to foster team effort (<strong>Figure 1</strong>).
+Before sharing our experience with learning club, we aim to highlight the merit of a team-based approach to software development.</p>
+<strong><em>Table 1:</em></strong> <strong>Collection of recommendations for improving scientific software quality.</strong> Some guidelines are more vague than others, they also have varied scope, and they target different stakeholders. Therefore, it may be hard to find individual responsibility and actionable points from the literature.
+<table>
+<thead>
+<tr>
+<th>
+Category
+</th>
+<th>
+Recommendation
+</th>
+<th>
+References
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">
+Software development 101
+</td>
+<td>
+Sanity check on input parameters
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Do not hard-code changeable parameters and paths
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Do not require superuser privileges for installation and usage
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Advanced software development
+</td>
+<td>
+Usage of design patterns
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Adoption of international best practice standards of software quality
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Regular refactoring
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="7">
+Software development process
+</td>
+<td>
+Continuous integration
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Agile software development methodology
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Educated choice of software development methodology
+</td>
+<td>
+<span class="citation" data-cites="5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Independent review of source code
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 5FEfM9Tw P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Code quality monitoring
+</td>
+<td>
+<span class="citation" data-cites="JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Inclusion of appropriate license
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Cooperation between developers and users
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="4">
+Testing and validation
+</td>
+<td>
+Establish validation and acceptance procedures
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Provide a small test set
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Standardized tests
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Ensure reproducibility of results
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+Reproducibility
+</td>
+<td>
+Standardized working environment and automation
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Version control
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv KdscyQBT JfPzXAiK">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Rely on package managers
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Containerization for portability
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Tagging of software version for reproducibility
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Documentation
+</td>
+<td>
+User (and developer) documentation
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 10uv4hoEv 5FEfM9Tw KdscyQBT">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Requirements gathering
+</td>
+<td>
+<span class="citation" data-cites="10uv4hoEv 5FEfM9Tw">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>,<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Description of the software version used, its configurations and parameters in publications
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td rowspan="8">
+Community effort
+</td>
+<td>
+Contribute to open-source development
+</td>
+<td>
+<span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Reuse existing (reliable) software
+</td>
+<td>
+<span class="citation" data-cites="KdscyQBT JfPzXAiK">[<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Preferentially selecting freely available open-source software
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Encourage user participation in the software development process
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q">[<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Recognition and assignment of adequate time for quality-assured development
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q 5FEfM9Tw">[<a href="#ref-5FEfM9Tw" role="doc-biblioref">14</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Recognition of software development as academic achievement
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Support for developer community for long term maintenance (when applicable)
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+<tr>
+<td>
+Financial support for software development and maintenance
+</td>
+<td>
+<span class="citation" data-cites="9PC0T09Q P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-9PC0T09Q" role="doc-biblioref">29</a>]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="coding-in-teams">Coding in teams</h2>
+<p>Beyond the brief mention of getting support in the guidelines for bioinformaticians, specialized literature exists that examines how to effectively organize coding activities in a team.
+Programming as a collective practice is a key notion in software engineering.
+A central theme in this literature is maximizing team cohesion while minimizing code coupling <span class="citation" data-cites="GTTqWzhD">[<a href="#ref-GTTqWzhD" role="doc-biblioref">30</a>]</span>.
+From perspective of the code, adoption of sound software design enforcing modularity and extensibility ensures the viability of a software project <span class="citation" data-cites="13xuO2R5H">[<a href="#ref-13xuO2R5H" role="doc-biblioref">31</a>]</span>.
+From the perspective of the development, team management practices centred around communication and collective governance are preferred <span class="citation" data-cites="13xuO2R5H">[<a href="#ref-13xuO2R5H" role="doc-biblioref">31</a>]</span>.</p>
+<p>In general, we understand management as performing a set of tasks: planning, monitoring resources, and tracking progression <span class="citation" data-cites="17ANcXz4b">[<a href="#ref-17ANcXz4b" role="doc-biblioref">32</a>]</span>.
+Typically, the oversight of these functions would be taken up by a single individual referred to as the “manager” of a project, where manager is a role rather than a title of a particular person.
+In the particular context of computational projects in academia, a strict division of labour is rarely found in regard to the management of software projects.
+Some tasks, such as risk, budget and time management, are discussed at the conception of the project (e.g. during grant application) and thus decoupled from the actual software development phase.
+The remaining management tasks would often fall on the developer(s).
+Implicit decision-making is one of the key challenges current bioinformatics projects face.</p>
+<p>As agile is the only recommendation about team management present in these guidelines (<strong>Table 1</strong>), we discuss it here in light of the current academic practices.
+Through more team communication, one outstanding aim of agile is the aspiration for more autonomy in organizing the work of software developers.
+Practices and methods aligned with agile prescriptions include planning a minimum viable product, documenting requirements, organizing stand-up meetings, defining and assigning tasks, pair-programming, and code reviews.
+Many of these practices do not require the presence of the manager, but assume a collegial work culture and standardized procedures.
+The additional overhead in terms of time and resources needed when developing is offset by the aforementioned benefits in terms of software resilience and improved team capabilities.</p>
+<p>Incentivizing a collective ownership and governance of the codebase as a whole, promotes the adoption of software engineering best practices among developers contributing to a software project <span class="citation" data-cites="13VZD4t0l">[<a href="#ref-13VZD4t0l" role="doc-biblioref">33</a>]</span>.
+Indeed, by aspiring to make any developer within the team interchangeable across the various ongoing tasks, we create the need for robust testing, comprehensive documentation and coherence across the difference parts of the project <span class="citation" data-cites="GTTqWzhD">[<a href="#ref-GTTqWzhD" role="doc-biblioref">30</a>]</span>.
+Furthermore, by exposing every developer to a variety of tasks over the course of the project development, we strengthen the knowledge and skill base of the team as a whole, as well as create a better mutual awareness of team member expertise.
+This mutual awareness is known as transactive memory system, and has been linked to increased team performance <span class="citation" data-cites="TXLVl02W">[<a href="#ref-TXLVl02W" role="doc-biblioref">34</a>]</span>.
+Taken together these merits further improve the team’s capacity to overcome technical challenges that will arise over the course of the development process.</p>
+<p>We do not believe that all the software engineering guidelines employed in the industry are necessarily relevant to the production of scientific software.
+The circumstances differ significantly, mainly due to how the outcomes of research projects (papers, tools, protocols, etc.) need to be credited to particular individual researchers for their career progression.
+Regardless of the optimality of this situation, personal projects remain the norm, and it would be futile to expect another group member to achieve an equal level of familiarity with one’s project.
+However, this should not prevent interactions between the people in the group, as it is through these interactions that rules are enforced and quality increased.
+To reach reliability, performance and extensibility it is more important to collaborate with people and individual software quality attributes will be more comfortably handled even if we as individuals do not have a capacity to touch upon every single one of them.</p>
+<p>In our research groups, we have practically implemented the environment in which we, as a group, learn about and implement software quality practices that have been discussed in literature.
+We want to share this experience and propose how simple additions, such as weekly code review sessions or seminars, can lead to the improved quality of collective or personal software.</p>
+<h2 id="our-experience-of-development-processes-involving-teams">Our experience of development processes involving teams</h2>
+<p>The software development practices that we have adopted can be broadly separated into three categories: 1 - software quality seminars, 2 - code reviews, and 3 - resource sharing.
+Within the framework of software quality seminars, we have established a large-scale knowledge transfer system between the participants.
+Presentations and demonstrations of basic concepts, new techniques and tools that are not necessarily tied to a specific project help broaden our knowledge base and awareness.
+In this sense, they form almost a substitute for a more formal computer science education, which most bioinformaticians lack <span class="citation" data-cites="10uv4hoEv">[<a href="#ref-10uv4hoEv" role="doc-biblioref">2</a>]</span>.
+Through these sessions we built a shared vocabulary that enables quick discussions about implementation details and code structures.
+We also gained awareness of packages or technical solutions, which help to improve software performance and quality.</p>
+<p>The benefits of code reviews have been reviewed in the past <span class="citation" data-cites="16AfDLePW H5HCY7no mlkBCHTi">[<a href="#ref-OkkYJWTs" role="doc-biblioref">37</a>]</span>.
+This includes fairly obvious things like implementing consistent coding standards, detecting bugs and errors, but also less expected outcomes, such as diverse learning, fostering of a positive environment, or enhancing efficiency.
+Prior to a scheduled code review, the author is expected to write their code in a way that it will be explainable and understood by others.
+This expectation is largely self-inflicted as each person feel the pressure of exposing their weaknesses - even within a friendly environment.
+During the code review, the author has to explain some aspect of their code clearly (e.g. structure, algorithm implementation, performance related decisions).
+In our settings, it is entirely up to the author to choose which aspect of the code, or software product to discuss.
+Although it is implied that participants of code reviews are intended to discuss implementation details, we accept and enjoy discussions about any other aspect of the code, such as user interface design, documentation, or architecture considerations.</p>
+<p>The other participants may not be deeply familiar with the particular project, but they have their unique knowledge and point of view.
+The feedback obtained can help fix existing or potential future issues, improve the implementation, and produce cleaner, more concise code.
+Our experience indicates a broader adoption of theoretical aspects and good practices of software engineering highlighted during these code review sessions.
+We found that during these meetings implicit peer-pressure helps us achieve most goals: standardization of practices, improved code quality, and enhanced usability of the software.</p>
+<p>As a positive additional outcome, we noticed an increasing understanding in each other’s projects that naturally emerged through talking about the examined code.
+This enabled us to give more involved comments during subsequent group meetings too, where we would naturally discuss each other’s scientific projects.
+Additionally, seeing and analysing everyone’s code on a more hands-on level showed us how repetitive some pieces of code can be in different projects.
+This redundancy is partially removed by implementing a system to share resources.</p>
+<p>Resource sharing boils down to making sure that useful resources are brought to the attention of all participants easily.
+It can be discussed from two perspectives: external open-access resources (forums, repositories, packages and libraries) and internal (within-group resources with tools).
+The latter is very important as it allows for team contribution that can benefit the individual project development.
+A simple example of this could be a shared repository of various computational tools that were developed by members of the group.
+Such tools are universal enough and fit the group’s research questions, so all people in the group can re-use them.
+In addition, each tool can be potentially developed and reviewed by multiple group members.</p>
+<p>We believe these three pillars are the minimum requirement for achieving lasting improvement in software development within research teams, but bioinformaticians of other groups should tailor the content and the frequency of these meetings to their specific needs.
+Although not explicitly a project conceived during the meetings, many regular attendees have extensively applied many of the discussed software development methods (e.g., object-oriented programming style, user stories when documenting the requirements and assumptions, Jira to add features and report bugs, continuous integration with Git) when working on the same codebase as a team for the latest release of JASPAR database <span class="citation" data-cites="GwNdLY9X">[<a href="#ref-GwNdLY9X" role="doc-biblioref">11</a>]</span>.
+We also want to note that this article in fact was successfully written using a continuous integration based tool Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">38</a>]</span>.
+In the next sections we discuss how software quality seminars and code reviews helped with the examples of three specific software engineering notions: modularization, testing, and dependency management.
+We share specific examples from our own projects to highlight how these concepts change the way we code (<strong>Supplementary Figures</strong>).</p>
+<h3 id="modularization">Modularization</h3>
+<p>The first example we give is the shift in our work towards increased modularization.
+Modular design is one of the most common approach for team programming to ensure maintainability and extensibility of a software product.
+We understood from the guidelines and experiences from within the team that moving from unstructured scripts to organized code with functions brings several benefits at a low cost.
+Understanding the ways we can improve code organization was a theme we touched several times during the software quality seminars.
+In parallel, during code reviews we encountered and discussed several examples where modularization was implemented.
+Our toolkit collects stand-alone scripts that are by definition modules to be used.</p>
+<p>We covered the following topics in lecture forms to gain understanding in ways to improve modularization (<strong>Supplementary Table 2</strong>): object-oriented programming, class diagrams and unified modelling language in general, design patterns, software architecture, Snakemake <span class="citation" data-cites="fVLvtRTc">[<a href="#ref-fVLvtRTc" role="doc-biblioref">20</a>]</span>, S4 objects, R package development, a case report from the organization of the JASPAR database project <span class="citation" data-cites="GwNdLY9X">[<a href="#ref-GwNdLY9X" role="doc-biblioref">11</a>]</span>, and a review on the book titled The Pragmatic Programmer <span class="citation" data-cites="umHir4ge">[<a href="#ref-umHir4ge" role="doc-biblioref">39</a>]</span>.
+We understood that modularization can take form in many levels.
+On the smallest scale it can mean naming parts of the code by organizing them into functions.
+Once a code grew, we can start refactoring into classes and focus on the coherence and coupling of the parts (<strong>Supplementary Figure 1-2</strong>).
+When building a pipeline of scripts, we can identify coherent modules that would translate to rules in Snakemake <span class="citation" data-cites="fVLvtRTc">[<a href="#ref-fVLvtRTc" role="doc-biblioref">20</a>]</span> (<strong>Supplementary Figure 3-4</strong>.)
+To sum up, modularization means the continuous monitoring of the code, the recognition of a code that grew too much, and the re-structuring into smaller parts.
+It involves an understanding that the code is not a static entity, but an ever-growing, ever-changing organism.</p>
+<p>A recurring question is whether a script needs refactoring or can remain a prototype.
+Taschuk and Wilson <span class="citation" data-cites="KdscyQBT">[<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span> suggest a cut-off where a script is being reused, shared with others or used to produce findings in a publication.
+This definition would potentially include the majority of code written by bioinformaticians, but the time spent on improving the scripts should be weighed against the time required to deal with suboptimal code on a case-by-case basis.
+With practice, and being exposed to lot of code, modularization can become the norm and the distance between a prototype and a refactored code can be significantly reduced.</p>
+<h3 id="testing">Testing</h3>
+<p>As highlighted in the literature <span class="citation" data-cites="14uh60177">[<a href="#ref-14uh60177" role="doc-biblioref">17</a>]</span>, testing is a difficult concept for scientific software.
+However, it is also a central concept in team programming, as test coverage increases trust and allows the safe addition of new features by any member.
+We revisited testing multiple times (<strong>Supplementary Table 2</strong>): discussed debugging tools, how to write unit tests in python (<code>pytest</code> and <code>unittest</code>) and R (<code>testthat</code>), what type of functions can be tested, why automated tests are beneficial and how to implement them via continuous integration services (e.g., GitHub Actions).
+The main difficulty was for us to see testing as software testing beyond the validation of the scientific feature of the software that can be shown on a small test data.
+Similarly to modularization, a recurring question was when to start adding tests.
+Although there is no hard threshold, we tend to identify a sweet spot when the code has not grown too much so that refactoring is a daunting task, but also not changing too much so that test coverage would be a wasted effort.
+In general, we advise on testing earlier than one would feel like (i.e. departing from the mindset: “I will start tomorrow after I implement this new idea”).
+Code reviews are a very nice platform to discuss tests: to get the input from peers on how to challenge the implementation.
+This part is actually a scientific endeavour, when edge cases can be thought of and the properties of the biological question can be discussed.</p>
+<h3 id="dependency-management">Dependency management</h3>
+<p>Given the large number of dependencies, even whole ecosystems of tools, dependency management is one of the most important task to ensure reproducibility of the findings.
+In a team setting, where all members need to be able to run the code, it is natural to create identical environments for all developers.
+In the software quality seminars we covered (<strong>Supplementary Table 2</strong>): container solutions <span class="citation" data-cites="qX419rCR BTJpICMh">[<a href="#ref-qX419rCR" role="doc-biblioref">23</a>,<a href="#ref-BTJpICMh" role="doc-biblioref">24</a>]</span>, R package development, and Anaconda <span class="citation" data-cites="ejrNkEAL">[<a href="#ref-ejrNkEAL" role="doc-biblioref">22</a>]</span>.
+We established the DockerHub account for our group <span class="citation" data-cites="wrZCyQi5">[<a href="#ref-wrZCyQi5" role="doc-biblioref">40</a>]</span> to share our custom containers (<strong>Supplementary Figures</strong>).
+This resource also enables easy installation of our Snakemake pipelines across different servers.</p>
+<p>In sum, software quality seminars, code reviews and shared resources in the research group can be implemented as separate activities choosing all or any of them.
+We observed that even a single activity is benefiting members’ coding experience and the resulting code quality.
+Overall, as good practices become routine, the required time investment will be reduced and the benefits will become more apparent.
+The shared knowledge base and standards also allow us to make new group members adopt good coding practices more quickly.</p>
+<h2 id="conclusions-and-future-perspectives">Conclusions and future perspectives</h2>
+<p>As bioinformatics becomes a more and more software-heavy field, we believe a good direction is to collectively lower the barrier to adapting to new technologies.
+For large software project which supports many researchers and contributes to novel findings, working in team and following standards is a necessity and not an option.
+Even for small projects, we argue that following good software quality practices and mimic team structure is very beneficial.
+The overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience <span class="citation" data-cites="GTTqWzhD">[<a href="#ref-GTTqWzhD" role="doc-biblioref">30</a>]</span>.
+In a group the knowledge on who knows what speeds up the problem-solving <span class="citation" data-cites="TXLVl02W">[<a href="#ref-TXLVl02W" role="doc-biblioref">34</a>]</span>; time spent together, and social factors ease technical knowledge transfer <span class="citation" data-cites="GTTqWzhD">[<a href="#ref-GTTqWzhD" role="doc-biblioref">30</a>]</span>.
+We therefore motivate group leaders of groups with even a small computational component to build an environment for their trainees to communicate and discuss software quality aspects.</p>
+<p>We envision a future where scientific software for core applications is appreciated, reliable, and actively maintained.
+All scientists would benefit from a strong backbone of software solutions, that would support quick and efficient prototyping, as well as maturation of working solutions.
+The lack of funding for the maintenance of software, prevents achieving a level of software quality that would inspire confidence in the results <span class="citation" data-cites="P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>]</span>.
+Funding is typically provided for the development of novel software, and it can be hard to justify spending time on maintenance which provides no output in terms of articles.
+Currently, as Alexander Szalay puts it “the funding stops when they [researchers] actually develop the software prototype” <span class="citation" data-cites="TWrdAuSr">[<a href="#ref-TWrdAuSr" role="doc-biblioref">18</a>]</span>.
+Researchers want to build on each other’s findings, use published novel software as tools, but they might need to spend quite some time adopting or maintaining that software <span class="citation" data-cites="KdscyQBT JfPzXAiK P66ASHG">[<a href="#ref-P66ASHG" role="doc-biblioref">1</a>,<a href="#ref-JfPzXAiK" role="doc-biblioref">3</a>,<a href="#ref-KdscyQBT" role="doc-biblioref">7</a>]</span>.
+The infrastructure would benefit from funding earmarked for maintenance, and from dedicating time to it in project proposals.
+Fortunately in recent years, the lack of funding is being recognized and addressed by a few agencies, such as the Chan Zuckerberg Initiative Essential Open Source Software for Science fund <span class="citation" data-cites="AXsRFu5M">[<a href="#ref-AXsRFu5M" role="doc-biblioref">41</a>]</span>.
+Scientific community and funding agencies should welcome the efforts of maintaining original software and encourage its updates instead of the development of a replacement software that risks remaining unmaintained.</p>
+<p>To summarize, today it is important for the scientific community to recognize the limitations of the software we are producing.
+This includes acknowledging the flaws in the process of coding.
+As a potential great improvement we propose organizing activities, such as software quality and code review seminars, that would involve the whole research group in each other’s projects, therefore allowing the sharing of knowledge and feedback on the code practically.
+We also advocate for sustainable funding for the maintenance of existing and newly developed scientific software.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The authors would like to acknowledge the helpful feedback on an early version of the manuscript provided by Ine Bonthuis, Nolan Newman, and Romana Pop.
+We would also like to acknowledge the contributions made by all the participants of our code reviews and software quality seminars.</p>
+<h2 class="page_break_before" id="references">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-P66ASHG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Better Software, Better Research</strong> <div class="csl-block">Carole Goble</div> <em>IEEE Internet Computing</em> (2014-09) <a href="https://doi.org/vjz">https://doi.org/vjz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/mic.2014.88">10.1109/mic.2014.88</a></div></div>
+</div>
+<div id="ref-10uv4hoEv" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Improving bioinformatics software quality through incorporation of software engineering practices</strong> <div class="csl-block">Adeeb Noor</div> <em>PeerJ Computer Science</em> (2022-01-05) <a href="https://doi.org/gsm3hg">https://doi.org/gsm3hg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7717/peerj-cs.839">10.7717/peerj-cs.839</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35111923">35111923</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8771759">PMC8771759</a></div></div>
+</div>
+<div id="ref-JfPzXAiK" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Software engineering practices for scientific software development: A systematic mapping study</strong> <div class="csl-block">Elvira-Maria Arvanitou, Apostolos Ampatzoglou, Alexander Chatzigeorgiou, Jeffrey C Carver</div> <em>Journal of Systems and Software</em> (2021-02) <a href="https://doi.org/gq3jtm">https://doi.org/gq3jtm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.jss.2020.110848">10.1016/j.jss.2020.110848</a></div></div>
+</div>
+<div id="ref-1F0QZjj0U" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><a href="https://c2.com/doc/oopsla92.html">https://c2.com/doc/oopsla92.html</a></div>
+</div>
+<div id="ref-rJVIBuN0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Managing technical debt</strong> <div class="csl-block">Eric Allman</div> <em>Communications of the ACM</em> (2012-05) <a href="https://doi.org/grx4cv">https://doi.org/grx4cv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2160718.2160733">10.1145/2160718.2160733</a></div></div>
+</div>
+<div id="ref-fJWFe93e" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>How do scientists develop and use scientific software?</strong> <div class="csl-block">Jo Erskine Hannay, Carolyn MacLeod, Janice Singer, Hans Petter Langtangen, Dietmar Pfahl, Greg Wilson</div> <em>2009 ICSE Workshop on Software Engineering for Computational Science and Engineering</em> (2009-05) <a href="https://doi.org/bw966x">https://doi.org/bw966x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/secse.2009.5069155">10.1109/secse.2009.5069155</a></div></div>
+</div>
+<div id="ref-KdscyQBT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Ten simple rules for making research software more robust</strong> <div class="csl-block">Morgan Taschuk, Greg Wilson</div> <em>PLOS Computational Biology</em> (2017-04-13) <a href="https://doi.org/gfvpqw">https://doi.org/gfvpqw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005412">10.1371/journal.pcbi.1005412</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28407023">28407023</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5390961">PMC5390961</a></div></div>
+</div>
+<div id="ref-NwrEMaFV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Empirical study on software and process quality in bioinformatics tools</strong> <div class="csl-block">Katalin Ferenc, Konrad Otto, Francisco Gomes de Oliveira Neto, Marcela Dávila López, Jennifer Horkoff, Alexander Schliep</div> <em>Cold Spring Harbor Laboratory</em> (2022-03-13) <a href="https://doi.org/grx4jr">https://doi.org/grx4jr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.03.10.483804">10.1101/2022.03.10.483804</a></div></div>
+</div>
+<div id="ref-161bJhAyl" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>A large-scale analysis of bioinformatics code on GitHub</strong> <div class="csl-block">Pamela H Russell, Rachel L Johnson, Shreyas Ananthan, Benjamin Harnke, Nichole E Carlson</div> <em>PLOS ONE</em> (2018-10-31) <a href="https://doi.org/gskr8b">https://doi.org/gskr8b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0205898">10.1371/journal.pone.0205898</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30379882">30379882</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6209220">PMC6209220</a></div></div>
+</div>
+<div id="ref-22CUqVv1" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>A survey of scientific software development</strong> <div class="csl-block">Luke Nguyen-Hoan, Shayne Flint, Ramesh Sankaranarayana</div> <em>Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement</em> (2010-09-16) <a href="https://doi.org/brfqvq">https://doi.org/brfqvq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1852786.1852802">10.1145/1852786.1852802</a></div></div>
+</div>
+<div id="ref-GwNdLY9X" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>JASPAR 2024: 20th anniversary of the open-access database of transcription factor binding profiles</strong> <div class="csl-block">Ieva Rauluseviciute, Rafael Riudavets-Puig, Romain Blanc-Mathieu, Jaime A Castro-Mondragon, Katalin Ferenc, Vipin Kumar, Roza Berhanu Lemma, Jérémy Lucas, Jeanne Chèneby, Damir Baranasic, … Anthony Mathelier</div> <em>Nucleic Acids Research</em> (2023-11-14) <a href="https://doi.org/gs4n8b">https://doi.org/gs4n8b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkad1059">10.1093/nar/gkad1059</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37962376">37962376</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10767809">PMC10767809</a></div></div>
+</div>
+<div id="ref-jJdEHq1p" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>The Network Zoo: a multilingual package for the inference and analysis of gene regulatory networks</strong> <div class="csl-block">Marouen Ben Guebila, Tian Wang, Camila M Lopes-Ramos, Viola Fanfani, Des Weighill, Rebekka Burkholz, Daniel Schlauch, Joseph N Paulson, Michael Altenbuchinger, Katherine H Shutta, … John Quackenbush</div> <em>Genome Biology</em> (2023-03-09) <a href="https://doi.org/gtg476">https://doi.org/gtg476</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-023-02877-1">10.1186/s13059-023-02877-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36894939">36894939</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9999668">PMC9999668</a></div></div>
+</div>
+<div id="ref-LAj3scYO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>A Software Chasm: Software Engineering and Scientific Computing</strong> <div class="csl-block">Diane F Kelly</div> <em>IEEE Software</em> (2007-11) <a href="https://doi.org/cbrmv5">https://doi.org/cbrmv5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/ms.2007.155">10.1109/ms.2007.155</a></div></div>
+</div>
+<div id="ref-5FEfM9Tw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Software Engineering Education for Bioinformatics</strong> <div class="csl-block">Medha Umarji, Carolyn Seaman, AGunes Koru, Hongfang Liu</div> <em>2009 22nd Conference on Software Engineering Education and Training</em> (2009) <a href="https://doi.org/b57ccg">https://doi.org/b57ccg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cseet.2009.44">10.1109/cseet.2009.44</a></div></div>
+</div>
+<div id="ref-16TRJmxtX" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>ISO 25010</strong> <a href="https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3%20">https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3%20</a></div>
+</div>
+<div id="ref-7F3gCGKy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Developing Scientific Software</strong> <div class="csl-block">Judith Segal, Chris Morris</div> <em>IEEE Software</em> (2008-07) <a href="https://doi.org/bnm3xp">https://doi.org/bnm3xp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/ms.2008.85">10.1109/ms.2008.85</a></div></div>
+</div>
+<div id="ref-14uh60177" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Testing Scientific Software: A Systematic Literature Review</strong> <div class="csl-block">Upulee Kanewala, James M Bieman</div> <em>arXiv</em> (2018) <a href="https://doi.org/gsrxg5">https://doi.org/gsrxg5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.1804.01954">10.48550/arxiv.1804.01954</a></div></div>
+</div>
+<div id="ref-TWrdAuSr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Ex-Google chief’s venture aims to save neglected science software</strong> <div class="csl-block">David Matthews</div> <em>Nature</em> (2022-07-13) <a href="https://doi.org/gsnnwv">https://doi.org/gsnnwv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-022-01901-x">10.1038/d41586-022-01901-x</a></div></div>
+</div>
+<div id="ref-1AlfTlwqW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>A Scientist's Nightmare: Software Problem Leads to Five Retractions</strong> <div class="csl-block">Greg Miller</div> <em>Science</em> (2006-12-22) <a href="https://doi.org/fbvb8b">https://doi.org/fbvb8b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.314.5807.1856">10.1126/science.314.5807.1856</a></div></div>
+</div>
+<div id="ref-fVLvtRTc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Sustainable data analysis with Snakemake</strong> <div class="csl-block">Felix Mölder, Kim Philipp Jablonski, Brice Letcher, Michael B Hall, Christopher H Tomkins-Tinch, Vanessa Sochat, Jan Forster, Soohyun Lee, Sven O Twardziok, Alexander Kanitz, … Johannes Köster</div> <em>F1000Research</em> (2021-01-18) <a href="https://doi.org/gjjkwv">https://doi.org/gjjkwv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.12688/f1000research.29032.1">10.12688/f1000research.29032.1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34035898">34035898</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8114187">PMC8114187</a></div></div>
+</div>
+<div id="ref-4XDvZWxk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Nextflow enables reproducible computational workflows</strong> <div class="csl-block">Paolo Di Tommaso, Maria Chatzou, Evan W Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame</div> <em>Nature Biotechnology</em> (2017-04) <a href="https://doi.org/gfj52z">https://doi.org/gfj52z</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3820">10.1038/nbt.3820</a></div></div>
+</div>
+<div id="ref-ejrNkEAL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Unleash AI Innovation and Value</strong> <div class="csl-block">Anaconda</div> <a href="https://www.anaconda.com/">https://www.anaconda.com/</a></div>
+</div>
+<div id="ref-qX419rCR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Home</strong> <div class="csl-block">Docker Documentation</div> (2024-01-17) <a href="https://docs.docker.com/">https://docs.docker.com/</a></div>
+</div>
+<div id="ref-BTJpICMh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Apptainer - Portable, Reproducible Containers</strong> <a href="https://apptainer.org/">https://apptainer.org/</a></div>
+</div>
+<div id="ref-1AjC5sp3x" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Ten simple rules for getting started with command-line bioinformatics</strong> <div class="csl-block">Parice A Brandies, Carolyn J Hogg</div> <em>PLOS Computational Biology</em> (2021-02-18) <a href="https://doi.org/gh32h2">https://doi.org/gh32h2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1008645">10.1371/journal.pcbi.1008645</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33600404">33600404</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7891784">PMC7891784</a></div></div>
+</div>
+<div id="ref-BMxKyBvU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Cooperative Software Development</strong> <a href="https://faculty.washington.edu/ajko/books/cooperative-software-development">https://faculty.washington.edu/ajko/books/cooperative-software-development</a></div>
+</div>
+<div id="ref-EhDaAbSA" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Studying the impact of social interactions on software quality</strong> <div class="csl-block">Nicolas Bettenburg, Ahmed E Hassan</div> <em>Empirical Software Engineering</em> (2012-04-28) <a href="https://doi.org/f4mhdp">https://doi.org/f4mhdp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s10664-012-9205-0">10.1007/s10664-012-9205-0</a></div></div>
+</div>
+<div id="ref-H5HCY7no" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Ten simple rules to increase computational skills among biologists with Code Clubs</strong> <div class="csl-block">Ada K Hagan, Nicholas A Lesniak, Marcy J Balunas, Lucas Bishop, William L Close, Matthew D Doherty, Amanda G Elmore, Kaitlin J Flynn, Geoffrey D Hannigan, Charlie C Koumpouras, … Patrick D Schloss</div> <em>PLOS Computational Biology</em> (2020-08-27) <a href="https://doi.org/gg92xw">https://doi.org/gg92xw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1008119">10.1371/journal.pcbi.1008119</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32853198">32853198</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7451508">PMC7451508</a></div></div>
+</div>
+<div id="ref-9PC0T09Q" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Handreichung Zum Umgang Mit Forschungssoftware</strong> <div class="csl-block">Matthias Katerbow, Georg Feulner</div> <em>Zenodo</em> (2018-02-27) <a href="https://doi.org/ghk5fk">https://doi.org/ghk5fk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1172970">10.5281/zenodo.1172970</a></div></div>
+</div>
+<div id="ref-GTTqWzhD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Team Familiarity, Role Experience, and Performance: Evidence from Indian Software Services</strong> <div class="csl-block">Robert S Huckman, Bradley R Staats, David M Upton</div> <em>Management Science</em> (2009) <a href="https://www.jstor.org/stable/40539129">https://www.jstor.org/stable/40539129</a></div>
+</div>
+<div id="ref-13xuO2R5H" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>The psychology of computer programming</strong> <div class="csl-block">Gerald M Weinberg</div> <em>Dorset House Pub</em> (1998) <div class="csl-block">ISBN: 9780932633422</div></div>
+</div>
+<div id="ref-17ANcXz4b" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>What Is Software Project Management?</strong> <a href="https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/">https://www.wrike.com/project-management-guide/faq/what-is-software-project-management/</a></div>
+</div>
+<div id="ref-13VZD4t0l" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>A teamwork model for understanding an agile team: A case study of a Scrum project</strong> <div class="csl-block">Nils Brede Moe, Torgeir Dingsøyr, Tore Dybå</div> <em>Information and Software Technology</em> (2010-05) <a href="https://doi.org/cvr88b">https://doi.org/cvr88b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.infsof.2009.11.004">10.1016/j.infsof.2009.11.004</a></div></div>
+</div>
+<div id="ref-TXLVl02W" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Communication in Transactive Memory Systems: A Review and Multidimensional Network Perspective</strong> <div class="csl-block">Bei Yan, Andrea B Hollingshead, Kristen S Alexander, Ignacio Cruz, Sonia Jawaid Shaikh</div> <em>Small Group Research</em> (2020-12-11) <a href="https://doi.org/ghpwvf">https://doi.org/ghpwvf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1177/1046496420967764">10.1177/1046496420967764</a></div></div>
+</div>
+<div id="ref-16AfDLePW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Walking the Talk: Adopting and Adapting Sustainable Scientific Software
+Development processes in a Small Biology Lab</strong> <div class="csl-block">Michael R Crusoe, CTitus Brown</div> <em>Journal of Open Research Software</em> (2016-11-29) <a href="https://doi.org/gsmb78">https://doi.org/gsmb78</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5334/jors.35">10.5334/jors.35</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27942385">27942385</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5142744">PMC5142744</a></div></div>
+</div>
+<div id="ref-mlkBCHTi" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Agile and the Long Crisis of Software</strong> <div class="csl-block">https://www.facebook.com/logicisamagazine</div> <em>Logic(s) Magazine</em> <a href="https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/">https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/</a></div>
+</div>
+<div id="ref-OkkYJWTs" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>The pragmatic programmer: from journeyman to master</strong> <div class="csl-block">Andrew Hunt, David Thomas</div> <em>Addison-Wesley</em> (2000) <div class="csl-block">ISBN: 9780201616224</div></div>
+</div>
+<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+</div>
+<div id="ref-umHir4ge" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>The pragmatic programmer, 20th anniversary edition: journey to mastery</strong> <div class="csl-block">David Thomas, Andrew Hunt</div> <em>Addison-Wesley</em> (2019) <div class="csl-block">ISBN: 9780135957059</div></div>
+</div>
+<div id="ref-wrZCyQi5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Docker</strong> <a href="https://hub.docker.com/u/cbgr">https://hub.docker.com/u/cbgr</a></div>
+</div>
+<div id="ref-AXsRFu5M" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>CZI – Essential Open Source Software for Science</strong> <div class="csl-block">Chan Zuckerberg Initiative</div> <a href="https://chanzuckerberg.com/eoss/">https://chanzuckerberg.com/eoss/</a></div>
+</div>
+</div>
+<!-- default theme -->
+
+<style>
+  /* import google fonts */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+  /* -------------------------------------------------- */
+  /* global */
+  /* -------------------------------------------------- */
+
+  /* all elements */
+  * {
+    /* force sans-serif font unless specified otherwise */
+    font-family: "Open Sans", "Helvetica", sans-serif;
+
+    /* prevent text inflation on some mobile browsers */
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+  }
+
+  @media only screen {
+    /* "page" element */
+    body {
+      position: relative;
+      box-sizing: border-box;
+      font-size: 12pt;
+      line-height: 1.5;
+      max-width: 8.5in;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* "page" element */
+    body {
+      padding: 20px;
+      margin: 0;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+      background: none;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* headings */
+  /* -------------------------------------------------- */
+
+  /* all headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  /* biggest heading */
+  h1 {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  /* second biggest heading */
+  h2 {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #bdbdbd;
+  }
+
+  /* heading font sizes */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.15em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+
+  /* -------------------------------------------------- */
+  /* manuscript header */
+  /* -------------------------------------------------- */
+
+  /* manuscript title */
+  header > h1 {
+    margin: 0;
+  }
+
+  /* manuscript title caption text (ie "automatically generated on") */
+  header + p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* -------------------------------------------------- */
+  /* text elements */
+  /* -------------------------------------------------- */
+
+  /* links */
+  a {
+    color: #2196f3;
+    overflow-wrap: break-word;
+  }
+
+  /* superscripts and subscripts */
+  sub,
+  sup {
+    /* prevent from affecting line height */
+    line-height: 0;
+  }
+
+  /* unordered and ordered lists*/
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  /* class for styling text semibold */
+  .semibold {
+    font-weight: 600;
+  }
+
+  /* class for styling elements horizontally left aligned */
+  .left {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: left;
+  }
+
+  /* class for styling elements horizontally centered */
+  .center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* class for styling elements horizontally right aligned */
+  .right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: right;
+  }
+
+  /* -------------------------------------------------- */
+  /* section elements */
+  /* -------------------------------------------------- */
+
+  /* horizontal divider line */
+  hr {
+    border: none;
+    height: 1px;
+    background: #bdbdbd;
+  }
+
+  /* paragraphs, horizontal dividers, figures, tables, code */
+  p,
+  hr,
+  figure,
+  table,
+  pre {
+    /* treat all as "paragraphs", with consistent vertical margins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* figures */
+  /* -------------------------------------------------- */
+
+  /* figure */
+  figure {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure caption */
+  figcaption {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  /* figure image element */
+  figure > img,
+  figure > svg {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure auto-number */
+  img + figcaption > span:first-of-type,
+  svg + figcaption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tables */
+  /* -------------------------------------------------- */
+
+  /* table */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* table cells */
+  th,
+  td {
+    border: solid 1px #bdbdbd;
+    padding: 10px;
+    /* squash table if too wide for page by forcing line breaks */
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* header row and even rows */
+  th,
+  tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+
+  /* odd rows */
+  tr:nth-child(2n + 1) {
+    background-color: #ffffff;
+  }
+
+  /* table caption */
+  caption {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  /* table auto-number */
+  table > caption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* code */
+  /* -------------------------------------------------- */
+
+  /* multi-line code block */
+  pre {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+    break-inside: avoid;
+    text-align: left;
+  }
+
+  /* inline code, ie code within normal text */
+  :not(pre) > code {
+    padding: 0 4px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+  }
+
+  /* code text */
+  /* apply all children, to reach syntax highlighting sub-elements */
+  code,
+  code * {
+    /* force monospace font */
+    font-family: "Source Code Pro", "Courier New", monospace;
+  }
+
+  /* -------------------------------------------------- */
+  /* quotes */
+  /* -------------------------------------------------- */
+
+  /* quoted text */
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 4px solid #bdbdbd;
+    padding-left: 16px;
+    break-inside: avoid;
+  }
+
+  /* -------------------------------------------------- */
+  /* banners */
+  /* -------------------------------------------------- */
+
+  /* info banners */
+  .banner {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* paragraph in banner */
+  .banner > p {
+    margin: 0;
+  }
+
+  /* -------------------------------------------------- */
+  /* highlight colors */
+  /* -------------------------------------------------- */
+
+  .white {
+    background: #ffffff;
+  }
+  .lightgrey {
+    background: #eeeeee;
+  }
+  .grey {
+    background: #757575;
+  }
+  .darkgrey {
+    background: #424242;
+  }
+  .black {
+    background: #000000;
+  }
+  .lightred {
+    background: #ffcdd2;
+  }
+  .lightyellow {
+    background: #ffecb3;
+  }
+  .lightgreen {
+    background: #dcedc8;
+  }
+  .lightblue {
+    background: #e3f2fd;
+  }
+  .lightpurple {
+    background: #f3e5f5;
+  }
+  .red {
+    background: #f44336;
+  }
+  .orange {
+    background: #ff9800;
+  }
+  .yellow {
+    background: #ffeb3b;
+  }
+  .green {
+    background: #4caf50;
+  }
+  .blue {
+    background: #2196f3;
+  }
+  .purple {
+    background: #9c27b0;
+  }
+  .white,
+  .lightgrey,
+  .lightred,
+  .lightyellow,
+  .lightgreen,
+  .lightblue,
+  .lightpurple,
+  .orange,
+  .yellow,
+  .white a,
+  .lightgrey a,
+  .lightred a,
+  .lightyellow a,
+  .lightgreen a,
+  .lightblue a,
+  .lightpurple a,
+  .orange a,
+  .yellow a {
+    color: #000000;
+  }
+  .grey,
+  .darkgrey,
+  .black,
+  .red,
+  .green,
+  .blue,
+  .purple,
+  .grey a,
+  .darkgrey a,
+  .black a,
+  .red a,
+  .green a,
+  .blue a,
+  .purple a {
+    color: #ffffff;
+  }
+
+  /* -------------------------------------------------- */
+  /* buttons */
+  /* -------------------------------------------------- */
+
+  /* class for styling links like buttons */
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: none;
+    color: #2196f3;
+    border: solid 1px #bdbdbd;
+    border-radius: 5px;
+  }
+
+  /* buttons when hovered */
+  .button:hover:not([disabled]),
+  .icon_button:hover:not([disabled]) {
+    cursor: pointer;
+    background: #f5f5f5;
+  }
+
+  /* buttons when disabled */
+  .button[disabled],
+  .icon_button[disabled] {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* class for styling buttons containg only single icon */
+  .icon_button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  /* icon button inner svg image */
+  .icon_button > svg {
+    height: 16px;
+  }
+
+  /* -------------------------------------------------- */
+  /* icons */
+  /* -------------------------------------------------- */
+
+  /* class for styling icons inline with text */
+  .inline_icon {
+    height: 1em;
+    position: relative;
+    top: 0.125em;
+  }
+
+  /* -------------------------------------------------- */
+  /* references */
+  /* -------------------------------------------------- */
+
+  .csl-entry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* -------------------------------------------------- */
+  /* print control */
+  /* -------------------------------------------------- */
+
+  @media print {
+    @page {
+      /* suggested printing margin */
+      margin: 0.5in;
+    }
+
+    /* document and "page" elements */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* "page" element */
+    body {
+      font-size: 11pt !important;
+      line-height: 1.35;
+    }
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 15px 0;
+    }
+
+    /* figures and tables */
+    figure,
+    table {
+      font-size: 0.85em;
+    }
+
+    /* table cells */
+    th,
+    td {
+      padding: 5px;
+    }
+
+    /* shrink font awesome icons */
+    i.fas,
+    i.fab,
+    i.far,
+    i.fal {
+      transform: scale(0.85);
+    }
+
+    /* decrease banner margins */
+    .banner {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    /* class for centering an element vertically on its own page */
+    .page_center {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      break-before: page;
+      break-after: page;
+    }
+
+    /* always insert a page break before the element */
+    .page_break_before {
+      break-before: page;
+    }
+
+    /* always insert a page break after the element */
+    .page_break_after {
+      break-after: page;
+    }
+
+    /* avoid page break before the element */
+    .page_break_before_avoid {
+      break-before: avoid;
+    }
+
+    /* avoid page break after the element */
+    .page_break_after_avoid {
+      break-after: avoid;
+    }
+
+    /* avoid page break inside the element */
+    .page_break_inside_avoid {
+      break-inside: avoid;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* override pandoc css quirks */
+  /* -------------------------------------------------- */
+
+  .sourceCode {
+    /* prevent unsightly overflow in wide code blocks */
+    overflow: auto !important;
+  }
+
+  div.sourceCode {
+    /* prevent background fill on top-most code block  container */
+    background: none !important;
+  }
+
+  .sourceCode * {
+    /* force consistent line spacing */
+    line-height: 1.5 !important;
+  }
+
+  div.sourceCode {
+    /* style code block margins same as <pre> element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tablenos */
+  /* -------------------------------------------------- */
+
+  /* tablenos wrapper */
+  .tablenos {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .tablenos > table {
+    /* move margins from table to table_wrapper to allow margin collapsing */
+    margin: 0;
+  }
+
+  @media only screen {
+    /* tablenos wrapper */
+    .tablenos {
+      /* show scrollbar on tables if necessary to prevent overflow */
+      overflow-x: auto !important;
+    }
+
+    .tablenos th,
+    .tablenos td {
+      overflow-wrap: unset !important;
+      word-break: unset !important;
+    }
+
+    /* table in wrapper */
+    .tablenos table,
+    .tablenos table * {
+      /* don't break table words */
+      overflow-wrap: normal !important;
+    }
+  }
+</style>
+<!-- 
+    Plugin Core
+
+    Functions needed for and shared across all first-party plugins.
+-->
+
+<script>
+  // get element that is target of hash (from link element or url)
+  function getHashTarget(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector(`[id="${id}"]`);
+    if (!target) return;
+
+    // if figure or table, modify target to get expected element
+    if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+    if (id.indexOf("tbl:") === 0) target = target.querySelector("table");
+
+    return target;
+  }
+
+  // get position/dimensions of element or viewport
+  function getRectInView(element) {
+    let rect = {};
+    rect.left = 0;
+    rect.top = 0;
+    rect.right = document.documentElement.clientWidth;
+    rect.bottom = document.documentElement.clientHeight;
+    let style = {};
+
+    if (element instanceof HTMLElement) {
+      rect = element.getBoundingClientRect();
+      style = window.getComputedStyle(element);
+    }
+
+    const margin = {};
+    margin.left = parseFloat(style.marginLeftWidth) || 0;
+    margin.top = parseFloat(style.marginTopWidth) || 0;
+    margin.right = parseFloat(style.marginRightWidth) || 0;
+    margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+    const border = {};
+    border.left = parseFloat(style.borderLeftWidth) || 0;
+    border.top = parseFloat(style.borderTopWidth) || 0;
+    border.right = parseFloat(style.borderRightWidth) || 0;
+    border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+    const newRect = {};
+    newRect.left = rect.left + margin.left + border.left;
+    newRect.top = rect.top + margin.top + border.top;
+    newRect.right = rect.right + margin.right + border.right;
+    newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+    newRect.width = newRect.right - newRect.left;
+    newRect.height = newRect.bottom - newRect.top;
+
+    return newRect;
+  }
+
+  // get position of element relative to page
+  function getRectInPage(element) {
+    const rect = getRectInView(element);
+    const body = getRectInView(document.body);
+
+    const newRect = {};
+    newRect.left = rect.left - body.left;
+    newRect.top = rect.top - body.top;
+    newRect.right = rect.right - body.left;
+    newRect.bottom = rect.bottom - body.top;
+    newRect.width = rect.width;
+    newRect.height = rect.height;
+
+    return newRect;
+  }
+
+  // get closest element before specified element that matches query
+  function firstBefore(element, query) {
+    while (element && element !== document.body && !element.matches(query))
+      element = element.previousElementSibling || element.parentNode;
+
+    return element;
+  }
+
+  // check if element is part of collapsed heading
+  function isCollapsed(element) {
+    while (element && element !== document.body) {
+      if (element.dataset.collapsed === "true") return true;
+      element = element.parentNode;
+    }
+    return false;
+  }
+
+  // expand any collapsed parent containers of element if necessary
+  function expandElement(element) {
+    if (isCollapsed(element)) {
+      // accordion plugin
+      const heading = firstBefore(element, "h2");
+      if (heading) heading.click();
+      // details/summary HTML element
+      const summary = firstBefore(element, "summary");
+      if (summary) summary.click();
+    }
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // get list of elements after a start element up to element matching query
+  function nextUntil(element, query, exclude) {
+    const elements = [];
+    while (((element = element.nextElementSibling), element)) {
+      if (element.matches(query)) break;
+      if (!element.matches(exclude)) elements.push(element);
+    }
+    return elements;
+  }
+</script>
+<!--
+  Accordion Plugin
+
+  Allows sections of content under h2 headings to be collapsible.
+-->
+
+<script type="module">
+  // whether to always start expanded ('false'), always start collapsed
+  // ('true'), or start collapsed when screen small ('auto')
+  const startCollapsed = "auto";
+
+  // start script
+  function start() {
+    // run through each <h2> heading
+    const headings = document.querySelectorAll("h2");
+    for (const heading of headings) {
+      addArrow(heading);
+
+      // start expanded/collapsed based on option
+      if (
+        startCollapsed === "true" ||
+        (startCollapsed === "auto" && isSmallScreen()) ||
+        heading.dataset.collapsed === "true"
+      )
+        collapseHeading(heading);
+      else expandElement(heading);
+    }
+
+    // attach hash change listener to window
+    window.addEventListener("hashchange", onHashChange);
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) goToElement(target);
+  }
+
+  // add arrow to heading
+  function addArrow(heading) {
+    // add arrow button
+    const arrow = document.createElement("button");
+    arrow.innerHTML = document.querySelector(".icon_angle_down").innerHTML;
+    arrow.classList.add("icon_button", "accordion_arrow");
+    heading.insertBefore(arrow, heading.firstChild);
+
+    // attach click listener to heading and button
+    heading.addEventListener("click", onHeadingClick);
+    arrow.addEventListener("click", onArrowClick);
+  }
+
+  // determine if on mobile-like device with small screen
+  function isSmallScreen() {
+    return Math.min(window.innerWidth, window.innerHeight) < 480;
+  }
+
+  // when <h2> heading is clicked
+  function onHeadingClick(event) {
+    // only collapse if <h2> itself is target of click (eg, user did
+    // not click on anchor within <h2>)
+    if (event.target === this) toggleCollapse(this);
+  }
+
+  // when arrow button is clicked
+  function onArrowClick() {
+    toggleCollapse(this.parentNode);
+  }
+
+  // collapse section if expanded, expand if collapsed
+  function toggleCollapse(heading) {
+    if (heading.dataset.collapsed === "false") collapseHeading(heading);
+    else expandElement(heading);
+  }
+
+  // elements to exclude from collapse, such as table of contents panel,
+  // hypothesis panel, etc
+  const exclude = "#toc_panel, div.annotator-frame, #lightbox_overlay";
+
+  // collapse section
+  function collapseHeading(heading) {
+    heading.setAttribute("data-collapsed", "true");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "true");
+  }
+
+  // expand section
+  function expandElement(heading) {
+    heading.setAttribute("data-collapsed", "false");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "false");
+  }
+
+  // get list of elements between this <h2> and next <h2> or <h1>
+  // ("children" of the <h2> section)
+  function getChildren(heading) {
+    return nextUntil(heading, "h2, h1", exclude);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+  <!-- modified from: https://fontawesome.com/icons/angle-down -->
+  <svg width="16" height="16" viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* accordion arrow button */
+    .accordion_arrow {
+      margin-right: 10px;
+    }
+
+    /* arrow icon when <h2> data-collapsed attribute true */
+    h2[data-collapsed="true"] > .accordion_arrow > svg {
+      transform: rotate(-90deg);
+    }
+
+    /* all elements (except <h2>'s) when data-collapsed attribute true */
+    *:not(h2)[data-collapsed="true"] {
+      display: none;
+    }
+
+    /* accordion arrow button when hovered and <h2>'s when hovered */
+    .accordion_arrow:hover,
+    h2[data-collapsed="true"]:hover,
+    h2[data-collapsed="false"]:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always hide accordion arrow button on print */
+  @media only print {
+    .accordion_arrow {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Anchors Plugin
+
+  Adds an anchor next to each of a certain type of element that provides a
+  human-readable url to that specific item/position in the document (e.g.
+  "manuscript.html#abstract"). It also makes it such that scrolling out of view
+  of a target removes its identifier from the url.
+-->
+
+<script type="module">
+  // which types of elements to add anchors next to, in "document.querySelector"
+  // format
+  const typesQuery =
+    'h1, h2, h3, div[id^="fig:"], div[id^="tbl:"], span[id^="eq:"]';
+
+  // start script
+  function start() {
+    // add anchor to each element of specified types
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) addAnchor(element);
+
+    // attach scroll listener to window
+    window.addEventListener("scroll", onScroll);
+  }
+
+  // when window is scrolled
+  function onScroll() {
+    // if url has hash and user has scrolled out of view of hash
+    // target, remove hash from url
+    const tolerance = 100;
+    const target = getHashTarget();
+    if (target) {
+      if (
+        target.getBoundingClientRect().top > window.innerHeight + tolerance ||
+        target.getBoundingClientRect().bottom < 0 - tolerance
+      )
+        history.pushState(null, null, " ");
+    }
+  }
+
+  // add anchor to element
+  function addAnchor(element) {
+    let addTo; // element to add anchor button to
+
+    // if figure or table, modify withId and addTo to get expected
+    // elements
+    if (element.id.indexOf("fig:") === 0) {
+      addTo = element.querySelector("figcaption");
+    } else if (element.id.indexOf("tbl:") === 0) {
+      addTo = element.querySelector("caption");
+    } else if (element.id.indexOf("eq:") === 0) {
+      addTo = element.querySelector(".eqnos-number");
+    }
+
+    addTo = addTo || element;
+    const id = element.id || null;
+
+    // do not add anchor if element doesn't have assigned id.
+    // id is generated by pandoc and is assumed to be unique and
+    // human-readable
+    if (!id) return;
+
+    // create anchor button
+    const anchor = document.createElement("a");
+    anchor.innerHTML = document.querySelector(".icon_link").innerHTML;
+    anchor.title = "Link to this part of the document";
+    anchor.classList.add("icon_button", "anchor");
+    anchor.dataset.ignore = "true";
+    anchor.href = "#" + id;
+    addTo.appendChild(anchor);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- link icon -->
+
+<template class="icon_link">
+  <!-- modified from: https://fontawesome.com/icons/link -->
+  <svg width="16" height="16" viewBox="0 0 512 512">
+    <path
+      fill="currentColor"
+      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* anchor button */
+    .anchor {
+      opacity: 0;
+      margin-left: 5px;
+    }
+
+    /* anchor buttons within <h2>'s */
+    h2 .anchor {
+      margin-left: 10px;
+    }
+
+    /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+    *:hover > .anchor,
+    .anchor:hover,
+    .anchor:focus {
+      opacity: 1;
+    }
+
+    /* anchor button when hovered */
+    .anchor:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always show anchor button on devices with no mouse/hover ability */
+  @media (hover: none) {
+    .anchor {
+      opacity: 1;
+    }
+  }
+
+  /* always hide anchor button on print */
+  @media only print {
+    .anchor {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Attributes Plugin
+
+    Allows arbitrary HTML attributes to be attached to (almost) any element.
+    Place an HTML comment inside or next to the desired element with the content:
+    $attribute="value"
+-->
+
+<script type="module">
+  // start script
+  function start() {
+    // get list of comments in document
+    const comments = findComments();
+
+    for (const comment of comments)
+      if (comment.parentElement)
+        addAttributes(comment.parentElement, comment.nodeValue.trim());
+  }
+
+  // add html attributes to specified element based on string of
+  // html attributes and values
+  function addAttributes(element, text) {
+    // regex's for finding attribute/value pairs in the format of
+    // attribute="value" or attribute='value
+    const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+    const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+    // loop through attribute/value pairs
+    let match;
+    while ((match = text.match(regex2) || text.match(regex1))) {
+      // get attribute and value from regex capture groups
+      let attribute = match[1];
+      let value = match[2];
+
+      // remove from string
+      text = text.substring(match.index + match[0].length);
+
+      if (!attribute || !value) break;
+
+      // set attribute of parent element
+      try {
+        element.setAttribute(attribute, value);
+      } catch (error) {
+        console.log(error);
+      }
+
+      // special case for colspan
+      if (attribute === "colspan") removeTableCells(element, value);
+    }
+  }
+
+  // get list of comment elements in document
+  function findComments() {
+    const comments = [];
+
+    // iterate over comment nodes in document
+    function acceptNode(node) {
+      return NodeFilter.FILTER_ACCEPT;
+    }
+    const iterator = document.createNodeIterator(
+      document.body,
+      NodeFilter.SHOW_COMMENT,
+      acceptNode
+    );
+    let node;
+    while ((node = iterator.nextNode())) comments.push(node);
+
+    return comments;
+  }
+
+  // remove certain number of cells after specified cell
+  function removeTableCells(cell, number) {
+    number = parseInt(number);
+    if (!number) return;
+
+    // remove elements
+    for (; number > 1; number--) {
+      if (cell.nextElementSibling) cell.nextElementSibling.remove();
+    }
+  }
+
+  // start script on DOMContentLoaded instead of load to ensure this plugins
+  // runs before other plugins
+  window.addEventListener("DOMContentLoaded", start);
+</script>
+<!--
+  Jump to First Plugin
+
+  Adds a button next to each reference entry, figure, and table that jumps the
+  page to the first occurrence of a link to that item in the manuscript.
+-->
+
+<script type="module">
+  // whether to add buttons next to reference entries
+  const references = "true";
+  // whether to add buttons next to figures
+  const figures = "true";
+  // whether to add buttons next to tables
+  const tables = "true";
+
+  // start script
+  function start() {
+    if (references !== "false")
+      makeButtons(`div[id^="ref-"]`, ".csl-left-margin", "reference");
+    if (figures !== "false")
+      makeButtons(`div[id^="fig:"]`, "figcaption", "figure");
+    if (tables !== "false") makeButtons(`div[id^="tbl:"]`, "caption", "table");
+  }
+
+  // when jump button clicked
+  function onButtonClick() {
+    const first = getFirstOccurrence(this.dataset.id);
+    if (!first) return;
+
+    // update url hash so navigating "back" in history will return user to button
+    window.location.hash = this.dataset.id;
+    // scroll to link
+    const timeout = function () {
+      goToElement(first, window.innerHeight * 0.5);
+    };
+    window.setTimeout(timeout, 0);
+  }
+
+  // get first occurrence of link to item in document
+  function getFirstOccurrence(id) {
+    let query = "a";
+    query += '[href="#' + id + '"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelector(query);
+  }
+
+  // add button next to each reference entry, figure, or table
+  function makeButtons(query, containerQuery, subject) {
+    const elements = document.querySelectorAll(query);
+    for (const element of elements) {
+      const id = element.id;
+      const buttonContainer = element.querySelector(containerQuery);
+      const first = getFirstOccurrence(id);
+
+      // if can't find link to reference or place to put button, ignore
+      if (!first || !buttonContainer) continue;
+
+      // make jump button
+      let button = document.createElement("button");
+      button.classList.add("icon_button", "jump_arrow");
+      button.title = `Jump to the first occurrence of this ${subject} in the document`;
+      const icon = document.querySelector(".icon_angle_double_up");
+      button.innerHTML = icon.innerHTML;
+      button.dataset.id = id;
+      button.dataset.ignore = "true";
+      button.addEventListener("click", onButtonClick);
+      buttonContainer.prepend(button);
+    }
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+  <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+  <svg width="16" height="16" viewBox="0 0 320 512">
+    <path
+      fill="currentColor"
+      d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* jump button */
+    .jump_arrow {
+      position: relative;
+      top: 0.125em;
+      margin-right: 5px;
+    }
+  }
+
+  /* always hide jump button on print */
+  @media only print {
+    .jump_arrow {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Lightbox Plugin
+
+    Makes it such that when a user clicks on an image, the image fills the
+    screen and the user can pan/drag/zoom the image and navigate between other
+    images in the document.
+-->
+
+<script type="module">
+  // list of possible zoom/scale factors
+  const zooms =
+    "0.1, 0.25, 0.333333, 0.5, 0.666666, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8";
+  // whether to fit image to view ('fit'), display at 100% and shrink if
+  // necessary ('shrink'), or always display at 100% ('100')
+  const defaultZoom = "fit";
+  // whether to zoom in/out toward center of view ('true') or mouse ('false')
+  const centerZoom = "false";
+
+  // start script
+  function start() {
+    // run through each <img> element
+    const imgs = document.querySelectorAll("figure > img");
+    let count = 1;
+    for (const img of imgs) {
+      img.classList.add("lightbox_document_img");
+      img.dataset.number = count;
+      img.dataset.total = imgs.length;
+      img.addEventListener("click", openLightbox);
+      count++;
+    }
+
+    // attach mouse and key listeners to window
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("keyup", onKeyUp);
+  }
+
+  // when mouse is moved anywhere in window
+  function onWindowMouseMove(event) {
+    window.mouseX = event.clientX;
+    window.mouseY = event.clientY;
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("lightbox_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("lightbox_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeLightbox();
+        break;
+    }
+  }
+
+  // open lightbox
+  function openLightbox() {
+    const lightbox = makeLightbox(this);
+    if (!lightbox) return;
+
+    blurBody(lightbox);
+    document.body.appendChild(lightbox);
+  }
+
+  // make lightbox
+  function makeLightbox(img) {
+    // delete lightbox if it exists, start fresh
+    closeLightbox();
+
+    // create screen overlay containing lightbox
+    const overlay = document.createElement("div");
+    overlay.id = "lightbox_overlay";
+
+    // create image info boxes
+    const numberInfo = document.createElement("div");
+    const zoomInfo = document.createElement("div");
+    numberInfo.id = "lightbox_number_info";
+    zoomInfo.id = "lightbox_zoom_info";
+
+    // create container for image
+    const imageContainer = document.createElement("div");
+    imageContainer.id = "lightbox_image_container";
+    const lightboxImg = makeLightboxImg(
+      img,
+      imageContainer,
+      numberInfo,
+      zoomInfo
+    );
+    imageContainer.appendChild(lightboxImg);
+
+    // create bottom container for caption and navigation buttons
+    const bottomContainer = document.createElement("div");
+    bottomContainer.id = "lightbox_bottom_container";
+    const caption = makeCaption(img);
+    const prevButton = makePrevButton(img);
+    const nextButton = makeNextButton(img);
+    bottomContainer.appendChild(prevButton);
+    bottomContainer.appendChild(caption);
+    bottomContainer.appendChild(nextButton);
+
+    // attach top middle and bottom to overlay
+    overlay.appendChild(numberInfo);
+    overlay.appendChild(zoomInfo);
+    overlay.appendChild(imageContainer);
+    overlay.appendChild(bottomContainer);
+
+    return overlay;
+  }
+
+  // make <img> object that is intuitively draggable and zoomable
+  function makeLightboxImg(sourceImg, container, numberInfoBox, zoomInfoBox) {
+    // create copy of source <img>
+    const img = sourceImg.cloneNode(true);
+    img.classList.remove("lightbox_document_img");
+    img.removeAttribute("id");
+    img.removeAttribute("width");
+    img.removeAttribute("height");
+    img.style.position = "unset";
+    img.style.margin = "0";
+    img.style.padding = "0";
+    img.style.width = "";
+    img.style.height = "";
+    img.style.minWidth = "";
+    img.style.minHeight = "";
+    img.style.maxWidth = "";
+    img.style.maxHeight = "";
+    img.id = "lightbox_img";
+
+    // build sorted list of zoomSteps
+    const zoomSteps = zooms.split(/[^0-9.]/).map((step) => parseFloat(step));
+    zoomSteps.sort((a, b) => a - b);
+
+    // <img> object property variables
+    let zoom = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let clickMouseX = undefined;
+    let clickMouseY = undefined;
+    let clickTranslateX = undefined;
+    let clickTranslateY = undefined;
+
+    updateNumberInfo();
+
+    // update image numbers displayed in info box
+    function updateNumberInfo() {
+      numberInfoBox.innerHTML =
+        sourceImg.dataset.number + " of " + sourceImg.dataset.total;
+    }
+
+    // update zoom displayed in info box
+    function updateZoomInfo() {
+      let zoomInfo = zoom * 100;
+      if (!Number.isInteger(zoomInfo)) zoomInfo = zoomInfo.toFixed(2);
+      zoomInfoBox.innerHTML = zoomInfo + "%";
+    }
+
+    // move to closest zoom step above current zoom
+    const zoomIn = function () {
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep > zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      updateTransform();
+    };
+
+    // move to closest zoom step above current zoom
+    const zoomOut = function () {
+      zoomSteps.reverse();
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep < zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      zoomSteps.reverse();
+
+      updateTransform();
+    };
+
+    // update display of <img> based on scale/translate properties
+    const updateTransform = function () {
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      // get new width/height after scale
+      const rect = img.getBoundingClientRect();
+      // limit translate
+      translateX = Math.max(translateX, -rect.width / 2);
+      translateX = Math.min(translateX, rect.width / 2);
+      translateY = Math.max(translateY, -rect.height / 2);
+      translateY = Math.min(translateY, rect.height / 2);
+
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      updateZoomInfo();
+    };
+
+    // fit <img> to container
+    const fit = function () {
+      // no x/y offset, 100% zoom by default
+      translateX = 0;
+      translateY = 0;
+      zoom = 1;
+
+      // widths of <img> and container
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      const containerWidth = parseFloat(
+        window.getComputedStyle(container).width
+      );
+      const containerHeight = parseFloat(
+        window.getComputedStyle(container).height
+      );
+
+      // how much zooming is needed to fit <img> to container
+      const xRatio = imgWidth / containerWidth;
+      const yRatio = imgHeight / containerHeight;
+      const maxRatio = Math.max(xRatio, yRatio);
+      const newZoom = 1 / maxRatio;
+
+      // fit <img> to container according to option
+      if (defaultZoom === "shrink") {
+        if (maxRatio > 1) zoom = newZoom;
+      } else if (defaultZoom === "fit") zoom = newZoom;
+
+      updateTransform();
+    };
+
+    // when mouse wheel is rolled anywhere in container
+    const onContainerWheel = function (event) {
+      if (!event) return;
+
+      // let ctrl + mouse wheel to zoom behave as normal
+      if (event.ctrlKey) return;
+
+      // prevent normal scroll behavior
+      event.preventDefault();
+      event.stopPropagation();
+
+      // point around which to scale img
+      const viewRect = container.getBoundingClientRect();
+      const viewX = (viewRect.left + viewRect.right) / 2;
+      const viewY = (viewRect.top + viewRect.bottom) / 2;
+      const originX = centerZoom === "true" ? viewX : mouseX;
+      const originY = centerZoom === "true" ? viewY : mouseY;
+
+      // get point on image under origin
+      const oldRect = img.getBoundingClientRect();
+      const oldPercentX = (originX - oldRect.left) / oldRect.width;
+      const oldPercentY = (originY - oldRect.top) / oldRect.height;
+
+      // increment/decrement zoom
+      if (event.deltaY < 0) zoomIn();
+      if (event.deltaY > 0) zoomOut();
+
+      // get offset between previous image point and origin
+      const newRect = img.getBoundingClientRect();
+      const offsetX = originX - (newRect.left + newRect.width * oldPercentX);
+      const offsetY = originY - (newRect.top + newRect.height * oldPercentY);
+
+      // translate image to keep image point under origin
+      translateX += offsetX;
+      translateY += offsetY;
+
+      // perform translate
+      updateTransform();
+    };
+
+    // when container is clicked
+    function onContainerClick(event) {
+      // if container itself is target of click, and not other
+      // element above it
+      if (event.target === this) closeLightbox();
+    }
+
+    // when mouse button is pressed on image
+    const onImageMouseDown = function (event) {
+      // store original mouse position relative to image
+      clickMouseX = window.mouseX;
+      clickMouseY = window.mouseY;
+      clickTranslateX = translateX;
+      clickTranslateY = translateY;
+      event.stopPropagation();
+      event.preventDefault();
+    };
+
+    // when mouse button is released anywhere in window
+    const onWindowMouseUp = function (event) {
+      // reset original mouse position
+      clickMouseX = undefined;
+      clickMouseY = undefined;
+      clickTranslateX = undefined;
+      clickTranslateY = undefined;
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mouseup", onWindowMouseUp);
+    };
+
+    // when mouse is moved anywhere in window
+    const onWindowMouseMove = function (event) {
+      if (
+        clickMouseX === undefined ||
+        clickMouseY === undefined ||
+        clickTranslateX === undefined ||
+        clickTranslateY === undefined
+      )
+        return;
+
+      // offset image based on original and current mouse position
+      translateX = clickTranslateX + window.mouseX - clickMouseX;
+      translateY = clickTranslateY + window.mouseY - clickMouseY;
+      updateTransform();
+      event.preventDefault();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mousemove", onWindowMouseMove);
+    };
+
+    // when window is resized
+    const onWindowResize = function (event) {
+      fit();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("resize", onWindowResize);
+    };
+
+    // attach the necessary event listeners
+    img.addEventListener("dblclick", fit);
+    img.addEventListener("mousedown", onImageMouseDown);
+    container.addEventListener("wheel", onContainerWheel);
+    container.addEventListener("mousedown", onContainerClick);
+    container.addEventListener("touchstart", onContainerClick);
+    window.addEventListener("mouseup", onWindowMouseUp);
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("resize", onWindowResize);
+
+    // run fit() after lightbox atttached to document and <img> Loaded
+    // so needed container and img dimensions available
+    img.addEventListener("load", fit);
+
+    return img;
+  }
+
+  // make caption
+  function makeCaption(img) {
+    const caption = document.createElement("div");
+    caption.id = "lightbox_caption";
+    const captionSource = img.nextElementSibling;
+    if (captionSource.tagName.toLowerCase() === "figcaption") {
+      const captionCopy = makeCopy(captionSource);
+      caption.innerHTML = captionCopy.innerHTML;
+    }
+
+    caption.addEventListener("touchstart", function (event) {
+      event.stopPropagation();
+    });
+
+    return caption;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // make button to jump to previous image in document
+  function makePrevButton(img) {
+    const prevButton = document.createElement("button");
+    prevButton.id = "lightbox_prev_button";
+    prevButton.title = "Jump to the previous image in the document [←]";
+    prevButton.classList.add("icon_button", "lightbox_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+
+    // attach click listeners to button
+    prevButton.addEventListener("click", function () {
+      getPrevImg(img).click();
+    });
+
+    return prevButton;
+  }
+
+  // make button to jump to next image in document
+  function makeNextButton(img) {
+    const nextButton = document.createElement("button");
+    nextButton.id = "lightbox_next_button";
+    nextButton.title = "Jump to the next image in the document [→]";
+    nextButton.classList.add("icon_button", "lightbox_button");
+    nextButton.innerHTML = document.querySelector(
+      ".icon_caret_right"
+    ).innerHTML;
+
+    // attach click listeners to button
+    nextButton.addEventListener("click", function () {
+      getNextImg(img).click();
+    });
+
+    return nextButton;
+  }
+
+  // get previous image in document
+  function getPrevImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if < 1
+    if (index - 1 >= 0) index--;
+    else index = imgs.length - 1;
+    return imgs[index];
+  }
+
+  // get next image in document
+  function getNextImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if > total
+    if (index + 1 <= imgs.length - 1) index++;
+    else index = 0;
+    return imgs[index];
+  }
+
+  // close lightbox
+  function closeLightbox() {
+    focusBody();
+
+    const lightbox = document.getElementById("lightbox_overlay");
+    if (lightbox) lightbox.remove();
+  }
+
+  // make all elements behind lightbox non-focusable
+  function blurBody(overlay) {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.tabIndex = -1;
+    document.body.classList.add("body_no_scroll");
+  }
+
+  // make all elements focusable again
+  function focusBody() {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.removeAttribute("tabIndex");
+    document.body.classList.remove("body_no_scroll");
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* regular <img> in document when hovered */
+    img.lightbox_document_img:hover {
+      cursor: pointer;
+    }
+
+    .body_no_scroll {
+      overflow: hidden !important;
+    }
+
+    /* screen overlay */
+    #lightbox_overlay {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 3;
+    }
+
+    /* middle area containing lightbox image */
+    #lightbox_image_container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* bottom area containing caption */
+    #lightbox_bottom_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* image number info text box */
+    #lightbox_number_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      left: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* zoom info text box */
+    #lightbox_zoom_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      right: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* copy of image caption */
+    #lightbox_caption {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      max-height: 100%;
+      padding: 10px 0;
+      text-align: center;
+      overflow-y: auto;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button */
+    .lightbox_button {
+      width: 100px;
+      height: 100%;
+      min-width: 100px;
+      min-height: 100%;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button when hovered */
+    .lightbox_button:hover {
+      background: none !important;
+    }
+
+    /* navigation button icon */
+    .lightbox_button > svg {
+      height: 25px;
+    }
+
+    /* figure auto-number */
+    #lightbox_caption > span:first-of-type {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    /* lightbox image when hovered */
+    #lightbox_img:hover {
+      cursor: grab;
+    }
+
+    /* lightbox image when grabbed */
+    #lightbox_img:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* when on screen < 480px wide */
+  @media only screen and (max-width: 480px) {
+    /* make navigation buttons skinnier on small screens to make more room for caption text */
+    .lightbox_button {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  /* always hide lightbox on print */
+  @media only print {
+    #lightbox_overlay {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Link Highlight Plugin
+
+  Makes it such that when a user hovers or focuses a link, other links that have
+  the same target will be highlighted. It also makes it such that when clicking
+  a link, the target of the link (eg reference, figure, table) is briefly
+  highlighted.
+-->
+
+<script type="module">
+  // whether to also highlight links that go to external urls
+  const externalLinks = "false";
+  // whether user must click off to unhighlight instead of just
+  // un-hovering
+  const clickUnhighlight = "false";
+  // whether to also highlight links that are unique
+  const highlightUnique = "true";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach mouse and focus listeners to link
+      link.addEventListener("mouseenter", onLinkFocus);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("mouseleave", onLinkUnhover);
+    }
+
+    // attach click and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("hashchange", onHashChange);
+
+    // run hash change on window load in case user has navigated
+    // directly to hash
+    onHashChange();
+  }
+
+  // when link is focused (tabbed to) or hovered
+  function onLinkFocus() {
+    highlight(this);
+  }
+
+  // when link is unhovered
+  function onLinkUnhover() {
+    if (clickUnhighlight !== "true") unhighlightAll();
+  }
+
+  // when the mouse is clicked anywhere in window
+  function onClick(event) {
+    unhighlightAll();
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) glowElement(target);
+  }
+
+  // start glow sequence on an element
+  function glowElement(element) {
+    const startGlow = function () {
+      onGlowEnd();
+      element.dataset.glow = "true";
+      element.addEventListener("animationend", onGlowEnd);
+    };
+    const onGlowEnd = function () {
+      element.removeAttribute("data-glow");
+      element.removeEventListener("animationend", onGlowEnd);
+    };
+    startGlow();
+  }
+
+  // highlight link and all others with same target
+  function highlight(link) {
+    // force unhighlight all to start fresh
+    unhighlightAll();
+
+    // get links with same target
+    if (!link) return;
+    const sameLinks = getSameLinks(link);
+
+    // if link unique and option is off, exit and don't highlight
+    if (sameLinks.length <= 1 && highlightUnique !== "true") return;
+
+    // highlight all same links, and "select" (special highlight) this
+    // one
+    for (const sameLink of sameLinks) {
+      if (sameLink === link) sameLink.setAttribute("data-selected", "true");
+      else sameLink.setAttribute("data-highlighted", "true");
+    }
+  }
+
+  // unhighlight all links
+  function unhighlightAll() {
+    const links = getLinks();
+    for (const link of links) {
+      link.setAttribute("data-selected", "false");
+      link.setAttribute("data-highlighted", "false");
+    }
+  }
+
+  // get links with same target
+  function getSameLinks(link) {
+    const results = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        results.push(otherLink);
+    }
+    return results;
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    let query = "a";
+    if (externalLinks !== "true") query += '[href^="#"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelectorAll(query);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<style>
+  @media only screen {
+    /* anything with data-highlighted attribute true */
+    [data-highlighted="true"] {
+      background: #ffeb3b;
+    }
+
+    /* anything with data-selected attribute true */
+    [data-selected="true"] {
+      background: #ff8a65 !important;
+    }
+
+    /* animation definition for glow */
+    @keyframes highlight_glow {
+      0% {
+        background: none;
+      }
+      10% {
+        background: #bbdefb;
+      }
+      100% {
+        background: none;
+      }
+    }
+
+    /* anything with data-glow attribute true */
+    [data-glow="true"] {
+      animation: highlight_glow 2s;
+    }
+  }
+</style>
+<!--
+  Table of Contents Plugin
+
+  Provides a "table of contents" (toc) panel on the side of the document that
+  allows the user to conveniently navigate between sections of the document.
+-->
+
+<script type="module">
+  // which types of elements to add links for, in "document.querySelector" format
+  const typesQuery = "h1, h2, h3";
+  // whether toc starts open. use 'true' or 'false', or 'auto' to
+  // use 'true' behavior when screen wide enough and 'false' when not
+  const startOpen = "false";
+  // whether toc closes when clicking on toc link. use 'true' or
+  // 'false', or 'auto' to use 'false' behavior when screen wide
+  // enough and 'true' when not
+  const clickClose = "auto";
+  // if list item is more than this many characters, text will be
+  // truncated
+  const charLimit = "50";
+  // whether or not to show bullets next to each toc item
+  const bullets = "false";
+
+  // start script
+  function start() {
+    // make toc panel and populate with entries (links to document
+    // sections)
+    const panel = makePanel();
+    if (!panel) return;
+    makeEntries(panel);
+    // attach panel to document after making entries, so 'toc' heading
+    // in panel isn't included in toc
+    document.body.insertBefore(panel, document.body.firstChild);
+
+    // initial panel state
+    if (startOpen === "true" || (startOpen === "auto" && !isSmallScreen()))
+      openPanel();
+    else closePanel();
+
+    // attach click, scroll, and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("hashchange", onScroll);
+    window.addEventListener("keyup", onKeyUp);
+    onScroll();
+
+    // add class to push document body down out of way of toc button
+    document.body.classList.add("toc_body_nudge");
+  }
+
+  // determine if screen wide enough to fit toc panel
+  function isSmallScreen() {
+    // in default theme:
+    // 816px = 8.5in = width of "page" (<body>) element
+    // 260px = min width of toc panel (*2 for both sides of <body>)
+    return window.innerWidth < 816 + 260 * 2;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick() {
+    if (isSmallScreen()) closePanel();
+  }
+
+  // when window is scrolled or hash changed
+  function onScroll() {
+    highlightViewed();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    // close on esc
+    if (event.key === "Escape") closePanel();
+  }
+
+  // find entry of currently viewed document section in toc and highlight
+  function highlightViewed() {
+    const firstId = getFirstInView(typesQuery);
+
+    // get toc entries (links), unhighlight all, then highlight viewed
+    const list = document.getElementById("toc_list");
+    if (!firstId || !list) return;
+    const links = list.querySelectorAll("a");
+    for (const link of links) link.dataset.viewing = "false";
+    const link = list.querySelector('a[href="#' + firstId + '"]');
+    if (!link) return;
+    link.dataset.viewing = "true";
+  }
+
+  // get first or previous toc listed element in top half of view
+  function getFirstInView(query) {
+    // get all elements matching query and with id
+    const elements = document.querySelectorAll(query);
+    const elementsWithIds = [];
+    for (const element of elements) {
+      if (element.id) elementsWithIds.push(element);
+    }
+
+    // get first or previous element in top half of view
+    for (let i = 0; i < elementsWithIds.length; i++) {
+      const element = elementsWithIds[i];
+      const prevElement = elementsWithIds[Math.max(0, i - 1)];
+      if (element.getBoundingClientRect().top >= 0) {
+        if (element.getBoundingClientRect().top < window.innerHeight / 2)
+          return element.id;
+        else return prevElement.id;
+      }
+    }
+  }
+
+  // make panel
+  function makePanel() {
+    // create panel
+    const panel = document.createElement("div");
+    panel.id = "toc_panel";
+    if (bullets === "true") panel.dataset.bullets = "true";
+
+    // create header
+    const header = document.createElement("div");
+    header.id = "toc_header";
+
+    // create toc button
+    const button = document.createElement("button");
+    button.id = "toc_button";
+    button.innerHTML = document.querySelector(".icon_th_list").innerHTML;
+    button.title = "Table of Contents";
+    button.classList.add("icon_button");
+
+    // create header text
+    const text = document.createElement("h4");
+    text.innerHTML = "Table of Contents";
+
+    // create container for toc list
+    const list = document.createElement("div");
+    list.id = "toc_list";
+
+    // attach click listeners
+    panel.addEventListener("click", onPanelClick);
+    header.addEventListener("click", onHeaderClick);
+    button.addEventListener("click", onButtonClick);
+
+    // attach elements
+    header.appendChild(button);
+    header.appendChild(text);
+    panel.appendChild(header);
+    panel.appendChild(list);
+
+    return panel;
+  }
+
+  // create toc entries (links) to each element of the specified types
+  function makeEntries(panel) {
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) {
+      // do not add link if element doesn't have assigned id
+      if (!element.id) continue;
+
+      // create link/list item
+      const link = document.createElement("a");
+      link.classList.add("toc_link");
+      switch (element.tagName.toLowerCase()) {
+        case "h1":
+          link.dataset.level = "1";
+          break;
+        case "h2":
+          link.dataset.level = "2";
+          break;
+        case "h3":
+          link.dataset.level = "3";
+          break;
+        case "h4":
+          link.dataset.level = "4";
+          break;
+      }
+      link.title = element.innerText;
+      let text = element.innerText;
+      if (text.length > charLimit) text = text.slice(0, charLimit) + "...";
+      link.innerHTML = text;
+      link.href = "#" + element.id;
+      link.addEventListener("click", onLinkClick);
+
+      // attach link
+      panel.querySelector("#toc_list").appendChild(link);
+    }
+  }
+
+  // when panel is clicked
+  function onPanelClick(event) {
+    // stop click from propagating to window/document and closing panel
+    event.stopPropagation();
+  }
+
+  // when header itself is clicked
+  function onHeaderClick(event) {
+    togglePanel();
+  }
+
+  // when button is clicked
+  function onButtonClick(event) {
+    togglePanel();
+    // stop header underneath button from also being clicked
+    event.stopPropagation();
+  }
+
+  // when link is clicked
+  function onLinkClick(event) {
+    if (clickClose === "true" || (clickClose === "auto" && isSmallScreen()))
+      closePanel();
+    else openPanel();
+  }
+
+  // open panel if closed, close if opened
+  function togglePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (!panel) return;
+
+    if (panel.dataset.open === "true") closePanel();
+    else openPanel();
+  }
+
+  // open panel
+  function openPanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "true";
+  }
+
+  // close panel
+  function closePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "false";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+  <!-- modified from: https://fontawesome.com/icons/th-list -->
+  <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* toc panel */
+    #toc_panel {
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      z-index: 2;
+    }
+
+    /* toc panel when closed */
+    #toc_panel[data-open="false"] {
+      min-width: 60px;
+      width: 60px;
+      height: 60px;
+      border-right: solid 1px #bdbdbd;
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc panel when open */
+    #toc_panel[data-open="true"] {
+      min-width: 260px;
+      max-width: 480px;
+      /* keep panel edge consistent distance away from "page" edge */
+      width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+      bottom: 0;
+      border-right: solid 1px #bdbdbd;
+    }
+
+    /* toc panel header */
+    #toc_header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* toc panel header when hovered */
+    #toc_header:hover {
+      cursor: pointer;
+    }
+
+    /* toc panel header when panel open */
+    #toc_panel[data-open="true"] > #toc_header {
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc open/close header button */
+    #toc_button {
+      margin-right: 20px;
+    }
+
+    /* hide toc list and header text when closed */
+    #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
+    #toc_panel[data-open="false"] > #toc_list {
+      display: none;
+    }
+
+    /* toc list of entries */
+    #toc_list {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: calc(60px + 1px);
+      bottom: 0;
+      overflow: auto;
+    }
+
+    /* toc entry, link to section in document */
+    .toc_link {
+      display: block;
+      padding: 5px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* toc entry when hovered or when "viewed" */
+    .toc_link:hover,
+    .toc_link[data-viewing="true"] {
+      background: #f5f5f5;
+    }
+
+    /* toc entry, level 1 indentation */
+    .toc_link[data-level="1"] {
+      margin-left: 0;
+    }
+
+    /* toc entry, level 2 indentation */
+    .toc_link[data-level="2"] {
+      margin-left: 20px;
+    }
+
+    /* toc entry, level 3 indentation */
+    .toc_link[data-level="3"] {
+      margin-left: 40px;
+    }
+
+    /* toc entry, level 4 indentation */
+    .toc_link[data-level="4"] {
+      margin-left: 60px;
+    }
+
+    /* toc entry bullets */
+    #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+      position: absolute;
+      left: -15px;
+      top: -1px;
+      font-size: 1.5em;
+    }
+
+    /* toc entry, level 2 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+      content: "\2022";
+    }
+
+    /* toc entry, level 3 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+      content: "\25AB";
+    }
+
+    /* toc entry, level 4 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+      content: "-";
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* push <body> ("page") element down to make room for toc icon */
+    .toc_body_nudge {
+      padding-top: 60px;
+    }
+
+    /* toc icon when panel closed and not hovered */
+    #toc_panel[data-open="false"]:not(:hover) {
+      background: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  /* always hide toc panel on print */
+  @media only print {
+    #toc_panel {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Tooltips Plugin
+
+  Makes it such that when the user hovers or focuses a link to a citation or
+  figure, a tooltip appears with a preview of the reference content, along with
+  arrows to navigate between instances of the same reference in the document.
+-->
+
+<script type="module">
+  // whether user must click off to close tooltip instead of just un-hovering
+  const clickClose = "false";
+  // delay (in ms) between opening and closing tooltip
+  const delay = "100";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach hover and focus listeners to link
+      link.addEventListener("mouseover", onLinkHover);
+      link.addEventListener("mouseleave", onLinkUnhover);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("touchend", onLinkTouch);
+    }
+
+    // attach mouse, key, and resize listeners to window
+    window.addEventListener("mousedown", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("keyup", onKeyUp);
+    window.addEventListener("resize", onResize);
+  }
+
+  // when link is hovered
+  function onLinkHover() {
+    // function to open tooltip
+    const delayOpenTooltip = function () {
+      openTooltip(this);
+    }.bind(this);
+
+    // run open function after delay
+    this.openTooltipTimer = window.setTimeout(delayOpenTooltip, delay);
+  }
+
+  // when mouse leaves link
+  function onLinkUnhover() {
+    // cancel opening tooltip
+    window.clearTimeout(this.openTooltipTimer);
+
+    // don't close on unhover if option specifies
+    if (clickClose === "true") return;
+
+    // function to close tooltip
+    const delayCloseTooltip = function () {
+      // if tooltip open and if mouse isn't over tooltip, close
+      const tooltip = document.getElementById("tooltip");
+      if (tooltip && !tooltip.matches(":hover")) closeTooltip();
+    };
+
+    // run close function after delay
+    this.closeTooltipTimer = window.setTimeout(delayCloseTooltip, delay);
+  }
+
+  // when link is focused (tabbed to)
+  function onLinkFocus(event) {
+    openTooltip(this);
+  }
+
+  // when link is touched on touch screen
+  function onLinkTouch(event) {
+    // attempt to force hover state on first tap always, and trigger
+    // regular link click (and navigation) on second tap
+    if (event.target === document.activeElement) event.target.click();
+    else {
+      document.activeElement.blur();
+      event.target.focus();
+    }
+    if (event.cancelable) event.preventDefault();
+    event.stopPropagation();
+    return false;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick(event) {
+    closeTooltip();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("tooltip_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("tooltip_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeTooltip();
+        break;
+    }
+  }
+
+  // when window is resized or zoomed
+  function onResize() {
+    closeTooltip();
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    const queries = [];
+    // exclude buttons, anchor links, toc links, etc
+    const exclude =
+      ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    queries.push('a[href^="#ref-"]' + exclude); // citation links
+    queries.push('a[href^="#fig:"]' + exclude); // figure links
+    const query = queries.join(", ");
+    return document.querySelectorAll(query);
+  }
+
+  // get links with same target, get index of link in set, get total
+  // same links
+  function getSameLinks(link) {
+    const sameLinks = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        sameLinks.push(otherLink);
+    }
+
+    return {
+      elements: sameLinks,
+      index: sameLinks.indexOf(link),
+      total: sameLinks.length,
+    };
+  }
+
+  // open tooltip
+  function openTooltip(link) {
+    // delete tooltip if it exists, start fresh
+    closeTooltip();
+
+    // make tooltip element
+    const tooltip = makeTooltip(link);
+
+    // if source couldn't be found and tooltip not made, exit
+    if (!tooltip) return;
+
+    // make navbar elements
+    const navBar = makeNavBar(link);
+    if (navBar) tooltip.firstElementChild.appendChild(navBar);
+
+    // attach tooltip to page
+    document.body.appendChild(tooltip);
+
+    // position tooltip
+    const position = function () {
+      positionTooltip(link);
+    };
+    position();
+
+    // if tooltip contains images, position again after they've loaded
+    const imgs = tooltip.querySelectorAll("img");
+    for (const img of imgs) img.addEventListener("load", position);
+  }
+
+  // close (delete) tooltip
+  function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) tooltip.remove();
+  }
+
+  // make tooltip
+  function makeTooltip(link) {
+    // get target element that link points to
+    const source = getSource(link);
+
+    // if source can't be found, exit
+    if (!source) return;
+
+    // create new tooltip
+    const tooltip = document.createElement("div");
+    tooltip.id = "tooltip";
+    const tooltipContent = document.createElement("div");
+    tooltipContent.id = "tooltip_content";
+    tooltip.appendChild(tooltipContent);
+
+    // make copy of source node and put in tooltip
+    const sourceCopy = makeCopy(source);
+    tooltipContent.appendChild(sourceCopy);
+
+    // attach mouse event listeners
+    tooltip.addEventListener("click", onTooltipClick);
+    tooltip.addEventListener("mousedown", onTooltipClick);
+    tooltip.addEventListener("touchstart", onTooltipClick);
+    tooltip.addEventListener("mouseleave", onTooltipUnhover);
+
+    // (for interaction with lightbox plugin)
+    // transfer click on tooltip copied img to original img
+    const sourceImg = source.querySelector("img");
+    const sourceCopyImg = sourceCopy.querySelector("img");
+    if (sourceImg && sourceCopyImg) {
+      const clickImg = function () {
+        sourceImg.click();
+        closeTooltip();
+      };
+      sourceCopyImg.addEventListener("click", clickImg);
+    }
+
+    return tooltip;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+      "class",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // when tooltip is clicked
+  function onTooltipClick(event) {
+    // when user clicks on tooltip, stop click from transferring
+    // outside of tooltip (eg, click off to close tooltip, or eg click
+    // off to unhighlight same refs)
+    event.stopPropagation();
+  }
+
+  // when tooltip is unhovered
+  function onTooltipUnhover(event) {
+    if (clickClose === "true") return;
+
+    // make sure new mouse/touch/focus no longer over tooltip or any
+    // element within it
+    const tooltip = document.getElementById("tooltip");
+    if (!tooltip) return;
+    if (this.contains(event.relatedTarget)) return;
+
+    closeTooltip();
+  }
+
+  // make nav bar to go betwen prev/next instances of same reference
+  function makeNavBar(link) {
+    // find other links to the same source
+    const sameLinks = getSameLinks(link);
+
+    // don't show nav bar when singular reference
+    if (sameLinks.total <= 1) return;
+
+    // find prev/next links with same target
+    const prevLink = getPrevLink(link, sameLinks);
+    const nextLink = getNextLink(link, sameLinks);
+
+    // create nav bar
+    const navBar = document.createElement("div");
+    navBar.id = "tooltip_nav_bar";
+    const text = sameLinks.index + 1 + " of " + sameLinks.total;
+
+    // create nav bar prev/next buttons
+    const prevButton = document.createElement("button");
+    const nextButton = document.createElement("button");
+    prevButton.id = "tooltip_prev_button";
+    nextButton.id = "tooltip_next_button";
+    prevButton.title =
+      "Jump to the previous occurence of this item in the document [←]";
+    nextButton.title =
+      "Jump to the next occurence of this item in the document [→]";
+    prevButton.classList.add("icon_button");
+    nextButton.classList.add("icon_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+    nextButton.innerHTML =
+      document.querySelector(".icon_caret_right").innerHTML;
+    navBar.appendChild(prevButton);
+    navBar.appendChild(document.createTextNode(text));
+    navBar.appendChild(nextButton);
+
+    // attach click listeners to buttons
+    prevButton.addEventListener("click", function () {
+      onPrevNextClick(link, prevLink);
+    });
+    nextButton.addEventListener("click", function () {
+      onPrevNextClick(link, nextLink);
+    });
+
+    return navBar;
+  }
+
+  // get previous link with same target
+  function getPrevLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if < 1
+    let index;
+    if (sameLinks.index - 1 >= 0) index = sameLinks.index - 1;
+    else index = sameLinks.total - 1;
+    return sameLinks.elements[index];
+  }
+
+  // get next link with same target
+  function getNextLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if > total
+    let index;
+    if (sameLinks.index + 1 <= sameLinks.total - 1) index = sameLinks.index + 1;
+    else index = 0;
+    return sameLinks.elements[index];
+  }
+
+  // get element that is target of link or url hash
+  function getSource(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector('[id="' + id + '"]');
+    if (!target) return;
+
+    // if ref or figure, modify target to get expected element
+    if (id.indexOf("ref-") === 0) target = target.querySelector(":nth-child(2)");
+    else if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+
+    return target;
+  }
+
+  // when prev/next arrow button is clicked
+  function onPrevNextClick(link, prevNextLink) {
+    if (link && prevNextLink)
+      goToElement(prevNextLink, window.innerHeight * 0.5);
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // determine position to place tooltip based on link position in
+  // viewport and tooltip size
+  function positionTooltip(link, left, top) {
+    const tooltipElement = document.getElementById("tooltip");
+    if (!tooltipElement) return;
+
+    // get convenient vars for position/dimensions of
+    // link/tooltip/page/view
+    link = getRectInPage(link);
+    const tooltip = getRectInPage(tooltipElement);
+    const view = getRectInPage();
+
+    // horizontal positioning
+    if (left)
+      // use explicit value
+      left = left;
+    else if (link.left + tooltip.width < view.right)
+      // fit tooltip to right of link
+      left = link.left;
+    else if (link.right - tooltip.width > view.left)
+      // fit tooltip to left of link
+      left = link.right - tooltip.width;
+    // center tooltip in view
+    else left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+    // vertical positioning
+    if (top)
+      // use explicit value
+      top = top;
+    else if (link.top - tooltip.height > view.top)
+      // fit tooltip above link
+      top = link.top - tooltip.height;
+    else if (link.bottom + tooltip.height < view.bottom)
+      // fit tooltip below link
+      top = link.bottom;
+    else {
+      // center tooltip in view
+      top = view.top + view.height / 2 - tooltip.height / 2;
+      // nudge off of link to left/right if possible
+      if (link.right + tooltip.width < view.right) left = link.right;
+      else if (link.left - tooltip.width > view.left)
+        left = link.left - tooltip.width;
+    }
+
+    tooltipElement.style.left = left + "px";
+    tooltipElement.style.top = top + "px";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* tooltip container */
+    #tooltip {
+      position: absolute;
+      width: 50%;
+      min-width: 240px;
+      max-width: 75%;
+      z-index: 1;
+    }
+
+    /* tooltip content */
+    #tooltip_content {
+      margin-bottom: 5px;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+      overflow-wrap: break-word;
+    }
+
+    /* tooltip copy of paragraphs and figures */
+    #tooltip_content > p,
+    #tooltip_content > figure {
+      margin: 0;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    /* tooltip copy of <img> */
+    #tooltip_content > figure > img,
+    #tooltip_content > figure > svg {
+      max-height: 260px;
+    }
+
+    /* navigation bar */
+    #tooltip_nav_bar {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* navigation bar previous/next buton */
+    #tooltip_nav_bar > .icon_button {
+      position: relative;
+      top: 3px;
+    }
+
+    /* navigation bar previous button */
+    #tooltip_nav_bar > .icon_button:first-of-type {
+      margin-right: 5px;
+    }
+
+    /* navigation bar next button */
+    #tooltip_nav_bar > .icon_button:last-of-type {
+      margin-left: 5px;
+    }
+  }
+
+  /* always hide tooltip on print */
+  @media only print {
+    #tooltip {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Analytics Plugin (third-party) 
+  
+  Copy and paste code from Google Analytics or similar service here.
+-->
+<!-- 
+  Annotations Plugin
+
+  Allows public annotation of the  manuscript. See https://web.hypothes.is/.
+-->
+
+<script type="module">
+  // configuration
+  window.hypothesisConfig = function () {
+    return {
+      branding: {
+        accentColor: "#2196f3",
+        appBackgroundColor: "#f8f8f8",
+        ctaBackgroundColor: "#f8f8f8",
+        ctaTextColor: "#000000",
+        selectionFontFamily: "Open Sans, Helvetica, sans serif",
+        annotationFontFamily: "Open Sans, Helvetica, sans serif",
+      },
+    };
+  };
+
+  // hypothesis client script
+  const embed = "https://hypothes.is/embed.js";
+  // hypothesis annotation count query url
+  const query = "https://api.hypothes.is/api/search?limit=0&url=";
+
+  // start script
+  function start() {
+    const button = makeButton();
+    document.body.insertBefore(button, document.body.firstChild);
+    insertCount(button);
+  }
+
+  // make button
+  function makeButton() {
+    // create button
+    const button = document.createElement("button");
+    button.id = "hypothesis_button";
+    button.innerHTML = document.querySelector(".icon_hypothesis").innerHTML;
+    button.title = "Hypothesis annotations";
+    button.classList.add("icon_button");
+
+    function onClick(event) {
+      onButtonClick(event, button);
+    }
+
+    // attach click listeners
+    button.addEventListener("click", onClick);
+
+    return button;
+  }
+
+  // insert annotations count
+  async function insertCount(button) {
+    // get annotation count from Hypothesis based on url
+    let count = "-";
+    try {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const location = window.location;
+      const url = encodeURIComponent((canonical || location).href);
+      const response = await fetch(query + url);
+      const json = await response.json();
+      count = json.total || "-";
+    } catch (error) {
+      console.log(error);
+    }
+
+    // put count into button
+    const counter = document.createElement("span");
+    counter.id = "hypothesis_count";
+    counter.innerHTML = count;
+    button.title = "View " + count + " Hypothesis annotations";
+    button.append(counter);
+  }
+
+  // when button is clicked
+  function onButtonClick(event, button) {
+    const script = document.createElement("script");
+    script.src = embed;
+    document.body.append(script);
+    button.remove();
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- hypothesis icon -->
+
+<template class="icon_hypothesis">
+  <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+  <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  /* hypothesis activation button */
+  #hypothesis_button {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 0;
+    border-left: solid 1px #bdbdbd;
+    border-bottom: solid 1px #bdbdbd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  /* hypothesis button svg */
+  #hypothesis_button > svg {
+    position: relative;
+    top: -4px;
+  }
+
+  /* hypothesis annotation count */
+  #hypothesis_count {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+  }
+
+  /* side panel */
+  .annotator-frame {
+    width: 280px !important;
+  }
+
+  /* match highlight color to rest of theme */
+  .annotator-highlights-always-on .annotator-hl {
+    background-color: #ffeb3b !important;
+  }
+
+  /* match focused color to rest of theme */
+  .annotator-hl.annotator-hl-focused {
+    background-color: #ff8a65 !important;
+  }
+
+  /* match bucket bar color to rest of theme */
+  .annotator-bucket-bar {
+    background: #f5f5f5 !important;
+  }
+
+  /* always hide button, toolbar, and tooltip on print */
+  @media only print {
+    #hypothesis_button {
+      display: none;
+    }
+
+    .annotator-frame {
+      display: none !important;
+    }
+
+    hypothesis-adder {
+      display: none !important;
+    }
+  }
+</style>
+<!-- 
+  Mathjax Plugin (third-party) 
+
+  Allows the proper rendering of math/equations written in LaTeX.
+  See https://www.mathjax.org/.
+-->
+
+<script type="text/x-mathjax-config">
+  // configuration
+  MathJax.Hub.Config({
+    "CommonHTML": { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    "fast-preview": { disabled: true }
+  });
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+  crossorigin="anonymous"
+></script>
+
+<style>
+  /* mathjax containers */
+  .math.display > span:not(.MathJax_Preview) {
+    /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  /* right click menu */
+  .MathJax_Menu {
+    border-radius: 5px !important;
+    border: solid 1px #bdbdbd !important;
+    box-shadow: none !important;
+  }
+
+  /* equation auto-number */
+  span[id^="eq:"] > span.math.display + span {
+    font-weight: 600;
+  }
+
+  /* equation */
+  span[id^="eq:"] > span.math.display > span {
+    /* nudge to make room for equation auto-number and anchor */
+    margin-right: 60px !important;
+  }
+</style>
+</body>
+</html>
