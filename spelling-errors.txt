@@ -1,7 +1,6 @@
 Arvanitou
 Bieman
 binf
-bioinformatic
 bioinformatician
 bioinformaticians
 bioinformatics
@@ -17,10 +16,10 @@ extensibility
 Ferenc
 ferenckata
 Hagan
-hoc
 Hovan
 Ieva
 ievarau
+imprtant
 Incentivizing
 Ine
 JASPAR
@@ -29,7 +28,7 @@ Kanewala
 Katalin
 Kuijjer
 Kumar
-Ladislav
+ladislav
 Marieke
 Mathelier
 modularity
@@ -41,7 +40,7 @@ performant
 princeps
 priori
 Rauluseviciute
-Reproducibility
+reproducibility
 reusability
 Romana
 SCA

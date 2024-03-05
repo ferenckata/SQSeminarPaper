@@ -5,7 +5,7 @@ keywords:
 - bioinformatics
 - teamwork
 lang: en-US
-date-meta: '2024-03-04'
+date-meta: '2024-03-05'
 author-meta:
 - Katalin Ferenc
 - Ieva Rauluseviciute
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="og:title" content="Improving software quality in bioinformatics through teamwork" />
   <meta property="twitter:title" content="Improving software quality in bioinformatics through teamwork" />
-  <meta name="dc.date" content="2024-03-04" />
-  <meta name="citation_publication_date" content="2024-03-04" />
-  <meta property="article:published_time" content="2024-03-04" />
-  <meta name="dc.modified" content="2024-03-04T19:57:06+00:00" />
-  <meta property="article:modified_time" content="2024-03-04T19:57:06+00:00" />
+  <meta name="dc.date" content="2024-03-05" />
+  <meta name="citation_publication_date" content="2024-03-05" />
+  <meta property="article:published_time" content="2024-03-05" />
+  <meta name="dc.modified" content="2024-03-05T12:27:51+00:00" />
+  <meta property="article:modified_time" content="2024-03-05T12:27:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -59,9 +59,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ferenckata.github.io/SQSeminarPaper/" />
   <meta name="citation_pdf_url" content="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ferenckata.github.io/SQSeminarPaper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/85ae62aae0ae74484e73210d65ff8158dcc688f8/" />
-  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/85ae62aae0ae74484e73210d65ff8158dcc688f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/85ae62aae0ae74484e73210d65ff8158dcc688f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/" />
+  <meta name="manubot_html_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://ferenckata.github.io/SQSeminarPaper/v/85ae62aae0ae74484e73210d65ff8158dcc688f8/))
+([permalink](https://ferenckata.github.io/SQSeminarPaper/v/14d3791dcc571351f3f9976eb761a336daff4bd6/))
 was automatically generated
-from [ferenckata/SQSeminarPaper@85ae62a](https://github.com/ferenckata/SQSeminarPaper/tree/85ae62aae0ae74484e73210d65ff8158dcc688f8)
-on March 4, 2024.
+from [ferenckata/SQSeminarPaper@14d3791](https://github.com/ferenckata/SQSeminarPaper/tree/14d3791dcc571351f3f9976eb761a336daff4bd6)
+on March 5, 2024.
 </em></small>
 
 
@@ -216,7 +216,6 @@ Furthermore, we provide a framework on how to get started with collective softwa
 
 With this work we want to emphasize that good software quality can be learned through collaborative effort.
 We offer a visual metaphor, where improvement of software quality is like an exercise of rock-climbing (**Figure 1**).
-We can look at the improvement of software writing as an exercise of rock-climbing (**Figure 1**).
 At the top of the rock is our goal of good quality software.
 Specifically, we identified reliable, performant, and extensible software as our aim, as we wished to improve our skills in creating and maintaining a lasting piece of software as is the scope of our teams [@doi:10.1093/nar/gkad1059 ; @doi:10.1186/s13059-023-02877-1].
 In order to reach it, we need to become proficient in the various concepts depicted by the holds.
@@ -224,6 +223,8 @@ These concepts were selected from the literature and our professional experience
 The higher they are on the wall, the more advanced we consider the concepts to be.
 As the progress is cumulative, we have chosen to show the holds in the same colour if they represent related concepts that build upon each other.
 This way, we mimic traditional CS education.
+We found reiterating certain core concepts (e.g., modularization, testing) valuable.
+The actual order of visiting the topics and emphasis on them can vary between groups.
 The most important point, however, is the fact that rock climbing requires a partner to belay you, just as we believe the input of other people helps us become better programmers.
 
 ![***Figure 1:*** **An illustration comparing the process of improvement in software writing to rock climbing.**
@@ -241,16 +242,14 @@ There are also articles that propose guidelines on how to code or analyse data i
 The encouraged practices are plenty, however they vary a lot and do not necessarily include a consistent view in line with the mainstream software standards.
 
 For a general overview, we selected articles (**Supplementary Methods**) which would be the entry point for bioinformatician who aim to improve their programming skills and collected their suggestions in **Table 1**.
-Many of these papers focus on specific suggestions, often referred to as rules or “tips & tricks”.
+Many of these papers focus on a set of selected suggestions, often referred to as rules or “tips & tricks”.
 Others, as a form of guidelines, direct the readers towards good practices of coding.
 While the targets of these type of articles are early career researchers with minimal coding experience (e.g. first time terminal users), they also encourage the usage of state-of-the-art software solutions (e.g. containers).
 Therefore, their guidelines are often a mix of basic and advanced concepts, especially from the perspective of a standard computer science and software engineering curriculum.
-It is unclear how much practical help these guidelines can offer to a bioinformatician with limited experience.
 This highlights the unique challenges emerging in bioinformatics even for routine analyses.
 
 The first impression **Table 1** might give is being intimidating due to the sheer amount of recommendations.
 Many of these guidelines are struggling to establish themselves within the bioinformatics community [@doi:10.7717/peerj-cs.839].
-We note that the characteristically varied backgrounds among bioinformaticians adds to the challenge of establishing broadly adopted and effective standards.
 These difficulties prompts us to re-think our strategies and methods to realize the effective adoption of these guidelines.
 More specifically, our own experience indicated a greater likelihood of adoption for these notions when engaged as part of a collective effort towards better software engineering proficiency.
 
@@ -258,36 +257,36 @@ Updating development practices, or even gaining a good understanding of new conc
 Beyond understanding, Arvanitou et al. note that a scientific software developer, depending on the application of the software (e.g. whether it is a tool or a data analysis pipeline), needs to make choices among the good practices [@doi:10.1016/j.jss.2020.110848].
 The authors argue that selection can be done via the prioritization of software quality attributes [@{https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3%20}].
 Due to the trade-offs between these attributes (e.g. performance vs security), priorities needs to be set for each software product.
-As bioinformaticians are rarely familiar with the meaning and importance of these attributes [@doi:10.1109/CSEET.2009.44, @doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85], we list these attributes and provide short descriptions for them in the **Supplementary Materials**.
+As bioinformaticians are rarely familiar with the meaning and importance of these attributes [@doi:10.1109/CSEET.2009.44, @doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85], we list these attributes and provide short descriptions for them in the **Supplementary Table 1**.
 Some, such as functional suitability and performance are implicitly prioritized within bioinformatics.
 Others, such as maintainability, portability, and reliability, are neglected in most bioinformatics endeavour.
-Through implicit prioritization most software are developed as a prototype, even when the goal is to create a long-term product.
-Therefore, we decided to set three target quality attributes as our learning goals that we have neglected in the past: reliability, performance, and extensibility (**Figure 1**).
+Through implicit prioritization most software are developed as a prototype, even when the goal is to create a long-term product [@doi:10.1038/d41586-022-01901-x].
+Therefore, we decided to set three target quality attributes as our learning goals that we consider the most imprtant for our work: reliability, performance, and extensibility (**Figure 1**).
 
 The hardship of systematic, automated testing of scientific software has been discussed in detail [@doi:10.48550/arXiv.1804.01954; @doi:10.1109/MS.2008.85; @doi:10.1109/MIC.2014.88].
 Uncovered faults can and do lead to incorrect scientific insights as shown in multiple examples [@doi:10.1126/science.314.5807.1856], which prompted us to investigate this issue further.
 Often in science we use software to find new knowledge and do not know *a priori* the exact output a software should give for a new input dataset.
 Furthermore, according to the Kanewala and Bieman [@doi:10.48550/arXiv.1804.01954], scientists view their scientific model and the implementation as a single entity.
-Therefore, the validity of the model tend to be tested, but the code which produces it is not verified.
-In our sessions, we covered unit testing and discussed verification for scientific software (**Figure 1**).
+Therefore, the validity of the model tends to be tested, but the code which produces it is not verified.
+In our sessions, we covered unit testing and discussed verification for scientific software (**Figure 1**, **Supplementary Table 2**).
 
 Another insight is about the complexity of bioinformatics software.
 In bioinformatics analysis it is common to combine the functionalities that are coming from various packages.
 This has several implications [@doi:10.1371/journal.pcbi.1005412; @doi:10.1016/j.jss.2020.110848; @doi:10.1109/MIC.2014.88; @doi:10.1101/2022.03.10.483804], here we highlight two of them.
 First, over time the software becomes increasingly hard to maintain.
 The complexity, size, age, and the change-proneness of a code heavily affect maintainability [@doi:10.1109/CSEET.2009.44].
-To address this question, we built a shared understanding of functions and modularization (**Figure 1**), and expect the members of our code reviews to organize their code into modules.
+To address this question, we built a shared understanding of functions and modularization (**Figure 1**, **Supplementary Table 2**), and expect the members of our code reviews to organize their code into modules.
 Second, package management (including versioning) is a crucial aspect to ensure not only maintenance, but also ease of development, reproducibility, and reusability.
 Frameworks [@doi:10.12688/f1000research.29032.1; @doi:10.1038/nbt.3820] and package management solutions [@{https://www.anaconda.com/}; @{https://docs.docker.com/}; @{https://apptainer.org/}] are required to achieve these qualities.
-Similarly to modularization, we first learnt about version control and container solutions (**Figure 1**), so that we can expect members to follow these practices.
+Similarly to modularization, we first learnt about version control and container solutions (**Figure 1**, **Supplementary Table 2**), so that we can expect members to follow these practices.
 
 Interestingly, in our reviewed literature mainly dedicated to bioinformaticians, suggestions on how to systematically code in a team setting and utilize multiple people's expertise on software development are extremely rare.
 Often guidelines for starting bioinformaticians encourage reaching out to others, but mostly to seek help when encountering a problem with their code.
-This could include consulting with colleagues, finding a mentor or participating in online communities (for example, Stack Overflow or Biostars) [@doi:10.1371/journal.pcbi.1008645].
+This could include consulting with colleagues, finding a mentor or participating in online communities (e.g., Stack Overflow or Biostars) [@doi:10.1371/journal.pcbi.1008645].
 However, it is still mainly focused on individual practices, called upon a specific (often scientific) issue, and insufficient to recognize unknown unknowns.
+It is in contrary to software engineering-oriented literature, where the main focus is on practices when coding in a team [@https://faculty.washington.edu/ajko/books/cooperative-software-development; @doi:10.1007/s10664-012-9205-0].
 The one counter example is the Code Clubs described by Hagan et al. [@doi:10.1371/journal.pcbi.1008119].
 In their research group, members are collectively engaged in software development through code reviews, pair coding, and software engineering education through workshops or seminars [@doi:10.1371/journal.pcbi.1008119].
-It is in contrary to software engineering-oriented literature, where the main focus is on practices when coding in a team [@https://faculty.washington.edu/ajko/books/cooperative-software-development; @doi:10.1007/s10664-012-9205-0].
 Sharing your coding experience with others helps minimize the isolation, allows individuals to learn from their peers, helps to establish and maintain standards, and helps to write a better quality software.
 We therefore established a learning club called software quality seminars, regular code reviews, and a resource sharing platform to foster team effort (**Figure 1**).
 Before sharing our experience with learning club, we aim to highlight the merit of a team-based approach to software development.
@@ -312,7 +311,7 @@ Before sharing our experience with learning club, we aim to highlight the merit 
             <td>[@doi:10.1371/journal.pcbi.1005412]</td>
         </tr>
         <tr>
-            <td>Do not require superuser privileges</td>
+            <td>Do not require superuser privileges for installation and usage</td>
             <td>[@doi:10.1371/journal.pcbi.1005412]</td>
         </tr>
         <tr>
@@ -461,8 +460,8 @@ In the particular context of computational projects in academia, a strict divisi
 Some tasks, such as risk, budget and time management, are discussed at the conception of the project (e.g. during grant application) and thus decoupled from the actual software development phase.
 The remaining management tasks would often fall on the developer(s).
 Implicit decision-making is one of the key challenges current bioinformatics projects face.
-As agile is the only recommendation about team management present in these guidelines (**Table 1**), we discuss it here in light of the current academic practices.
 
+As agile is the only recommendation about team management present in these guidelines (**Table 1**), we discuss it here in light of the current academic practices.
 Through more team communication, one outstanding aim of agile is the aspiration for more autonomy in organizing the work of software developers.
 Practices and methods aligned with agile prescriptions include planning a minimum viable product, documenting requirements, organizing stand-up meetings, defining and assigning tasks, pair-programming, and code reviews.
 Many of these practices do not require the presence of the manager, but assume a collegial work culture and standardized procedures.
@@ -478,7 +477,7 @@ We do not believe that all the software engineering guidelines employed in the i
 The circumstances differ significantly, mainly due to how the outcomes of research projects (papers, tools, protocols, etc.) need to be credited to particular individual researchers for their career progression.
 Regardless of the optimality of this situation, personal projects remain the norm, and it would be futile to expect another group member to achieve an equal level of familiarity with one's project.
 However, this should not prevent interactions between the people in the group, as it is through these interactions that rules are enforced and quality increased.
-To reach reliability, performance and extensibility it is more important to collaborate with people and individual software quality attributes will be more comfortably handled even if we as individuals do not have a capacity to touch upon every single one of them (**Figure 1**).
+To reach reliability, performance and extensibility it is more important to collaborate with people and individual software quality attributes will be more comfortably handled even if we as individuals do not have a capacity to touch upon every single one of them.
 
 In our research groups, we have practically implemented the environment in which we, as a group, learn about and implement software quality practices that have been discussed in literature.
 We want to share this experience and propose how simple additions, such as weekly code review sessions or seminars, can lead to the improved quality of collective or personal software.
@@ -494,22 +493,24 @@ Through these sessions we built a shared vocabulary that enables quick discussio
 We also gained awareness of packages or technical solutions, which help to improve software performance and quality.
 
 The benefits of code reviews have been reviewed in the past [@doi:10.5334/jors.35; @doi:10.1371/journal.pcbi.1008119; @{https://logicmag.io/clouds/agile-and-the-long-crisis-of-software/}, @ISBN:9780201616224].
-This includes fairly obvious things like implementing consistent coding standards, detecting bugs and errors, but also less expected outcomes, such as diverse learning, fostering of a positive environment or enhancing efficiency.
+This includes fairly obvious things like implementing consistent coding standards, detecting bugs and errors, but also less expected outcomes, such as diverse learning, fostering of a positive environment, or enhancing efficiency.
 Prior to a scheduled code review, the author is expected to write their code in a way that it will be explainable and understood by others.
 This expectation is largely self-inflicted as each person feel the pressure of exposing their weaknesses - even within a friendly environment.
 During the code review, the author has to explain some aspect of their code clearly (e.g. structure, algorithm implementation, performance related decisions).
 In our settings, it is entirely up to the author to choose which aspect of the code, or software product to discuss.
 Although it is implied that participants of code reviews are intended to discuss implementation details, we accept and enjoy discussions about any other aspect of the code, such as user interface design, documentation, or architecture considerations.
+
 The other participants may not be deeply familiar with the particular project, but they have their unique knowledge and point of view.
 The feedback obtained can help fix existing or potential future issues, improve the implementation, and produce cleaner, more concise code.
 Our experience indicates a broader adoption of theoretical aspects and good practices of software engineering highlighted during these code review sessions.
 We found that during these meetings implicit peer-pressure helps us achieve most goals: standardization of practices, improved code quality, and enhanced usability of the software.
+
 As a positive additional outcome, we noticed an increasing understanding in each other’s projects that naturally emerged through talking about the examined code.
 This enabled us to give more involved comments during subsequent group meetings too, where we would naturally discuss each other's scientific projects.
 Additionally, seeing and analysing everyone's code on a more hands-on level showed us how repetitive some pieces of code can be in different projects.
-This redundancy can be removed by implementing a system to share resources.
+This redundancy is partially removed by implementing a system to share resources.
 
-Resource sharing boils down to making sure that useful online resources are brought to the attention of all participants easily.
+Resource sharing boils down to making sure that useful resources are brought to the attention of all participants easily.
 It can be discussed from two perspectives: external open-access resources (forums, repositories, packages and libraries) and internal (within-group resources with tools).
 The latter is very important as it allows for team contribution that can benefit the individual project development.
 A simple example of this could be a shared repository of various computational tools that were developed by members of the group.
@@ -517,9 +518,10 @@ Such tools are universal enough and fit the group’s research questions, so all
 In addition, each tool can be potentially developed and reviewed by multiple group members.
 
 We believe these three pillars are the minimum requirement for achieving lasting improvement in software development within research teams, but bioinformaticians of other groups should tailor the content and the frequency of these meetings to their specific needs.
-Although not explicitly a project conceived during the meetings, many regular attendees have extensively applied software quality features (object-oriented programming style, user stories when documenting the requirements and assumptions, Jira to add features and report bugs, continuous integration with Git) when working on the same codebase as a team for the latest release of JASPAR database [@doi:10.1093/nar/gkad1059].
+Although not explicitly a project conceived during the meetings, many regular attendees have extensively applied many of the discussed software development methods (e.g., object-oriented programming style, user stories when documenting the requirements and assumptions, Jira to add features and report bugs, continuous integration with Git) when working on the same codebase as a team for the latest release of JASPAR database [@doi:10.1093/nar/gkad1059].
 We also want to note that this article in fact was successfully written using a continuous integration based tool Manubot [@doi:10.1371/journal.pcbi.1007128].
 In the next sections we discuss how software quality seminars and code reviews helped with the examples of three specific software engineering notions: modularization, testing, and dependency management.
+We share specific examples from our own projects to highlight how these concepts change the way we code (**Supplementary Figures**).
 
 ### Modularization ###
 
@@ -530,32 +532,28 @@ Understanding the ways we can improve code organization was a theme we touched s
 In parallel, during code reviews we encountered and discussed several examples where modularization was implemented.
 Our toolkit collects stand-alone scripts that are by definition modules to be used.
 
-We covered the following topics in lecture forms to gain understanding in ways to improve modularization: object-oriented programming, class diagrams and unified modelling language in general, design patterns, software architecture, Snakemake [@doi:10.12688/f1000research.29032.1], S4 objects, R package development, a case report from the organization of the JASPAR database project [@doi:10.1093/nar/gkad1059], and a review on the book titled The Pragmatic Programmer [@ISBN:9780135957059].
+We covered the following topics in lecture forms to gain understanding in ways to improve modularization (**Supplementary Table 2**): object-oriented programming, class diagrams and unified modelling language in general, design patterns, software architecture, Snakemake [@doi:10.12688/f1000research.29032.1], S4 objects, R package development, a case report from the organization of the JASPAR database project [@doi:10.1093/nar/gkad1059], and a review on the book titled The Pragmatic Programmer [@ISBN:9780135957059].
 We understood that modularization can take form in many levels.
 On the smallest scale it can mean naming parts of the code by organizing them into functions.
-Once a code grew, we can start refactoring into classes and focus on the coherence and coupling of the parts.
-When building a pipeline of scripts, we can identify coherent modules that would translate to rules in Snakemake [@doi:10.12688/f1000research.29032.1].
+Once a code grew, we can start refactoring into classes and focus on the coherence and coupling of the parts (**Supplementary Figure 1-2**).
+When building a pipeline of scripts, we can identify coherent modules that would translate to rules in Snakemake [@doi:10.12688/f1000research.29032.1] (**Supplementary Figure 3-4**.)
 To sum up, modularization means the continuous monitoring of the code, the recognition of a code that grew too much, and the re-structuring into smaller parts.
 It involves an understanding that the code is not a static entity, but an ever-growing, ever-changing organism.
 
-In a large distributed project clean coding style may be trivial, but because the bioinformatic projects are often handled by a single person, it is very possible to make the code complex and obfuscated.
-We observed in code reviews that during data analysis parts of the code are re-run in an ad-hoc manner (e.g. by commenting out or re-writing parts), making it increasingly difficult to explain the code or reproduce the same analysis.
-At the start of implementation of regular meetings, the recurring comments were about modularization, documentation, and variable declarations, until these became standard among the members.
-After about half a year, it was established understanding for everyone involved that code organized into functions is preferred over the so-called "spaghetti code".
-
 A recurring question is whether a script needs refactoring or can remain a prototype.
 Taschuk and Wilson [@doi:10.1371/journal.pcbi.1005412] suggest a cut-off where a script is being reused, shared with others or used to produce findings in a publication.
-This definition would potentially include the majority of code written by bioinformaticians, but the time spent on improving the scripts should be weighed against the time required to deal with suboptimal code.
+This definition would potentially include the majority of code written by bioinformaticians, but the time spent on improving the scripts should be weighed against the time required to deal with suboptimal code on a case-by-case basis.
+With practice, and being exposed to lot of code, modularization can become the norm and the distance between a prototype and a refactored code can be significantly reduced.
 
 ### Testing ###
 
 As highlighted in the literature [@doi:10.48550/arXiv.1804.01954], testing is a difficult concept for scientific software.
 However, it is also a central concept in team programming, as test coverage increases trust and allows the safe addition of new features by any member.
-We revisited testing multiple times: discussed debugging tools, how to write unit tests in python (```pytest``` and ```unittest```) and R (```testthat```), what type of functions can be tested, why automated tests are beneficial and how to implement them via continuous integration services (e.g. GitHub Actions).
+We revisited testing multiple times (**Supplementary Table 2**): discussed debugging tools, how to write unit tests in python (```pytest``` and ```unittest```) and R (```testthat```), what type of functions can be tested, why automated tests are beneficial and how to implement them via continuous integration services (e.g., GitHub Actions).
 The main difficulty was for us to see testing as software testing beyond the validation of the scientific feature of the software that can be shown on a small test data.
 Similarly to modularization, a recurring question was when to start adding tests.
 Although there is no hard threshold, we tend to identify a sweet spot when the code has not grown too much so that refactoring is a daunting task, but also not changing too much so that test coverage would be a wasted effort.
-In general, we advise on testing earlier than one would feel like (i.e. I will start tomorrow after I implement this new idea).
+In general, we advise on testing earlier than one would feel like (i.e. departing from the mindset: "I will start tomorrow after I implement this new idea").
 Code reviews are a very nice platform to discuss tests: to get the input from peers on how to challenge the implementation.
 This part is actually a scientific endeavour, when edge cases can be thought of and the properties of the biological question can be discussed.
 
@@ -563,8 +561,8 @@ This part is actually a scientific endeavour, when edge cases can be thought of 
 
 Given the large number of dependencies, even whole ecosystems of tools, dependency management is one of the most important task to ensure reproducibility of the findings.
 In a team setting, where all members need to be able to run the code, it is natural to create identical environments for all developers.
-In the software quality seminars we covered: container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}], R package development, and Anaconda [@{https://www.anaconda.com/}].
-We established the DockerHub account for our group [@{https://hub.docker.com/u/cbgr}] to share our custom containers.
+In the software quality seminars we covered (**Supplementary Table 2**): container solutions [@{https://docs.docker.com/}; @{https://apptainer.org/}], R package development, and Anaconda [@{https://www.anaconda.com/}].
+We established the DockerHub account for our group [@{https://hub.docker.com/u/cbgr}] to share our custom containers (**Supplementary Figures**).
 This resource also enables easy installation of our Snakemake pipelines across different servers.
 
 In sum, software quality seminars, code reviews and shared resources in the research group can be implemented as separate activities choosing all or any of them.
@@ -575,24 +573,9 @@ The shared knowledge base and standards also allow us to make new group members 
 
 ## Conclusions and future perspectives ##
 
-Software engineering emerged and has been developing to address issues naturally arising from poorly planned software development, such as project failures, delays, incorrect functionality or defects [@doi:10.1145/3084225], none of which is unknown to the scientific community.
-Indeed, the crisis of scientific software in general is widely discussed [@doi:10.1038/d41586-023-00053-w; @doi:10.1038/d41586-022-01516-2].
-It is only natural that the bioinformatics community learns from those more experienced, and focuses on solving problems that have been identified.
-In this case, it is both the software engineering research community and the industry experts on software and team management.
-
-In our computational biology groups, we introduced regular seminars to learn about software solutions, and code reviews that fit our specific needs and context.
-Through these meetings, we learnt about and adopted various concepts that achieve a better quality software (**Supplementary Material**).
-Furthermore, we have established coding standards within our groups, which ease within-group support and collaborative projects.
-We note that the usage of these tools is not necessarily aligned with industry practices, due to the experimental nature of scientific software.
-Nevertheless, as bioinformatics becomes a more and more software-heavy field, we believe a good direction is to collectively lower the barrier to adapting to new technologies.
-
+As bioinformatics becomes a more and more software-heavy field, we believe a good direction is to collectively lower the barrier to adapting to new technologies.
 For large software project which supports many researchers and contributes to novel findings, working in team and following standards is a necessity and not an option.
-While this may not be necessary for smaller projects, we argue that following good software quality practices is still very beneficial.
-If single-person projects survive the original developer, deposited on platforms like GitHub, they might be overly cryptic and poorly documented so that no other scientist can take over [@doi:10.1038/d41586-022-01901-x].
-Over time a project might be taken over by another person, thus accidentally becoming a sort of team project with (by definition) insufficient communication.
-Lack of standards and good practices thus undermine maturation, addition of new features, and general maintainability.
-
-When discussing our approach, it is implied that team dynamic is important, especially for such bottom-up approaches.
+Even for small projects, we argue that following good software quality practices and mimic team structure is very beneficial.
 The overall performance increases when team members are familiar with each other and build problem-solving routines together through cumulative experience [@{http://www.jstor.org/stable/40539129}].
 In a group the knowledge on who knows what speeds up the problem-solving [@doi:10.1177/1046496420967764]; time spent together, and social factors ease technical knowledge transfer [@{http://www.jstor.org/stable/40539129}].
 We therefore motivate group leaders of groups with even a small computational component to build an environment for their trainees to communicate and discuss software quality aspects.
